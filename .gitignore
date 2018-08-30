@@ -4,3 +4,5 @@
 *.pyc
 
 *.xml
+
+deckbuilder\.log
