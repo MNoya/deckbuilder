@@ -1,0 +1,11 @@
+{% extends "views/base.html" %}
+{% block body %}
+    <h1>{{ object.name }} <img class="img-fluid race-icon race-{{ object.race }}"/></h1>
+    <h2>({{ object.cost }}) {{ object.get_card_type_display }}</h2>
+    <h3>{{ object.get_rarity_display }}</h3>
+    <text>{{ object.text }}</text>
+    <br>
+    {% if object.attack %}
+        {{ object.attack }}/{{ object.defense }}
+    {% endif %}
+{% endblock %}

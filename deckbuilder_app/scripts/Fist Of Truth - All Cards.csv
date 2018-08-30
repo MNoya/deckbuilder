@@ -1,0 +1,931 @@
+Name,Race,Rarity,Type,Cost,Att,Def,Text,Notes,
+Adaptability,Quadruple Radiance Empire,Common,Spell,1,-,-,"If there's no enemy in target ally's opposing row, it gans +4/+0, or it gains +0/+4.",,
+Adventurer's Gear,Quadruple Radiance Empire,Common,Spell,1,-,-,Deal X damage to target enemy. (Where X is the number of all allies on the board.),,
+Beam of faith,Quadruple Radiance Empire,Common,Spell,1,-,-,,,
+Spearhead,Quadruple Radiance Empire,Common,Spell,1,-,-,Give target all +3/+0.,,
+Wall of Holylight,Quadruple Radiance Empire,Epic,Unit,1,0,2,"Defender
+Death: If there is another ally on the board, return this card to your hand. ",,
+Seal of Empire,Quadruple Radiance Empire,Epic,Spell,2,-,-,"Turn start: Summon a 1/1 Imperial Archer.
+Add Seal of Empire to your hand.",,
+Temple Guard,Quadruple Radiance Empire,Epic,Unit,2,2,2,When this unit attacks the enemy: Summon a 1/1 Village Militia,,
+Temple Vanguard,Quadruple Radiance Empire,Rare,Unit,2,2,2,"Synergy 1
+Deployment Phase: Insight 1",,
+Angel Nectar,Quadruple Radiance Empire,Rare,Spell,2,-,-,"Restore 5 Health, draw a card.",,
+Blessing of Reyna,Quadruple Radiance Empire,Rare,Spell,2,-,-,Give all allies +0/+3.,,
+Holy Power,Quadruple Radiance Empire,Rare,Spell,2,-,-,"Douvle target Ally's Defence.
+ Draw a card.",,
+Fortification,Quadruple Radiance Empire,Rare,Unit,2,0,5,"Defender (Can't attack)
+ Turn end: Gain +0/+2",,
+Temple Garrison,Quadruple Radiance Empire,Rare,Unit,2,2,2,"Rejuvenation
+ Debut: Insight 1 (Reveal 1 card in enemy player's hand)",,
+Light of Awe,Quadruple Radiance Empire,Common,Spell,2,-,-,Target Enemy can't strike this turn. Draw a card.,,
+Prepare For Battle,Quadruple Radiance Empire,Common,Spell,2,-,-,Give all allies +1/+1.,,
+Strong unity,Quadruple Radiance Empire,Common,Spell,2,-,-,Give target all +X/+X. (Where X is the number of all allies on the board.),,
+Imperial Archer,Quadruple Radiance Empire,Common,Unit,2,1,1,"First strike
+ (Get priority to strike in battle phase).",,
+Imperial Soldier,Quadruple Radiance Empire,Common,Unit,2,1,1,Synergy 2 (Gain +2/+0 for every adjacent ally.),,
+Nun,Quadruple Radiance Empire,Common,Unit,2,1,2,Turn end: Restore 2 health.,,
+Radiant Scarecrow,Quadruple Radiance Empire,Common,Unit,2,0,3,"Turn start: If the 1st enemy in opp. row just entered the board, it can't strike in this round.",,
+Village Vagrant,Quadruple Radiance Empire,Common,Unit,2,1,1,Rejuvenation (When this unit attacks the enemy: Restore your health equal to the damage it dealt.),,
+Parry & Riposte,Quadruple Radiance Empire,Newbie's,Spell,2,-,-,Give target ally +1/+3.,,
+Field Worker,Quadruple Radiance Empire,Newbie's,Unit,2,1,3,,,
+Security Guard,Quadruple Radiance Empire,Newbie's,Unit,2,2,1,,,
+"Anabel, Dawn's Light",Quadruple Radiance Empire,Legendary,Unit,3,1,1,Pre-Strike: Give all allies +1/+1.,,
+Reinforce Battlefront,Quadruple Radiance Empire,Epic,Spell,3,-,-,"Insight 1
+Summon three 1/1 Vilage Millitia in target column. ",,
+Frontier Wall,Quadruple Radiance Empire,Epic,Unit,3,0,10,"Defender
+Armor 1",,
+Lights of Dawn,Quadruple Radiance Empire,Epic,Spell,3,-,-,Turn end: Give all Allies +3/+3,,
+White Robed Bishop,Quadruple Radiance Empire,Epic,Unit,3,2,3,Turn Start: Give all other allies +0/+1.,,
+Empire's Vitality,Quadruple Radiance Empire,Rare,Spell,3,-,-,"Give target ally +0/+3, restore X Health. (X = target's Defence)",,
+Armed Force,Quadruple Radiance Empire,Rare,Spell,3,-,-,Give Target ally +2/+2 and Armor 2.,,
+Counter Ambush,Quadruple Radiance Empire,Rare,Spell,3,-,-,Give all allies +1/+0. Give all enemies -1/-0,,
+Horn of Victory,Quadruple Radiance Empire,Rare,Spell,3,-,-,"Turn End: Draw 2 cards. If more allies than enemies are on the board, give a random ally +3/+3",,
+Elite Archer,Quadruple Radiance Empire,Rare,Unit,3,3,2,"First Strike (Priority action in combat)
+ Deployment phase: Insight 1",,
+Fearless Dynamiter,Quadruple Radiance Empire,Rare,Unit,3,1,4,"Turn end: Deal 3 damage randomy to enemy
+ Death: Deal 3 damage to your health",,
+Logistics Officer,Quadruple Radiance Empire,Rare,Unit,3,2,4,Turn end: Restore your health equal to this unit's attack.,,
+Shield Janissary,Quadruple Radiance Empire,Rare,Unit,3,3,1,Armor 2 (Reduce Physical damage to this unit by 2.),,
+Temple Knight,Quadruple Radiance Empire,Rare,Unit,3,1,3,"Rejuvenation
+Synergy 2",,
+Temple Marksman,Quadruple Radiance Empire,Rare,Unit,3,1,2,"Synergy 1
+ Turn start: Deal damage to enemy player equal to this unit's attack.",,
+Holy shield Protector,Quadruple Radiance Empire,Common,Spell,3,-,-,Give target ally +2/+1. Give target ally Armor 5 this turn.,,
+Holy Smite,Quadruple Radiance Empire,Common,Spell,3,-,-,Destroy an enemy on target square. Restore 3 Health to the enemy Player.,,
+Ballista,Quadruple Radiance Empire,Common,Unit,3,0,3,Synergy 3(Gain +3/+0 for every adjacent ally.),,
+Happy Dairy Cow,Quadruple Radiance Empire,Common,Unit,3,0,3,Turn end: Restore X Health (X equals to this unit's defence),,
+Protection Statue,Quadruple Radiance Empire,Common,Unit,3,0,6,"Defender
+Turn start: Give random adjacent ally +0/+1.",,
+Temple Recruit,Quadruple Radiance Empire,Common,Unit,3,2,3,Synergy 1(Gain +1/+0 for every adjacent ally.),,
+The Empire War Flag,Quadruple Radiance Empire,Common,Unit,3,0,1,"Defender, Debut: Give all adjacent allies +1/+1. Turn End: Give random ally +1/+1.",,
+Kind Aunt,Quadruple Radiance Empire,Newbie's,Unit,3,1,2,Debut: Give another random ally +1/+1.,,
+Militia Warrior,Quadruple Radiance Empire,Newbie's,Unit,3,3,1,,,
+"Caroline, Holy Lance",Quadruple Radiance Empire,Legendary,Unit,4,3,4,"Rejuvenation
+ Hexproof
+ Armor 1",,
+Hymn of Light,Quadruple Radiance Empire,Epic,Spell,4,-,-,Give all allies +2/+2,,
+Janissary Commander,Quadruple Radiance Empire,Epic,Unit,4,2,3,"Armor 3
+ Synergy 1",,
+Lunar Priest,Quadruple Radiance Empire,Epic,Unit,4,1,3,Turn end: Restore 8 health.,,
+Archer's Ambush,Quadruple Radiance Empire,Rare,Spell,4,-,-,"Turn end: Summon 3 1/1 Imperial Archers in target column, deal 1 Crash damage to 3 random enemies.",,
+Dazzling Radiance,Quadruple Radiance Empire,Rare,Spell,4,-,-,Four enemies cannot attack this turn.,,
+Seize Position,Quadruple Radiance Empire,Rare,Spell,4,-,-,Rerutn enemies in target to their owner. Summon a 1/1 Village Militia in the same row on your Fist.,,
+Bartender,Quadruple Radiance Empire,Rare,Unit,4,1,5,"Turn start: Give random adjacent ally +3/-1. If there's none, this unit gains +3/-1.",,
+Imperial Cannon,Quadruple Radiance Empire,Rare,Unit,4,0,7,"Defender
+ Turn end: if there is an ally right behind, deal 5 damage to opponent's random area in the opposite row.",,
+Monk of Peace,Quadruple Radiance Empire,Rare,Unit,4,2,2,Debut: enemies in the opposing row can't attack this turn.,,
+Siege Tower,Quadruple Radiance Empire,Rare,Unit,4,1,9,Turn end: Random enemy takes 1 damage.,,
+Temple Elite,Quadruple Radiance Empire,Rare,Unit,4,3,4,Synergy 2 (Gain +2/+0 for every adjacent ally.),,
+The Empire Tent,Quadruple Radiance Empire,Rare,Unit,4,0,4,"Defender, Debut: Summon a 1/1 Village Militia.",,
+Cooperation Tactic,Quadruple Radiance Empire,Common,Spell,4,-,-,Give target ally +2/+2/ Give adjacent allies +1/+1.,,
+Stoning,Quadruple Radiance Empire,Common,Spell,4,-,-,Deal 3 damage to enemies in target row.,,
+Bald Griffin,Quadruple Radiance Empire,Common,Unit,4,3,2,Rejuvenation (When this unit attacks the enemy: Restore your health equal to the damage it dealt.),,
+Cautious Hackbuteer,Quadruple Radiance Empire,Common,Unit,4,3,3,Pre-Strike: If there are other allies in same row deal 1 damage to random enemy,,
+Militia Captain,Quadruple Radiance Empire,Common,Unit,4,2,3,Debut: Summon a 1/1 Village Militia.,,
+Pumpkin Aunt,Quadruple Radiance Empire,Common,Unit,4,2,3,Debut: Deal 2 Damage to a random enemy. ,,
+Sanctuary Keeper,Quadruple Radiance Empire,Common,Unit,4,1,5,Armor 1 (Reduce physical damage to this unit by 1.),,
+Vanguard Cavalry,Quadruple Radiance Empire,Common,Unit,4,3,3,"Debut: if there's no enemy in the opposing row, gain +2/-2",,
+Village Taskmaster,Quadruple Radiance Empire,Common,Unit,4,1,4,When this unit attacks the enemy: Summon a 1/1 Village Militia,,
+Young Cleric,Quadruple Radiance Empire,Common,Unit,4,1,3,Turn start: Give another random ally +0/+2.,,
+Fat Guardsman,Quadruple Radiance Empire,Newbie's,Unit,4,2,4,,,
+"Reinhardt, Militant",Quadruple Radiance Empire,Legendary,Unit,5,2,5,"Trample
+Synergy 3",,
+Imperial Armor Master,Quadruple Radiance Empire,Epic,Unit,5,2,6,Pre-strike: Double a random ally's defense. ,,
+Royal Archer,Quadruple Radiance Empire,Epic,Unit,5,3,3,"First Strike
+ Turn start: Summon a 1/1 Imperial Archer on a random adjacent square.",,
+Countryside Defense,Quadruple Radiance Empire,Rare,Spell,5,-,-,"Turn End: Summon three 1/3 Field Farmers
+ for every ally on the field, gain 1 health",,
+Light's Retribution,Quadruple Radiance Empire,Rare,Spell,5,-,-,Destroy enemies in target row.,,
+Battlefield Priest,Quadruple Radiance Empire,Rare,Unit,5,4,3,Debut: Give all other allies +1/+1.,,
+Imperial Cuirassier,Quadruple Radiance Empire,Rare,Unit,5,5,2,"Debut: if the first enemy in the oppositve row just entered the board, destroy it.",,
+Temple Captain,Quadruple Radiance Empire,Rare,Unit,5,3,4,"Rejuvenation
+ When this unit attacks the enemy: Summon a 2/2 Temple Garrison.",,
+Temple Missionary,Quadruple Radiance Empire,Rare,Unit,5,2,5,Turn start: random enemy can't strike in this round,,
+Thick Hide,Quadruple Radiance Empire,Common,Spell,5,-,-,Give target unit +1/+6 and Armor 1.,,
+Kitchen Handyman,Quadruple Radiance Empire,Common,Unit,5,2,3,Turn start: Give random ally +1/+2.,,
+Mutinous Warrior,Quadruple Radiance Empire,Common,Unit,5,4,1,,,
+Sturdy Foreman,Quadruple Radiance Empire,Newbie's,Unit,5,3,4,,,
+"Ian, Archbishop of Yang",Quadruple Radiance Empire,Legendary,Unit,6,3,6,"Rejuvenation
+When you restore health: Double the heal value and this unit gains +0/+4.",,
+Honor Asylum,Quadruple Radiance Empire,Epic,Spell,6,-,-,"Give all allies +1/+/1
+ In this turn, give target allies: Armor 6, Hexproof",,
+"Achilles, the Destroyer",Quadruple Radiance Empire,Epic,Unit,6,0,11,"Suspend, Armor 2, Synergy 5",,
+Retribution Angel,Quadruple Radiance Empire,Epic,Unit,6,4,6,"Rejuvenation
+ Debut: If the 1st enemy in opp. row just entered the board, destroy it.",,
+Village Baron,Quadruple Radiance Empire,Rare,Unit,6,3,5,"Synergy 1
+ Turn end: Summon a 2/1 Securit Guard on a random adjacent square.",,
+Imperial Hammersmith,Quadruple Radiance Empire,Common,Unit,6,3,3,Debut: Give another random ally +2/+2.,,
+Imperial Hammerman,Quadruple Radiance Empire,Newbie's,Unit,6,6,2,,,
+Dazzling Angel Reyna,Quadruple Radiance Empire,Legendary,Unit,7,5,6,Debut: Insight 3. No enemies can attack this turn.,,
+Apocalypse,Quadruple Radiance Empire,Epic,Spell,7,-,-,Destroy 5 Units on each Fist.,,
+Light Paladin,Quadruple Radiance Empire,Epic,Unit,7,5,5,"Armor 2
+ (Reduce physical damage to this unit by 2.)
+ Debut: Restore 5 health.",,
+Wall of Glory,Quadruple Radiance Empire,Epic,Unit,7,0,20,"Defender
+Armor 1
+Turn end: Deal 4 damage to an opponent's random area in the opposite row.",,
+"Dapton, Fortress",Quadruple Radiance Empire,Legendary,Unit,8,0,24,"Defender
+Armor 2
+Shroud
+Turn end: Deal 6 damage to an opponent's random area in the opposite row.",,
+Templar Bannerman,Quadruple Radiance Empire,Epic,Unit,8,5,6,"Synergy 2 (Gain +2/+0 for every adjacent ally.)
+ Debut: Give all other allies +2/+3.",,
+Royal Griffin,Quadruple Radiance Empire,Epic,Unit,9,6,4,"Rejuvenation
+ Debut: Summon two 3/2 Bald Griffins in the same column.",,
+Loam Wall,Roughrock Weald,Common,Unit,0,0,4,Defender (Can't attack),Roughrock Weald,
+Clumsy Shoebill,Roughrock Weald,Rare,Unit,1,1,3,"Suspend:(Can't strike in entering turn.)
+ Hit player: Draw a card.",,
+Coyote,Roughrock Weald,Common,Unit,1,2,1,,,
+Roughrock Blood Lizard,Roughrock Weald,Common,Unit,1,1,1,When your restore health: This unit gains +2/+0.,,
+Seal of Roughrock,Roughrock Weald,Epic,Spell,2,-,-,"Restore 3 Health.
+Add Seal of Roughrock to your hand.",,
+Wolf Trainer,Roughrock Weald,Epic,Unit,2,2,1,"When you restore health, summon a 2/1 Coyote",,
+Fearless Hunter,Roughrock Weald,Epic,Unit,2,2,2,"Debut: Insight 1
+ When this unit attacks opponent: Damato player +X (X equal to this unit's attack )",,
+Distribute Arms,Roughrock Weald,Rare,Spell,2,-,-,"Give target ally +3/+1.
+Give adjacent allies +1/+0.",,
+Unstoppable,Roughrock Weald,Rare,Spell,2,-,-,Give target ally +2/+2 and Trample.,,
+Power-charge Archer,Roughrock Weald,Rare,Unit,2,1,4,Turn end: enemy player takes damage equal to this unit's attack.,,
+Roughrock Pangolin,Roughrock Weald,Rare,Unit,2,2,2,"Armor 1, when you restore health: This unit gains +1/+0, increase its Armor by 1.",,
+Shaman of Madness,Roughrock Weald,Rare,Unit,2,1,3,"Increase your Mana limit by 1
+Death: Deal 2 damage to your health.",,
+Beartrap,Roughrock Weald,Common,Spell,2,-,-,Draw a card. Destroy the Enemy just enter on target area.,,
+Haboob,Roughrock Weald,Common,Spell,2,-,-,Deal 1 damage to all units on board.,,
+Mania,Roughrock Weald,Common,Spell,2,-,-,Give random ally +4/+1.,,
+Potential Outburst,Roughrock Weald,Common,Spell,2,-,-,Turn end: Double the Attack and Defence of target ally.,,
+Toxic Arrow,Roughrock Weald,Common,Spell,2,-,-,Deal 2 damage to Enemy on target area. Turn end:Destroy the Enemy.,,
+Weapon Grinding,Roughrock Weald,Common,Spell,2,-,-,Give target Ally +2/+0. Draw a card.,,
+Barbarous Savage,Roughrock Weald,Common,Unit,2,4,2,Suspend: (Can't atttack in the turn it was deployed),,
+Chomper,Roughrock Weald,Common,Unit,2,0,4,Turn end: If this unit gets injuried in this round gain +2/+1,,
+Desert Meerkat,Roughrock Weald,Common,Unit,2,1,1,"Turn End: If there are not other allies deployed, summon a 1/1 Desert Meerkat.",,
+Fat Marmot,Roughrock Weald,Common,Unit,2,1,3,When you restore health: This unit gains +1/+1.,,
+Oasis Guide,Roughrock Weald,Common,Unit,2,1,4,"Defender,
+Counterattack
+Death: 33% draw a card",,
+Weald Shaman,Roughrock Weald,Common,Unit,2,1,2,Increase your Mana limit by 1.,,
+Wild Ambusher,Roughrock Weald,Common,Unit,2,2,1,"Debut: If the first enemy in the opposite row just entered the board, gain +1/+3",,
+Power Charging,Roughrock Weald,Epic,Spell,3,-,-,"Give target ally +5/+10.
+ The unit can't attack in this turn.",,
+Wild Sage,Roughrock Weald,Epic,Unit,3,2,2,"Debut: Insight 2
+ Increase your mana limit by 2.",,
+Wolf-Moon Shaman,Roughrock Weald,Epic,Unit,3,3,1,"Debut: Insight 1
+ Turn end: summons a 2/1 Coyote",,
+Khan's Decree,Roughrock Weald,Rare,Spell,3,-,-,Give all allies +2/+0.,,
+Life Bond,Roughrock Weald,Rare,Spell,3,-,-,Turn end: Heal 2 health and draw a card for each Ally on board.,,
+Burrow Badger,Roughrock Weald,Rare,Unit,3,2,2,"Rejuvenation
+When you restore health: This unit gains +1/+1",,
+Life Guardian,Roughrock Weald,Rare,Unit,3,2,5,"Defender, Counterattack
+Turn end: your health +1",,
+Swift Spearman,Roughrock Weald,Rare,Unit,3,2,3,"When this unit attacks opponent: Insight 1
+Deal 2 damage to a random enemy",,
+Thick-Skinned Hippo,Roughrock Weald,Rare,Unit,3,3,8,"Debut: Insight 1, Suspend (Can't attack in the turn it was summoned)",,
+Bull's Strength,Roughrock Weald,Common,Spell,3,-,-,Give target ally +2/+3.,,
+Rain of Pebbles,Roughrock Weald,Common,Spell,3,-,-,"Insight 2
+Deal 2 damage to enemies in target row.",,
+Throwing Stone,Roughrock Weald,Common,Spell,3,-,-,Deal 5 crash damage to a random area in opposite row,,
+Gluttonous Night Owl,Roughrock Weald,Common,Unit,3,2,3,"Debut: Insight 1
+When you restore health: Gain +1/+1.",,
+Deadly Grass,Roughrock Weald,Common,Unit,3,0,6,Turn end: When this unit gets injured: Deal 2 damage to 1 enemy,,
+Excited Scarecrow,Roughrock Weald,Common,Unit,3,0,5,Turn start: if the first enemy in target row just entered draw a card,,
+Nocturnal Huntsman,Roughrock Weald,Common,Unit,3,3,2,"When this unit attacks the enemy: Insight 1
+If there are no other allies deployed, deal 1 damaget to a random enemy.",,
+Noisy Dancer,Roughrock Weald,Common,Unit,3,2,1,Debut: Give random adjacent ally +2/+0.,,
+Pathfinder,Roughrock Weald,Common,Unit,3,3,1,"Debut:Insight 1. If there's no enemy in the opposite row, draw a card.",,
+Roughrock Warrior,Roughrock Weald,Common,Unit,3,2,4,,,
+Short-haird Boar Cub,Roughrock Weald,Common,Unit,3,2,2,Death: Restore 2 health.,,
+Totem of Motivation,Roughrock Weald,Common,Unit,3,0,4,Turn start: Give random adjacent ally +1/+0.,,
+Weald Warrior,Roughrock Weald,Common,Unit,3,2,3,"Turn end: If this unit is injured in this turn, gain +2/+1.",,
+Wild Breadfruit,Roughrock Weald,Common,Unit,3,0,5,"Defender 
+Increase your mana limit by 1",,
+Bill & Billy,Roughrock Weald,Legendary,Unit,4,7,7,"Trample
+ 50% chance of not attacking.",,
+Hungry Hulk,Roughrock Weald,Epic,Unit,4,4,7,"Suspend
+When you restore health: Gain +3/+3.",,
+Axe Zealot,Roughrock Weald,Epic,Unit,4,2,5,Pre-strike: Deal X damage to a random area in the opposite row (Where X is this unit's attack).,,
+Farseer Witch,Roughrock Weald,Epic,Unit,4,3,2,"Debut: For each enemy in the opposite row, draw a card.",,
+Ivory Maiden,Roughrock Weald,Epic,Unit,4,0,1,Turn end: Summon a 4/6 Mammoth.,,
+Prime Flamen,Roughrock Weald,Epic,Unit,4,4,4,"Turn end: Give random ally+X/+X
+(X is equal to remaining Mana)",,
+Threatening Warrior,Roughrock Weald,Rare,Unit,4,3,4,"Debut: If the first enemy in the opposite row just entered, they cannot attack and gain +1/+1. ",,
+Cull,Roughrock Weald,Rare,Spell,4,-,-,"Destroy unit on target square, restore X Health. (X equal to the unit's cost in the square)",,
+Prairie Fire,Roughrock Weald,Rare,Spell,4,-,-,Turn end: Deal 3 damage to all units on the board.,,
+Prime of Life,Roughrock Weald,Rare,Spell,4,-,-,"Give target Ally +4/+4.
+Restore 4 Health.",,
+Behemoth Hunter,Roughrock Weald,Rare,Unit,4,3,5,Debut: Restore 2 health.,,
+Blood Lizard Scout,Roughrock Weald,Rare,Unit,4,4,2,When you restore health: Deal 2 damage to a random enemy.,,
+Bright Breadfruit,Roughrock Weald,Rare,Unit,4,0,4,"Defender 
+Increase your Mana limit by 2",,
+Excited Wilding,Roughrock Weald,Rare,Unit,4,3,3,Turn end: if this unit gets injured in this round gain +3/+3 and Trample,,
+Provision Scout,Roughrock Weald,Rare,Unit,4,3,3,When this unit attacks the enemy: Give another random ally +2/+2.,,
+Wild Paean Singer,Roughrock Weald,Rare,Unit,4,2,3,Turn start: Give another random ally +2/+0.,,
+Sand Cyclone,Roughrock Weald,Common,Spell,4,-,-,Deal 3 damage randomly split among all enemies,,
+Blunt Yak,Roughrock Weald,Common,Unit,4,4,4,Suspend: (Can't attack in the turn it was deployed) Turn end: Gain +0/+2.,,
+Solus Lion,Roughrock Weald,Common,Unit,4,4,2,"Pre-strike: If there are no toher allies deployed, gain +1/+0.",,
+Wild Warrior,Roughrock Weald,Common,Unit,4,4,3,,,
+"Blood Axe, Kay",Roughrock Weald,Legendary,Unit,5,4,4,"Trample
+Turn start: Give all other allies Rejuvenation for 1 turn.
+When you restore health: gain +1/+1.",,
+Axe Lady,Roughrock Weald,Epic,Unit,5,3,3,Turn start & Pre-strike: Deal 2 damage to random area in the opposing row.,,
+Chief Bigmouth,Roughrock Weald,Epic,Unit,5,5,4,Turn End: Summon a 1/1 Roughrock Blood Lizard.,,
+Zax Commander,Roughrock Weald,Epic,Unit,5,3,5,"Trample
+Debut: Give random adjacent ally +1/+1 and Trample.",,
+Ancient Rock,Roughrock Weald,Rare,Spell,5,-,-,Deal 8 crash damage to a random area in opposite row.,,
+Elite Scout,Roughrock Weald,Rare,Unit,5,4,4,"Hit Player: Insight 1, Draw a card.",,
+Totem of Madness,Roughrock Weald,Rare,Unit,5,0,7,Turn start: Give all other allies +1/+0.,,
+Wandering Barbarian,Roughrock Weald,Rare,Unit,5,4,5,Debut: For each enemy in the opposite row gain +1/+1,,
+Rockfall,Roughrock Weald,Common,Spell,5,-,-,Deal 4 damage to an enemy on target square and 1 damage to adjacent enemies.,,
+Savage Growth,Roughrock Weald,Common,Spell,5,-,-,"Give target Unit +3/+3.
+ Draw a card.",,
+Aggressive Buffalo,Roughrock Weald,Common,Unit,5,5,3,,,
+Red Bristle Board,Roughrock Weald,Common,Unit,5,3,3,Death: Restore 3 health.,,
+Regenerative Ogre,Roughrock Weald,Common,Unit,5,3,4,"Turn end: If this unit is injured in this turn, gain +1/+2.",,
+Scavenger Vulture,Roughrock Weald,Common,Unit,5,4,1,"Debut: Insight 1 (Expose 1 card in enemy player's hand)
+Death: Draw a card.",,
+Wild Berserker,Roughrock Weald,Common,Unit,5,4,4,Trample,,
+Ancient Eartshaker,Roughrock Weald,Legendary,Unit,6,15,15,"Double strike, Shroud, Suspend
+ Reduce your Mana limit by 9.",,
+Blade of the Tyrant,Roughrock Weald,Epic,Spell,6,-,-,"Give target ally +3/+6 and Double strike.
+Give all other allies -1/-1.",,
+Fearless Warrior,Roughrock Weald,Epic,Unit,6,4,4,"Trample 
+Debut: Gain +2/+0 for every enemy in the opposing row.",,
+Roughrock Cyclops,Roughrock Weald,Epic,Unit,6,6,6,"Suspend
+ Pre-strike: Deal 4 damage to a random unit.",,
+Monolith Giant,Roughrock Weald,Rare,Unit,6,2,25,Suspend: (Can't attack in the turn it was deployed),,
+Weald Minotaur,Roughrock Weald,Rare,Unit,6,5,5,"Turn end: If this unit is injured in this turn, gain +1/+3.",,
+Mammoth,Roughrock Weald,Common,Unit,6,4,6,,,
+"Ruma, Master Shaman",Roughrock Weald,Legendary,Unit,7,3,9,Turn End: Give another ally +5/+5 and Trample. ,,
+Golden Bristle King,Roughrock Weald,Epic,Unit,7,4,4,"Debut: Summon a 3/3 Bristle Boar.
+Death Restore 4 health.",,
+Wake of Force,Roughrock Weald,Rare,Spell,7,-,-,Give target unit +8/+8.,,
+Sleeping Behemoth,Roughrock Weald,Rare,Unit,7,9,12,Suspend,,
+Fatheaded Cyclops,Roughrock Weald,Common,Unit,7,4,7,Turn end: If this unit is injured this turn deal 4 damage to random area in opposite row.,,
+Savage Rhino,Roughrock Weald,Common,Unit,7,5,6,Death: Restore 6 health.,,
+"Bloodeye, Tyrant",Roughrock Weald,Legendary,Unit,8,5,8,"Double strike
+Trample
+Debut: Deal 5 damage to two random units.",,
+Hungry White Dragon,Roughrock Weald,Epic,Unit,8,6,12,When you gain health: Deal 2 damage to all enemy units.,,
+Hesitant Giant,Roughrock Weald,Common,Unit,8,8,8,Pre-strike: Can't attack if there is no ally on an adjacent square.,,
+Solar Dragon,Roughrock Weald,Legendary,Unit,9,10,10,Pre-strike: Deal 5 damage to all enemies in the opposing row.,,
+Call of the Wild,Roughrock Weald,Epic,Spell,9,-,-,Summon three 4/6 Mammoths in target column.,,
+Rage Predator,Roughrock Weald,Rare,Unit,9,9,6,Trample,,
+Falling Fire,Inferno,Rare,Spell,1,-,-,"Deal 2 Crash damage to target square. If you have no cards, deal 4 crash damage. ",Inferno,
+Thunderbolt,Inferno,Rare,Spell,1,-,-,Deal 3 Crash damage to target square.,,
+Stygian Guard,Inferno,Rare,Unit,1,2,2,"When any player uses Charge, deal 2 damage to that player.",,
+Fireball,Inferno,Common,Spell,1,-,-,"Deal 2 damage to the first enemy in target row.
+ If there's no unit, enemy player takes the damage.",,
+Mask of Madness,Inferno,Common,Spell,1,-,-,Give target unit +4/-1,,
+Endless Bloodshade,Inferno,Legendary,Unit,2,3,1,"Debut: Deal 2 damage to your Health, add Endless Bloodshade to your hand.",,
+Hell Recruit,Inferno,Epic,Spell,2,-,-,Turn End: Summon 3 Infernal Dretches 1/1,,
+Seal of Inferno,Inferno,Epic,Spell,2,-,-,"Deal 1 Crash damage to target area.
+ Add Seal of Inferno into your hand.",,
+Skullcrusher,Inferno,Epic,Unit,2,3,4,"Trample
+ Debut: You take 4 health damage.",,
+Fire Charge,Inferno,Rare,Spell,2,-,-,Deal 2 Crash damage to target square. Give random ally +2/+-0,,
+Fireball,Inferno,Rare,Spell,2,-,-,"Deal 4 damage to the first enemy in target row.
+ If there's no unit, enemy player takes the damage.",,
+Poisonous Eye of Sorcery,Inferno,Rare,Spell,2,2,2,Pre-strike: Deal 2 damage to the opponent for every spell cast this turn. ,,
+Parasite Bite,Inferno,Rare,Spell,2,-,-,"Turne end: Destroy an enemy on target square, summon a 1/1 Infernal Biter.",,
+Parasitic Seed,Inferno,Rare,Spell,2,-,-,Turn End: enemy Player summons a 0/2 Parasitic Seed.,,
+Evil Eye,Inferno,Rare,Unit,2,1,1,Debut: enemy player discards a card.,,
+Hook of Atrocity,Inferno,Rare,Unit,2,3,2,Hit opponent: Deal 1 damage to both players.,,
+Bloodlust,Inferno,Common,Spell,2,-,-,Double the Attack of target ally.,,
+Soul Burning,Inferno,Common,Spell,2,-,-,"Deal 4 damage to an enemy on target square. If you have no cards, destroy the enemy instead.",,
+Blazing Devil,Inferno,Common,Unit,2,2,2,Debut: Deal 1 damage to the first enemy in the opposing row.,,
+Bloodlust Soldier,Inferno,Common,Unit,2,1,2,When this unit attacks the enemy: Gain +2/+0,,
+Chaotic Imp,Inferno,Common,Unit,2,2,1,Debut: Deal 2 damage to both players.,,
+Hell Reaper,Inferno,Common,Unit,2,3,1,"Turn Start: If you have no cards in your hand, this unit gains +2/+0",,
+Infernal Biter,Inferno,Common,Unit,2,1,1,Double strike,,
+Scarlet Minion,Inferno,Common,Unit,2,1,2,Death: enemy player takes damage. (Equal to this unit's attack.),,
+Lava Ball,Inferno,Epic,Spell,3,-,-,"Deal 6 damage to the first enemy in target row.
+ If there's no unit, enemy player takes the damage.",,
+Fire Conjurer,Inferno,Epic,Unit,3,2,2,"Hit opponent: Add fireball to your hand. 
+Turn end: Add fireball to your hand. ",,
+Flaming Ironarm,Inferno,Epic,Unit,3,5,5,Debut: Discard all cards in your hand. Deal 2 damage to the enemy player for every card you discarded.,,
+Hellplate Revenant,Inferno,Epic,Unit,3,2,1,"Armor 5
+ (Reduce physical damage to this unit by 5.)",,
+Reaper of Despair,Inferno,Epic,Unit,3,3,3,"Players can't restore health. 
+Pre-strike: If you have no cards in your hand, this unit gains +1/+1.",,
+Unholy Transition,Inferno,Rare,Spell,3,-,-,"Destroy an enemy on target square. If you have no cards, summon a 1/1 Infernal Dretch.",,
+Wrath of Insanity,Inferno,Rare,Spell,3,-,-,"Give target ally +2/+0. For every enemy on the board, target gains +1/+1",,
+Hellhound,Inferno,Rare,Unit,3,2,3,Double strike,,
+Howling Fiend,Inferno,Rare,Unit,3,2,1,When this unit attacks the enemy: enemy player discards a card.,,
+Pool of Grime,Inferno,Rare,Unit,3,0,6,"Defender
+ Turn End: Deal 2 damage to your health, draw a card.",,
+Scarlet Warrior,Inferno,Rare,Unit,3,3,2,Death: enemy player takes damage. (Equal to this unit's attack.),,
+Screwy Skaab,Inferno,Rare,Unit,3,2,3,"Pre-strike: If there's no enemy in the opposing row, gain +2/+0",,
+Stinky Giant Worm,Inferno,Rare,Unit,3,4,4,"Armor 1
+ Turn start: Other Allies take 1 damage",,
+Heart Devouring,Inferno,Common,Spell,3,-,-,Draw a card. Enemy Player discard a card.,,
+Thunder Strike,Inferno,Common,Spell,3,-,-,Deal 4 Crash damage to target square.,,
+Torment Fire,Inferno,Common,Spell,3,-,-,Deal 2 damage to the enemy Player and enemies in target row.,,
+Bloodfire Scorch,Inferno,Common,Unit,3,1,4,When enemy player takes damage: This unit gains +1/+0,,
+Combusting Skaab,Inferno,Common,Unit,3,3,2,,,
+Devil Fly,Inferno,Common,Unit,3,1,2,"Debut:If there's no enemy in the opposing row,
+ deal 2 damage to a random enemy.",,
+Greedy Redeye,Inferno,Common,Unit,3,2,1,"Debut: Insight 1 You take 2 damage, draw a card.",,
+Hungry Giant Mouth,Inferno,Common,Unit,3,3,1,Debut: Sacrifice random adjacent ally Gain +3/+3,,
+Scorched Corpse,Inferno,Common,Unit,3,2,2,Increase physical damage to player by 3.,,
+Sorcery Zombie,Inferno,Epic,Unit,4,1,6,"Double Strike
+Pre-strike: Gain +1/+1 for every spell card played this turn.",,
+Bitter Watcher,Inferno,Epic,Unit,4,3,4,"Turn end: If you have no cards, gain +1/-1 and draw a card.",,
+Blood-Flame Erinyes,Inferno,Epic,Unit,4,3,2,Turn end: Enemy Player discards a card. If he has no cards in hand. takes 4 health damage.,,
+Bloodlust Osyluth,Inferno,Epic,Unit,4,4,3,"Trample
+ When this unit attacks the enemy: Gain +1/+1.",,
+Demon Scarecrow,Inferno,Epic,Unit,4,0,4,"Turn start:if the first enemy in target row just entered, gain +4/+4",,
+Firestorm,Inferno,Rare,Spell,4,-,-,Deal 3 damage to the enemy player and enemies in target row.,,
+Devil Warlord,Inferno,Rare,Unit,4,4,4,"Turn Start: If you have no cards in your hand, summon a 1/1 Infernal Dretch",,
+Gluttonous Wing,Inferno,Rare,Unit,4,2,4,"Penetration, When enemy player takes damage: This unit has a 50% chance of gaining +1/+1.",,
+Howler,Inferno,Rare,Unit,4,5,2,Debut: Give all other allies +1/+0.,,
+Scorched Demon,Inferno,Rare,Unit,4,3,2,Pre-strike: Deal 2 damage to a random enemy.,,
+Imperious Curse,Inferno,Common,Spell,4,-,-,"Insight 1
+ Destroy a random enemy.",,
+Lava Golem,Inferno,Common,Unit,4,3,4,Pre-strike: Gain +1/+1 for every spell card played this turn.,,
+Acid Aberration,Inferno,Common,Unit,4,3,1,Debut: Deal 1 damage ot all enemies in the opposing row.,,
+Crawling Braineater,Inferno,Common,Unit,4,3,2,"Debut: Enemy player discard a card.
+ Death: You discard 1 hand card.",,
+Red Tails,Inferno,Common,Unit,4,6,3,Debut: another ally takes 2 damage,,
+Spitter,Inferno,Common,Unit,4,4,1,"Debut: If there's no enemy in the opposing row, deal 3 damage to the enemy player.",,
+Devouring Grudge,Inferno,Legendary,Unit,5,3,8,"Debut: Drain 5 Health from enemy Player.
+ Death: Return 5 Health to enemy player.",,
+Thunderstorm,Inferno,Epic,Spell,5,-,-,Deal 4 damage to the enemy Player and enemies in target row.,,
+Devouring Insect,Inferno,Epic,Unit,5,3,3,"Trample
+Pre-strike: If the enemy has no cards in their hand, gain +2/+2.",,
+Blackflame Rift,Inferno,Epic,Unit,5,0,10,"Defender, Turn End: Summon a 1/1 Infernal Dretch, if you've got no cards, summon a 3/2 Combustin Skaab.",,
+Cerberus,Inferno,Epic,Unit,5,2,6,"Triple Strike
+ Debut: Insight 1",,
+Infernal Butcher,Inferno,Epic,Unit,5,3,4,"Debut: Destroy an enemy.
+ Death: The opponent draw a card.",,
+Furious Fireball,Inferno,Rare,Spell,5,-,-,"Deal 5 Crash damage to target area. If you have no cards, add Furious Fireball to your hand.",,
+Fanged Butcher,Inferno,Rare,Unit,5,3,3,Debut: Deal 2 damage to all enemies in the opposing row.,,
+Furious Ushioni,Inferno,Rare,Unit,5,5,3,Debut: Deal 1 damage to all other units.,,
+Crumbled Thoughts,Inferno,Common,Spell,5,-,-,Deal 4 damage to the enemy Player. Discard 2 cards from your hand.,,
+Fire Falling,Inferno,Common,Spell,5,-,-,"Deal 7 damage to target Enemy. If you have no cards in hand, draw a card.",,
+Demon Eye,Inferno,Common,Unit,5,3,4,"Deployment phase: Insight 2
+Turn start: If you have no cards in your hand, this unit gains +0/+3.",,
+Giant Spraying Moth,Inferno,Common,Unit,5,4,3,"Debut: If there's no enemy in the opposing row, deal 3 damage to a random enemy.",,
+Hunter,Inferno,Common,Unit,5,5,1,When this unit attacks the enemy: enemy player discards a card.,,
+Infected Ushioni,Inferno,Common,Unit,5,5,5,Turn start: other allies in the same row takes 1 damage,,
+"Lilith, Blood Wing",Inferno,Legendary,Unit,6,5,4,"First strike, Turn start: If you've got no cards, you take 2 damage. Destroy a random enemy.",,
+Lava Bovine,Inferno,Epic,Unit,6,6,5,"Debut: Deal 2 damage to an enemy. Turn Start: If you have no cards, deal 2 damage to an enemy.",,
+Abyssal Devil,Inferno,Rare,Unit,6,6,1,Debut: Deal 6 damage to an enemy.,,
+Blood Prophet,Inferno,Rare,Unit,6,3,7,"Turn end: sacrifice and adjacent ally, draw a card",,
+Scorch,Inferno,Common,Spell,6,-,-,"Turn end: Destroy an enemy on target square, summon a 3/2 Deflagrating Skaab",,
+Abyssal Tentacle,Inferno,Common,Unit,6,3,5,"Turn Start: If enemy player has no cards in his/her hand, drain 2 Health.",,
+Nightmare Horror,Inferno,Epic,Unit,7,7,5,Debut: each player discard all cards in their hands.,,
+Poisonous Vermin,Inferno,Rare,Unit,7,2,7,Pre-strike: Deal 3 damage randomly split among all enemy units.,,
+Infernal Magma-Throat,Inferno,Legendary,Unit,8,6,6,"Pre-Strike, Turn Start, and End: Deal 2 damage to an enemy. If there are no enemy units, enemy player is damaged.",,
+Silver Mouth,Inferno,Rare,Unit,8,4,4,"Debut: Deal 3 damage to all enemies in opposite row.
+ Whenever an enemy dies, gain +1/+1.",,
+Scarlet Lord,Inferno,Legendary,Unit,9,9,7,"Debut: Summon two 1/2 Scarlet Minions.
+ Pre-Strike: Give all other allies +2/+0.",,
+Necromantic Augury,Deus of Winter's Apostle,Rare,Spell,0,-,-,"Sacrifice target Ally, draw two cards",Deus of Winter's Apostle,
+Bone Mound,Deus of Winter's Apostle,Common,Unit,0,0,1,"Defender
+ Death: Random ally gains +1/+2.",,
+Frozen Deep,Deus of Winter's Apostle,Rare,Spell,1,-,-,"Freeze target area. Enemy in this area can't strike this turn. If this area was already frozen, destroy enemy.",,
+Numbing Frost,Deus of Winter's Apostle,Common,Spell,1,-,-,"Silence target square.
+ Freeze that square.",,
+Cold Scarecrow,Deus of Winter's Apostle,Common,Unit,1,0,3,"Turn start:if the first enemy in target row just entered, the enemy unit -1/-1",,
+Ice Wall,Deus of Winter's Apostle,Common,Unit,1,0,4,"Defender, Death: Freeze this square.",,
+Skeleton Hound,Deus of Winter's Apostle,Common,Unit,1,1,1,Death: Give random ally +2/+0.,,
+Seal of Apostle,Deus of Winter's Apostle,Epic,Spell,2,-,-,"Freeze target square.
+ Add Seal of the Apostle to your hand.",,
+Winter Warlock,Deus of Winter's Apostle,Epic,Unit,2,2,2,"Turn Start: Freeze a random square. (Turn end: n the frozen square, Deus Race units gain +1/+0, other units gain -1/-0)",,
+Winter-eve Herald,Deus of Winter's Apostle,Epic,Unit,2,3,3,Reduce both players' Mana limit by 1.,,
+Frozen Bonespear,Deus of Winter's Apostle,Rare,Spell,2,-,-,"Freezes target area, give Enemy on the area -2/-2.",,
+Animated Wight,Deus of Winter's Apostle,Rare,Unit,2,1,2,"Death: Insight 1, summon a 2/1 Skeleton Warrior",,
+Cold Grave,Deus of Winter's Apostle,Rare,Unit,2,0,6,"Defender
+ Turn end: if 2 units died, turn this unit into 4/4 Skaab",,
+Frostiron Soldier,Deus of Winter's Apostle,Rare,Unit,2,3,1,Debut: Freeze a random adjacent square.,,
+Skeleton Soulhunter,Deus of Winter's Apostle,Rare,Unit,2,2,2,"Whenever an enemy dies, gain +1/+1",,
+Ritual of Winter,Deus of Winter's Apostle,Common,Spell,2,-,-,"Turn end: Freeze random area on your Fist
+ summon a 2/1 Skeleton",,
+Skeleton Wall,Deus of Winter's Apostle,Common,Spell,2,-,-,Turn End: Summon a 0/1 Bone Mound for every unit that died in this turn.,,
+Winter is Coming,Deus of Winter's Apostle,Common,Spell,2,-,-,"Freezes random area of target Player
+ draw a card.",,
+Bone Wall,Deus of Winter's Apostle,Common,Unit,2,0,5,"Defender (Can't attack)
+ Whenever a unit dies: Gain +0/+1.",,
+Creeping Corpse,Deus of Winter's Apostle,Common,Unit,2,1,3,Turn end: if 2 units died in this round gain +2/+1,,
+Deus Fanatic,Deus of Winter's Apostle,Common,Unit,2,4,1,Pre-strike: Can't attack if there is no ally on an adjacent area.,,
+Frost Zombie,Deus of Winter's Apostle,Common,Unit,2,2,2,"Death: Freeze a random square. (Turn end: Every Deus Race unit gains +1/+0, other units gain -1/-0).",,
+Iceplague Worm,Deus of Winter's Apostle,Common,Unit,2,1,2,Increase physical damage to the player by 2.,,
+Skeleton Warrior,Deus of Winter's Apostle,Common,Unit,2,2,1,,,
+Blood Blade of Boreas,Deus of Winter's Apostle,Legendary,Spell,3,-,-,"Give target +3/+1 and gain First Strike, Trample
+ freeze target area",,
+Frozen Memory,Deus of Winter's Apostle,Epic,Spell,3,-,-,"Increase 2 cards' cost in Enemy Player's hand by 3, draw a card.",,
+Blind Swordsman,Deus of Winter's Apostle,Epic,Unit,3,4,4,"Debut: Freeze a random adjacent area. 
+Pre-strike: Deal X damage to your health (where X is the total number of frozen squares). ",,
+Ruin Temple,Deus of Winter's Apostle,Epic,Unit,3,0,7,"Turn End: If more thant 2 units died during this turn, transform this unit into Polar Temple.",,
+Scary Thornbearer,Deus of Winter's Apostle,Epic,Unit,3,4,1,"Debut: if this unit has been frozen
+ gain +2/+0 and trample",,
+Stitch Master,Deus of Winter's Apostle,Epic,Unit,3,1,2,Turn end: if 2 units died in this round summon a 4/4 Skaab,,
+Conversion,Deus of Winter's Apostle,Rare,Spell,3,-,-,Give target ally +4/+4 and Silence. ,,
+Conscript Apostle,Deus of Winter's Apostle,Rare,Spell,3,-,-,"Turn end: Freeze target square, summon two 2/2 Frost Zombies.",,
+Frost Flamen,Deus of Winter's Apostle,Rare,Unit,3,1,1,"Pre-strike: Give random enemy -1/-1, freeze it's square.",,
+Immortal Frost Fencer,Deus of Winter's Apostle,Rare,Unit,3,3,1,"Death: If this unit's area is frozen
+ return it to your hand",,
+Polar Fanatic,Deus of Winter's Apostle,Rare,Unit,3,3,2,"Debut: Sacrifice a random adjacent ally.
+ If the sacrifice has been done, destroy a random enemy.",,
+Polar Night Ghost,Deus of Winter's Apostle,Rare,Unit,3,3,1,"Invisibility, Penetration",,
+Temple Flamen,Deus of Winter's Apostle,Rare,Unit,3,1,3,Pre-strike: Drain X Health from enemy player/ (X = this unit's attack),,
+Conversion,Deus of Winter's Apostle,Common,Spell,3,-,-,"Turn End: Summon a 4/4 Skaab
+ Drain 1 health from enemy",,
+Frost Drain,Deus of Winter's Apostle,Common,Spell,3,-,-,"Deal X damage to target enemy and restore X health
+(X equals to number of frozen areas on enemey fist)",,
+Deus Disciple,Deus of Winter's Apostle,Common,Unit,3,2,2,Whenever a unit dies: Gain +1/+0.,,
+Military Skeleton,Deus of Winter's Apostle,Common,Unit,3,2,2,Death: Give random ally +1/+1,,
+Skeleton Archer,Deus of Winter's Apostle,Common,Unit,3,1,1,Debut: Deal 2 damage to a random enemy.,,
+Winter Sadhu,Deus of Winter's Apostle,Common,Unit,3,1,3,Reduce enemy player's Mana limit by 1.,,
+Endless Wintersoul,Deus of Winter's Apostle,Legendary,Unit,4,1,1,Death: Regenerate this unit on a random square.,,
+Growling Monster of Ice,Deus of Winter's Apostle,Epic,Unit,4,6,5,"Pre-strike: If this unit's area isn't frozen, gain -2/-2.",,
+Silent Lich,Deus of Winter's Apostle,Epic,Unit,4,3,3,Turn start: Give a random adjacent ally +2/+1 and Silence. ,,
+Polar Trebuchet,Deus of Winter's Apostle,Epic,Unit,4,1,4,"Turn start: Deal 3 Crash damage to a random enemy square, then freeze that square.",,
+Skeleton Summoner,Deus of Winter's Apostle,Epic,Unit,4,2,3,Whenever an enemy dies: Summon a 1/1 Skeleton Hound.,,
+Winter-Veil Knight,Deus of Winter's Apostle,Epic,Unit,4,3,3,"Armor 1
+ Debut: Give all enemies in the opposing row -1/-1.",,
+Bone Explosion,Deus of Winter's Apostle,Rare,Spell,4,-,-,"Sacrifice target Ally, Give -4/-4 to two random enemies.",,
+Piercing Ice,Deus of Winter's Apostle,Rare,Spell,4,-,-,"Give two random enemies -1/-1, freeze the squares they occupy.",,
+Deus Acolyte,Deus of Winter's Apostle,Rare,Unit,4,4,3,"Debut: Insight 1
+ Whenever a unit dies: Gain+1/+0",,
+Hibernal Sorceror,Deus of Winter's Apostle,Rare,Unit,4,3,4,Turn end: if this unit has been frozen summon a 2/1 skeleton,,
+Polar Hunter,Deus of Winter's Apostle,Rare,Unit,4,1,5,"Debut: Freeze a random square occupied by the enemy.
+ The enemy can't attack this turn.",,
+Winter Spellbreaker,Deus of Winter's Apostle,Rare,Unit,4,2,4,"Reduce enemy player's Mana limit by 1.
+ Debut: Insight 2",,
+Boreas' Breath,Deus of Winter's Apostle,Common,Spell,4,-,-,Give enemies in target row -2/-2.,,
+Death Nail,Deus of Winter's Apostle,Common,Spell,4,-,-,"Turn end: Destroy an enemy. If this spell kills any Enemy, you summon a 2/2 Frozen Zombie.",,
+Ritual of Bones,Deus of Winter's Apostle,Common,Spell,4,-,-,Summon two 2/1 Skeleton Warriors in target row.,,
+Animated Bones,Deus of Winter's Apostle,Common,Unit,4,3,1,Death: Summon a 2/1 Skeleton Warrior.,,
+Grim Ram,Deus of Winter's Apostle,Common,Unit,4,2,3,Increase physical damage to the player by 4.,,
+Night Ghost,Deus of Winter's Apostle,Common,Unit,4,4,1,Pre-strike: if this units has been frozen an enemy -1/-1,,
+Watchful Crow,Deus of Winter's Apostle,Common,Unit,4,3,2,"Penetration
+ When an enemy dies: Gain +2/+0",,
+Wild Zombie,Deus of Winter's Apostle,Common,Unit,4,3,2,"Whenever an enemy dies, gain +1/+1.",,
+"Boreas, Dread Lord",Deus of Winter's Apostle,Legendary,Unit,5,4,3,"First strike
+ Trample
+ Armor 2",,
+Wail of the Dead,Deus of Winter's Apostle,Epic,Spell,5,-,-,Turn end: Summon 3 2/1 Skeleton Warriors. Every enemy that died in the last turn reduce's card's cost by 1.,,
+Merciless Predator,Deus of Winter's Apostle,Epic,Unit,5,3,6,"Pre-strike: Sacrifice a random adjacent ally and give a random enemy unit -2/-2.
+Whenever a unit dies, gain +1/+0.",,
+Queen of Evernight,Deus of Winter's Apostle,Epic,Unit,5,4,3,Reduce each player's Mana limit by 2. Turn end: If its area is frozen increase opponent's cards cost by 1,,
+Winter-Veil Warrior,Deus of Winter's Apostle,Epic,Unit,5,3,3,"Double Strike
+ Debut: Gain Armor X, where X is the number of frozen squares on your Fist.",,
+Howl of Deus,Deus of Winter's Apostle,Rare,Spell,5,-,-,Draw three cards. Restore 1 Health for each Frozen area on your Fist.,,
+Cold-marrow Vermin,Deus of Winter's Apostle,Rare,Unit,5,2,5,When this unit attacks the enemy: Deal extra damage equal to the number of frozen squares on both Fists.,,
+Never Roar,Deus of Winter's Apostle,Rare,Unit,5,3,4,"Debut: For every frozen square on your Fist, gain +1/+1.",,
+Skeleton Warlord,Deus of Winter's Apostle,Rare,Unit,5,4,2,Whenever an enemy dies: Summon a 2/1 Skeleton Warrior.,,
+Deus Cultist,Deus of Winter's Apostle,Common,Unit,5,2,2,Debut: Give all enemies in the opposing row -1/-1.,,
+Skaab,Deus of Winter's Apostle,Common,Unit,5,4,4,,,
+Temple Praetorian,Deus of Winter's Apostle,Common,Unit,5,5,6,Pre-Strike: If this unit's area doesn't freeze can't strike,,
+Throned Lich,Deus of Winter's Apostle,Legendary,Unit,6,2,7,"When an ally dies, give a random enemy -1/-1.
+ When an enemy dies, give a random ally +1/+1.",,
+Ice Age,Deus of Winter's Apostle,Epic,Spell,6,-,-,Deal X damage to all units.(Where X is the number of all frozen squares on the board.),,
+Apostle Bishop,Deus of Winter's Apostle,Epic,Unit,6,3,6,Turn end: Resurrrect a random enemy that died in this round on your Fist.,,
+Bone Ranges,Deus of Winter's Apostle,Rare,Spell,6,-,-,Summon three 0/5 Bone Wall in target column.,,
+Ice Golem,Deus of Winter's Apostle,Rare,Unit,6,6,3,"Debut: Freeze two random squares.
+ Death: Freeze two random squares.",,
+Coldblood Tooth,Deus of Winter's Apostle,Common,Spell,6,-,-,Summon three 1/1 Skeleton Hounds in target column.,,
+Gemini Shadow,Deus of Winter's Apostle,Common,Spell,6,-,-,"Turn End: Summon two 4/4 Skaabs
+ Drain 2 health from the enemy.",,
+Frostiron Axeman,Deus of Winter's Apostle,Common,Unit,6,3,5,Whenever a unit dies: Gain +0/+1.,,
+Avatar of Deus,Deus of Winter's Apostle,Legendary,Unit,7,1,3,"Debut: A frozen square on your Fist gains +1/+3
+ Turn end: drain 1 health fro each frozen square on enemy's fist.",,
+Deus Herald,Deus of Winter's Apostle,Epic,Unit,7,5,3,"Debut: Summon two 2/1 Skeleton Warriors.
+ Whenever a unit dies: Gain +1/+0.",,
+Killing Freeze,Deus of Winter's Apostle,Rare,Spell,7,-,-,Deal X damage to enemy Player (Where X is the number of all frozen squares on the board.),,
+Iceplague Carrier,Deus of Winter's Apostle,Rare,Unit,7,5,8,Debut: Restore 1 health for every frozen square on both Fists.,,
+Polar Yeti,Deus of Winter's Apostle,Common,Unit,7,5,2,"Debut: For every frozen square on your Fist, gain +1/+2",,
+"Yateras, Iceberg",Deus of Winter's Apostle,Legendary,Unit,8,6,15,"Debut: Freeze 6 random squares, all units can't attack this turn.",,
+Ice Behemoth,Deus of Winter's Apostle,Rare,Unit,8,5,6,"Trample
+ Debut: For each frozen area on your Fist, gain +1/+1.",,
+Descent of Apostles,Deus of Winter's Apostle,Epic,Spell,9,-,-,"In target row, summon 3 3/1 Animated Bones. Every enemy that died in the last turn reduce's card's cost by 1.",,
+Ice Dragon,Deus of Winter's Apostle,Epic,Unit,9,7,7,For every frozen square on both Fists: Reduce the cost of this card by 1.,,
+Anima Seed,Zen Valley,Epic,Unit,1,0,2,"Gain Heritage: Grow into a ""Big Tree"".(Random)",Zen Valley,
+Blade of Heritage,Zen Valley,Rare,Spell,1,-,-,Give target ally +2/+1 if this unit has Heritage when death Inherited Blade of Heritage into your hand,,
+Mountain Hermitage,Zen Valley,Rare,Spell,1,-,-,"Teleport target Ally to a radnom tile in another Row, draw a card.",,
+Animaivy,Zen Valley,Rare,Unit,1,0,2,Turn end: Double defence,,
+Fargesia Guard,Zen Valley,Rare,Unit,1,2,1,"Debut: Insight 1, deal 1 damage to random area in opposite row",,
+Disorientation,Zen Valley,Common,Spell,1,-,-,Return target enemy to its owner's hand.,,
+Peach,Zen Valley,Common,Spell,1,-,-,"Insight 1 
+ Give target ally +0/+1.",,
+Intelligent Vine,Zen Valley,Common,Unit,1,0,3,Turn end: Drain 1 Health from the enemy Player.,,
+Peck of Peaches,Zen Valley,Epic,Spell,2,-,-,"Turn end: Your health +3
+ Add three Peaches to your hand.",,
+Seal of Chivalry,Zen Valley,Epic,Spell,2,-,-,"Give random Ally +1/+2
+ Add Seal of Chivalry into your hand.",,
+Peach Hermit,Zen Valley,Epic,Unit,2,0,4,Turn end: Add Peach to your hand.,,
+Reynard Ronin,Zen Valley,Epic,Unit,2,1,2,"Turn start: Move to a row with no enemy.
+ Hit player: Gaint +1/+0",,
+Shield Builder,Zen Valley,Epic,Unit,2,1,3,"Armor 1
+ Turn Start: Deal 1 damage to every adjacent ally gain Armor 1",,
+Tornado,Zen Valley,Rare,Spell,2,-,-,Return an enemy on target square and random adjacent enemy to their owner's hand.,,
+Vines Rage,Zen Valley,Rare,Spell,2,-,-,Deal 3 damage to the enemy Player and the enemy that was just deployed on target square.,,
+Yin & Yan Symbol,Zen Valley,Rare,Spell,2,-,-,"Give target enemy -1/-1 and Defender. 
+ Or
+ Give target ally +1/+1 and First strike.",,
+Big-ear Tailor,Zen Valley,Rare,Unit,2,1,1,"Heritage 1
+ Increase Mana limit by 1.",,
+Goat Herbalist,Zen Valley,Rare,Unit,2,2,2,"Vanguard debut: Restore 2 health.
+ Rearguard debut: Deal 2 damage to the enemy Player.",,
+Leaf Mesmer,Zen Valley,Rare,Unit,2,2,1,"Heritage 1 (Death: Give an adjacent ally +1/+1.)
+ Debut: Switch positions with an adjacent ally.",,
+Taoist Numerologist,Zen Valley,Rare,Unit,2,1,3,"Heritage 1 (Death: Give a random adjacent ally +1/+1 and Heritage 1.)
+ Deployment phase: Insight 1",,
+Ginsengfruit,Zen Valley,Common,Spell,2,-,-,Restore 6 Health.,,
+Moon Serenade,Zen Valley,Common,Spell,2,-,-,Give target Unit +1/+1. Draw at card.,,
+Taoist Fraternity,Zen Valley,Common,Spell,2,-,-,Turn end: Give target and a adjacent Ally +2/+3.,,
+Black Bamboo Guard,Zen Valley,Common,Unit,2,1,3,"Gain Heritage: Gain +2/-1, deal 2 damage to a random enemy.",,
+Horse Barrier,Zen Valley,Common,Unit,2,1,5,"Defender (Can't attack)
+ Counterattack (When taking damage, this unit can deal its attack damage to its attacker)",,
+Purple Censer,Zen Valley,Common,Unit,2,0,3,"Defender,Heritage 2",,
+Sika Fencer,Zen Valley,Common,Unit,2,2,1,"Vanguard debut: Gain +0/+1
+ Rearguard debut: Gain +1/+0",,
+Sika Strider,Zen Valley,Common,Unit,2,1,2,Turn end: Gain +1/+0.,,
+Young Fencer,Zen Valley,Common,Unit,2,2,2,,,
+Holy Blade . Lin,Zen Valley,Legendary,Unit,3,2,3,"Turn start:switch position with random adjacent ally 
+When gets heritage, gain +1 double strike permanently and gain invisibility for 1 turn. ",,
+Master of Cosmos,Zen Valley,Legendary,Unit,3,1,3,"Heritage 3
+ Turn end: Give a random adjacent ally +1/+2.",,
+Qian & Kun Symbol,Zen Valley,Epic,Spell,3,-,-,"On the opponent's board: -2/-0 to 4 ennemies
+ On your board: +2/+0 to 4 allies",,
+Exorcist,Zen Valley,Epic,Unit,3,3,2,"Hexproof
+Hit opponent: Insight 1",,
+Peripatetic Guqin Artist,Zen Valley,Epic,Unit,3,1,1,Pre-Strike: Deal 1 damage to all enemies.,,
+Seiso Monk,Zen Valley,Epic,Unit,3,3,1,Vanguard debut: Gain Heritage 2. Rearguard debit: Return 1st enemy in the opposing row to its owner's hand.,,
+Spirit Possession,Zen Valley,Rare,Spell,3,-,-,Give target unit +3/+2 and lose Defender.,,
+Chivalric Draft,Zen Valley,Rare,Spell,3,-,-,"Turn end: Insight 1, summon two 2/2 Young Fencers.",,
+Hurricane,Zen Valley,Rare,Spell,3,-,-,Return enemies in target row to their owner's hand.,,
+Tiger Palms,Zen Valley,Rare,Spell,3,-,-,Give target ally +1/+1 and Double strike.,,
+Gatherer of Herbs,Zen Valley,Rare,Unit,3,2,3,"Rejuvenation
+Heritage 1",,
+Drunk Taoist,Zen Valley,Rare,Unit,3,3,4,Pre-strike: deal 1 damage to a random unit,,
+Moon Guqin Artist,Zen Valley,Rare,Unit,3,2,1,"Debut: Draw a random spell card from your deck.
+ If there's none add Moon Serenade to your hand.",,
+Puzzled Scarecrow,Zen Valley,Rare,Unit,3,0,1,"Turn start:if the first enemy in target row just entered, ruturn to owner's hands",,
+Sword Guardian,Zen Valley,Rare,Unit,3,3,3,When this unit attacks the enemy: Give all allies +1/+-0.,,
+"Taste House, Clerk",Zen Valley,Rare,Unit,3,1,3,"Turn start: if you have any card in hand discard one, then draw two cards at the end of the turn.",,
+"Taste House, Sister",Zen Valley,Rare,Unit,3,1,4,"Vanguard debut: Give another ally +2/+0.
+ Rearguard debut: Give another ally +0/+3",,
+Hei & Bai Symbol,Zen Valley,Common,Spell,3,-,-,"Cast on your Fist: Restore 4 Health.
+ Cast on the opponent's Fist: Deal 4 damage to the enemy player.",,
+Mountain Power,Zen Valley,Common,Spell,3,-,-,Give target ally +x/+0 (X equals to this unit's defense ),,
+Sun & Moon Symbol,Zen Valley,Common,Spell,3,-,-,"Deal 2 damage to all enemies in target row.
+ Or
+ Give alliers in target row +1/+1/.",,
+Ascetic Monk,Zen Valley,Common,Unit,3,2,2,Turn End: Gain +1/+1.,,
+Big-ear Farmer,Zen Valley,Common,Unit,3,1,2,"Front line debut:Restore 3 Health.
+ Debut in rear Line:Draw a card.",,
+Kunlun Rover,Zen Valley,Common,Unit,3,1,4,Heritage 1(Death: Give a random adjacent ally +1/+1 and Heritage 1.,,
+Reynard Fencer,Zen Valley,Common,Unit,3,3,1,Debut:Deal 1 damage to a random enemy.,,
+Sika Huntsman,Zen Valley,Common,Unit,3,4,1,,,
+Testudo Monk,Zen Valley,Common,Unit,3,1,3,"Armor 1(Reduce physical damage to this unit by 1)
+ Rejuvenation (When this unit attacks the enemy: Restore Health equal to the",,
+Woods Watchman,Zen Valley,Common,Unit,3,2,2,"Debut: Insight 1
+ Give a random adjacent ally +0/+2.",,
+Wild Boar Axe,Zen Valley,Legendary,Spell,4,-,-,"Give target ally+1/+2 and gain
+ Rejuvenation,Trample,Heritage 1",,
+"Azhen, Flora Lady",Zen Valley,Legendary,Unit,4,1,4,"Poison
+Hit opponent: Increase damage dealt by 9. 
+If no ally behind unit, it can't attack. 
+Pre-strike: adjacent allies +1/+1.",,
+Immortal Ficus,Zen Valley,Legendary,Unit,4,0,14,Turn end: Add Ginsengruit to your hand.,,
+Power of Dragon Rise,Zen Valley,Epic,Spell,4,-,-,Give target ally shroud for 1 turn. Target ally gains +X/+0 (where X is the ally's defense).,,
+Steel-backed Stylite,Zen Valley,Epic,Unit,4,3,4,"Rejuvenation
+Armor 1
+Gain Heritage: Gain armor 3",,ERROR
+Master of Spirit Possession,Zen Valley,Epic,Unit,4,2,3,Turn start: Give a random adjacent ally +1/+2 and lose defender.,,
+Celestial Kensai,Zen Valley,Epic,Unit,4,4,2,Pre-Strike: Deal 2 damage to all enemies in the opposing row.,,
+Deadly Swordman,Zen Valley,Epic,Unit,4,3,5,Turn end: When gets injured: Deal 1 damage to all enemies,,
+Ink-house Hermit,Zen Valley,Epic,Unit,4,0,4,Turn End: Copy another random unit to your hand.,,
+Sika Magi,Zen Valley,Epic,Unit,4,1,2,"Vanguard debut: All enemies get -1/-1.
+ Rearguard debut: All allies get +1/+1.",,
+Barn of Glen,Zen Valley,Rare,Unit,4,0,8,Turn start: Give another Ally +1/+1.,,
+Nun of Cloud,Zen Valley,Rare,Unit,4,2,3,"Heritage 2
+ Debut: Double the Defence of a random adjacent ally.",,
+Timorous Ambusher,Zen Valley,Rare,Unit,4,3,4,"Double strike
+ Debut: if there's an enemy in the opposing row, this unit can't attack this turn.",,
+Wind Chime Taoist,Zen Valley,Rare,Unit,4,2,2,"Debut: Insight 1, return a random enemy to opponent's hand",,
+Windwalk Martialist,Zen Valley,Rare,Unit,4,4,3,When this unit attacks the enemy: Return a random enemy to its owner's hand.,,
+Spring Breeze,Zen Valley,Common,Spell,4,-,-,"Return an enemy into owner's hand, draw a card.",,
+Vigor Gift,Zen Valley,Common,Spell,4,-,-,Give target ally +2/+4.,,
+Big-ear Carpenter,Zen Valley,Common,Unit,4,2,2,"Heritage 1
+ Debut: Give +1/+1 to a random adjacent ally.",,
+Pinaster Hermit,Zen Valley,Common,Unit,4,1,6,Turn end: Restore 2 health.,,
+Shrewd Pedlar,Zen Valley,Common,Unit,4,4,2,Heritage 1(Death: Give a random adjacent ally +1/+1 and Heritage 1.,,
+"Taste House, Chef",Zen Valley,Common,Unit,4,2,4,Debut:Give all other allies +0/+1.,,
+Peripatetic Lay Monk,Zen Valley,Legendary,Unit,5,3,3,"If this unit has Heritage, transform it into Successor of Shenron.",,
+Protective Anima,Zen Valley,Epic,Spell,5,-,-,Giver target Ally +2/+2 and Shroud/(Immune all effects.),,
+Ferry Hermit,Zen Valley,Epic,Unit,5,4,3,"Death: Draw a card,
+ if this unit has Heritage summon 4/3 Ferry Hermit on random adjacent area.",,
+Red Panda Trio,Zen Valley,Epic,Unit,5,3,1,Death: Split into 3 Pandas,,
+Senior Mammon,Zen Valley,Epic,Unit,5,2,9,"Turn End: If this Unit took any damage this turn, draw a card.",,
+Courage Teacher,Zen Valley,Rare,Unit,5,1,5,"Debut: Give adjacent ally +X/+0
+ (X equals the ally's Defense)",,
+Muddling Performer,Zen Valley,Rare,Unit,5,2,5,"Debut: Draw a random card costing 6 mana or more from deck.
+If there is none, restore 6 Health.",,
+Roving Monk,Zen Valley,Rare,Unit,5,4,5,First Strike (Get priority to strike in battle phase).,,
+Vigorous Ovis,Zen Valley,Rare,Unit,5,3,5,"Debut: Restore 5 Health
+ If this unit gains Heritage, restore 5 Health.",,
+Maze of the Huntsman,Zen Valley,Common,Spell,5,-,-,"Turn End: Return an enemy into owner's hand, summon a 4/1 Sika Huntsman.",,
+Chateau Elder,Zen Valley,Common,Unit,5,3,3,"Vanguard debut: Give another ally +3/-1.
+ Rearguard debut: Gain +3/-1.",,
+"Taste House, Cook",Zen Valley,Common,Unit,5,3,3,Debut: Give all other allies +1/+0.,,
+"Pigsy, Zen Hero",Zen Valley,Legendary,Unit,6,6,6,"Trample
+ Rejuvenation
+ Heritage 1",,
+Tree of Knowledge,Zen Valley,Epic,Unit,6,2,12,Increase your Mana limit by 3. Turn end: Gain +0/+X (Where X is 2 times remaining mana). ,,
+Hero of Liquor,Zen Valley,Epic,Unit,6,3,5,"Double strike
+ Debut: Gain +1/+1 for every enemy in the opposing row.",,
+Testudo Arhat,Zen Valley,Epic,Unit,6,4,4,"Armor 4
+ If this Unit has Heritage,Gain Shroud.(Immune all effects.)",,
+Plants Rise,Zen Valley,Rare,Spell,6,-,-,Summon two 1/6 Pinaster Hermits on target square and an adjacent square.,,
+Swotting Student,Zen Valley,Rare,Unit,6,1,4,"Debut:Draw 3 cards.
+ Death:Enemy Player draw a card.",,
+Poplar Taoist,Zen Valley,Common,Unit,6,1,13,Turn end:When gets injured: all allies +0/+1,,
+Reckless Tiger,Zen Valley,Common,Unit,6,5,3,Trample (Overflow attack that deals damage to enemies behind.),,
+"Yiyun Sword-master Ren",Zen Valley,Legendary,Unit,7,6,3,,,
+Moe!?,Zen Valley,Epic,Spell,7,-,-,Transform three random enemies into 0/2 Red Pandas.,,
+Chief of Taste House,Zen Valley,Epic,Unit,7,1,8,"Turn start: Heal 2 health.
+End at Debuting turn: Double your Health.",,
+Pine Village Vanguard,Zen Valley,Rare,Unit,7,12,6,,,
+Spruce Elder,Zen Valley,Rare,Unit,7,3,10,Turn start: Summon a 0/2 Red Panda on a random adjacent square.,,
+Pine Village Protector,Zen Valley,Common,Unit,7,5,9,When gets Heritage: gain Rejuvenation,,
+Vigorous Tiger,Zen Valley,Common,Unit,7,4,8,"Vanguard debut: 9 damage to 1st enemy in the opposing row.
+ Rearguard debut: 2 damage to 4 random enemies.",,
+Zen Hero of Ocean,Zen Valley,Rare,Unit,8,8,8,"Vanguard Debut: gain -0/-4 Trample
+ Rearguard Debut: gain -2/-0 Rejuvenation",,
+Droid-Basic,Recluse,Common,Unit,0,1,1,,Recluse,
+Duplicate,Recluse,Epic,Spell,1,-,-,Copy target unit on the board to your hand.,,
+Droid-Scout,Recluse,Rare,Unit,1,1,1,"Penetration
+ Hexproof
+ Hit player: Insight 1",,
+Force of Warp,Recluse,Common,Spell,1,-,-,Give target Unit +2/-1.,,
+Psionic Conspiracy,Recluse,Common,Spell,1,-,-,"Turn End:Insight 2, Enemy Player summon a 0/1 Psionic Bomb.",,
+Silence,Recluse,Common,Spell,1,-,-,Deal 1 damage to target square and Silence the unit summoned there,,
+Cursed Bat,Recluse,Common,Unit,1,1,1,Pre-strike: everytime using spell in this round gain +2/+0,,
+Droid-Spring,Recluse,Common,Unit,1,3,4,"Defender (Can't Strike.)
+ Charge: Strike normally in this turn.",,
+Phantom Python,Recluse,Common,Unit,1,3,3,"Phantom (Pre-strike:If there is no enemy in the opposing row, destroy this unit.)",,
+Seal of Knowledge,Recluse,Epic,Spell,2,-,-,"Give two random enemies -1/-0
+ Add Seal of Knowledge into your hand.",,
+Silent Summoner,Recluse,Epic,Unit,2,1,1,"Debut: Add Silence to your hand.
+Death: Add Silence to your hand.",,
+Magic-break Professor,Recluse,Epic,Unit,2,2,2,"Debut: Silence all enemies in opposing row.
+ Deployment phase: Insight 1.",,
+Behind Enemy Lines,Recluse,Rare,Spell,2,-,-,Turn End: Enemy Player summon two 0/1 Psionic Bombs.,,
+Careful Arrangement,Recluse,Rare,Spell,2,-,-,In target row: summon two 1/1 Mass Droids,,
+Sound of Silence,Recluse,Rare,Spell,2,-,-,"Silence target Unit, draw a card.",,
+Droid-Circulation,Recluse,Rare,Unit,2,2,2,Charge: Gain -1/-1 and add Droid-Circulation to your hand. ,,
+Blackwing Owl,Recluse,Rare,Unit,2,2,1,"Debut or Hit player: Insight 1, increase the cost of the card revealed by 1",,
+Divination Professor,Recluse,Rare,Unit,2,2,2,"Debut: Insight 2
+ Next Deployment phase: Insight 1",,
+Forbidden Scarecrow,Recluse,Rare,Unit,2,0,6,Turn start: if the first enemy in target row just entered turn it into scilence,,
+Mechanics Scholar,Recluse,Rare,Unit,2,1,1,"Debut: Insight 1,
+ add Careful Arrangement to your hand",,
+Recluse Owl,Recluse,Rare,Unit,2,2,1,"Debut or Hit player: Uproar 1, cost of the revealed card -1",,
+Heavy Burden,Recluse,Common,Spell,2,-,-,Give Enemy on target area -3/-0 and silence,,
+Planar Switch,Recluse,Common,Spell,2,-,-,"Give target Unit +1/+1 and
+ Penetration.(Directly deal physical damage to Player.)",,
+Cursed Cat,Recluse,Common,Unit,2,3,1,Pre-strike: everytime using spell in this round gain +1/+1,,
+Droid-Plug-in,Recluse,Common,Unit,2,1,4,Charge:Gain +1/+0.,,
+Magic-drug Apprentice,Recluse,Common,Unit,2,1,2,Debut:Deal 1 damage to a random enemy.,,
+Mechanic Apprentice,Recluse,Common,Unit,2,2,2,Penetration (Deal physical damage directly to the Player.),,
+Obstructing Guard,Recluse,Common,Unit,2,1,3,"Debut: Insight 1
+ Increase the cost of the card revealed by 2.",,
+Spellbreak Obelist,Recluse,Common,Unit,2,0,4,"Defender(Can't attack)
+ Reduce enemy Player's Mana limit by 1.",,
+Wisdom Subassembly,Recluse,Common,Unit,2,0,1,Death: Draw a card.,,
+Spellblade No.5,Recluse,Legendary,Unit,3,1,3,"Shroud
+First Strike
+Double Strike
+Turn end: Gain +1/+0 for every spell card played this turn. ",,
+Dinin No.9,Recluse,Legendary,Unit,3,2,2,"Pre-Strike: Give 3 random Enemies -1/-0
+ Charge:Switch position with random adjacent Ally.",,
+Iron Spell Defender,Recluse,Epic,Unit,3,2,3,"Armor 1
+Pre-strike: Gain +1/+0 and +1 armor for every spell card played this turn.",,
+Guard Professor,Recluse,Epic,Unit,3,1,3,"Turn start: Give a random enemy -1/-0,
+ give a random ally +0/+1.",,
+Ask The Hermit,Recluse,Rare,Spell,3,-,-,"Draw 2 cards.If you've used Charge in this turn,draw 3 cards instead.",,
+Scroll of Immensity,Recluse,Rare,Spell,3,-,-,"Draw a card, return Scroll of Immensity into your hand.",,
+Augury Scholar,Recluse,Rare,Unit,3,1,3,"Turn end: Gain -1/-1, draw a card.",,
+Droid-Infiltration,Recluse,Rare,Unit,3,4,1,Charge: Gain +1/+0 and Penetration this turn. (Trigger at the start of the battle if Charge is used.),,
+Guard Apprentice,Recluse,Rare,Unit,3,3,2,"Debut: Insight 1,
+ give all enemies in opposite rown -1/-0",,
+Recluse Core,Recluse,Rare,Unit,3,0,2,"Defender,Invisibility
+ Charge:Draw a card.",,
+Labyrinthe,Recluse,Common,Spell,3,-,-,"Insight 1
+ You draw two cards.",,
+Mass Weakness,Recluse,Common,Spell,3,-,-,Give enemies in target row -2/-0,,
+Recycled Plasma,Recluse,Common,Spell,3,-,-,"Deal 1 damage to Enemies in target Row,
+ Add Recycle Plasma into your hand.",,
+Droid-Element,Recluse,Common,Unit,3,2,3,Charge: Insight 1,,
+Conjuration Scholar,Recluse,Common,Unit,3,1,4,Debut: Add Force of Warp to your hand.,,
+Droid-Communication,Recluse,Common,Unit,3,3,2,Charge: Deal 1 damage to a random enemy.,,
+Droid-Disturber,Recluse,Common,Unit,3,1,5,Charge: an enemy can't Strike in this turn.,,
+Life Subassembly,Recluse,Common,Unit,3,0,3,Death: Restpre 5 Health.,,
+Magic-drug Scholar,Recluse,Common,Unit,3,2,3,Debut: Give another random unit +2/-2.,,
+Kidou-7,Recluse,Legendary,Unit,4,3,3,"Pre-Strike in Debut turn: Deal 2 damage to a random enemy.
+ Death: Summon a 0/1 Kidou . Savin.",,
+Inversion,Recluse,Epic,Spell,4,-,-,"Clone target enemy, and summon it on your fist",,
+Droid-Fission,Recluse,Epic,Unit,4,4,4,Charge: Gain -1/-1 and summon a 2/3 Droid-Element on a random area. ,,
+Conjuration Proctor,Recluse,Epic,Unit,4,2,2,Your Spells trigger twice.,,
+Hoary Root,Recluse,Epic,Unit,4,1,1,Shroud(Immune all effects). Turn end: Double this UUnit's Attack and Defence.,,
+Mystery Tree,Recluse,Epic,Unit,4,0,7,Turn end: every time using spell in this round draw a card,,
+Humble Research,Recluse,Rare,Spell,4,-,-,Turn end: Draw a card for every enemy on the board.,,
+Lost Faith,Recluse,Rare,Spell,4,-,-,"Give target enemy -7/-0. If you've used Charge this turn, move that enemy to your hand instead.",,
+Alloy Engineer,Recluse,Rare,Unit,4,2,4,Turn End: Disassemble into a 0/3 Life Subassembly and a 0/1 Wisdom Subassembly,,
+Droid-Energy,Recluse,Rare,Unit,4,2,3,"Charge: No attack this turn, enemy is damaged equal to this unit's attack. Turn start: Not charged, gain +2/+0.",,
+Droid-Incinerator,Recluse,Rare,Unit,4,2,5,"Charge: 1 damage to all units. (If Charge is used when Deploying, trigger this at the start of the Battle.)",,
+Epic Scholar,Recluse,Rare,Unit,4,1,4,"Debut: Gain a random epic card from your deck
+ if no epic card gain +1/+1",,
+Pulp Fluid,Recluse,Rare,Unit,4,3,3,"Turn End: If this unit took any damage this turn, summon a copy of it on an adjacent square.",,
+Citadel Gargoyle,Recluse,Common,Unit,4,3,5,"Debut: In this turn, this unit gains Armor 3 but can't attack.",,
+Droid - Provision,Recluse,Common,Unit,4,2,5,"Charge: Sacrifice the unit, draw a card. (This will occur at the start of the battle if used when deploying)",,
+Droid-Enhancement,Recluse,Common,Unit,4,3,4,"Charge: Gain +1/+1. (If Charge is used when deplyoing, trigger this at the start of the Battle.)",,
+Support Guardian,Recluse,Common,Unit,4,1,7,Charge: Drain 1 attack point from random enemy unit,,
+Meara No.2,Recluse,Legendary,Unit,5,2,2,"Return Spell card to your hand after it's been cast.
+ Death: Return this unit to your hand.",,
+Magic Storm Hydra,Recluse,Epic,Unit,5,3,6,"Trample
+ Pre-strike: Gain +2/+1 for every spell you cast this turn.",,
+Pioneering Thoughts,Recluse,Rare,Spell,5,-,-,"Insight 4
+Draw cards until you are holding 4 cards.",,
+Dreamy Sphinx,Recluse,Rare,Unit,5,5,5,"Debut:Draw a card.
+ Death: Discard a card.",,
+Droid-Destruction,Recluse,Rare,Unit,5,4,5,Charge: Gain -1/-0 deal 3 damage to a random enemy,,
+Phantom Bear,Recluse,Rare,Unit,5,5,5,"Trample,Phantom",,
+Conjuring Witch,Recluse,Common,Unit,5,2,3,Debut: Give an enemy -3/-0 and silence.,,
+Droid-Luminosity,Recluse,Common,Unit,5,4,2,"Penetration, Charge:Gain +1/+1",,
+Multiple Phantasms,Recluse,Epic,Spell,6,-,-,Summon three 3/3 Phantasm Pythons in target Lin.,,
+Illusion Professor,Recluse,Epic,Unit,6,1,2,Turn start: Summon a 5/5 Phantasm Bear in front of this Unit.,,
+Phantom Dragon,Recluse,Epic,Unit,6,9,9,"Phantom,Shroud",,
+Obsidian Gargoyle,Recluse,Rare,Unit,6,4,7,"Reduce enemy player's Mana limit by 2.
+ Debut: In this turn, this unit gains Armor 4, but it can't attack.",,
+Droid-Manufacturing,Recluse,Common,Unit,6,2,6,Turn end: Add Mass Droid to your hand.,,
+Handsome Student,Recluse,Common,Unit,6,4,6,"Turn End: If this unit took 1 damage or more,you have 33% chance to draw a card.",,
+Frigate-Pangu,Recluse,Epic,Unit,7,2,18,"Penetration,
+ Rejuvenation
+ Charge: Gain +1/-2.",,
+Sagacious Sphinx,Recluse,Epic,Unit,7,4,9,Turn end: Copy a random card in enemy Player's hand to your hand.,,
+Mystery Pumpkin Tree,Recluse,Rare,Unit,7,2,7,Whenever an enemy dies: 50% draw Pumpkin.Whenever ally dies:50% draw Pumpkin,,
+Giant Gargoyle,Recluse,Common,Unit,7,7,5,"Debut: In this turn, this unit gains Armor 3 but can't attack.",,
+Ulviirala No.6,Recluse,Legendary,Unit,8,3,2,Turn start:Summon three 3/3 Phantasm Pythons in front Line.,,
+Destroyer-Tianwei,Recluse,Epic,Unit,8,6,6,"Penetration
+ Charge: Double this unit's Attack and Defence, but it can't attack this turn.",,
+Mind Control,Recluse,Rare,Spell,8,-,-,Manipulate target enemy.,,
+Enchanted Steel,Recluse,Rare,Unit,8,8,8,"Armor 2
+ Charge: Increase Armor value by 1.",,
+Istorvir No.3,Recluse,Legendary,Unit,9,3,4,Pre-strike: Manipulate a random enemy,,
+Iron Wing Arbiter,Recluse,Epic,Unit,9,7,3,"Debut: Destroy a random enemy.
+ Charge: Destroy a random enemy.",,
+Magic Matchstick,Paradise Harbor,Common,Spell,0,-,-,"Insight 1
+ Give +1/+2 to target ally",Paradise Harbor,
+Dire Puppy,Paradise Harbor,Common,Unit,0,0,1,Turn end: Gain +1/+0,,
+King's Message,Paradise Harbor,Epic,Spell,1,-,-,"-2 HP. Draw 1 Legendary card from your deck.
+ If there's noe, draw another card instead.",,
+Mind Collapser,Paradise Harbor,Rare,Spell,1,-,-,"Destroy Enemy on target area, you take health damage equal to the Enemy's cost.",,
+Matchstick Girl,Paradise Harbor,Rare,Unit,1,1,2,Turn end: Gain -1/-1 and get Magic Matchstick,,
+Prized Beast,Paradise Harbor,Rare,Unit,1,4,5,Pre-strike: This unit can't attack unless there are no enemy units on the board.,,
+Happy Messenger,Paradise Harbor,Common,Unit,1,2,2,"Debut: Insight 1
+ Turn end: Return this unit to owner's hand",,
+Supply Barrel,Paradise Harbor,Common,Unit,1,0,2,"Defender
+ Death: Restore 2 Health.",,
+"Soar, Fleuret Gent",Paradise Harbor,Legendary,Unit,2,1,1,"Synergy 2, First strike, Rejuvenation",,
+Leira's Secret Scroll,Paradise Harbor,Epic,Spell,2,-,-,Add three Leira's Fire Missile cards into your hand,,
+Seal of Paradise,Paradise Harbor,Epic,Spell,2,-,-,"Deal 2 damage to Enemy Player.
+ Add Seal of Paradise into your hand.",,
+Devil Hunter of Red Sea,Paradise Harbor,Epic,Unit,2,2,1,"First Strike
+Pre-strike: Deal X damage to a random enemy and gain +X/+0 (Where X is how many spell cards you played this turn).",,
+Beast Smuggler,Paradise Harbor,Epic,Unit,2,1,1,Debut: Summon a 4/5 Prized-Beast.,,
+Petrel's Bodyguard,Paradise Harbor,Epic,Unit,2,2,2,"Turn start: If there are more allies than enemies on the board, deal 1 damage to a random enemy.",,
+Chain Lightning,Paradise Harbor,Rare,Spell,2,-,-,Deal 3 damage to target enemy and random adjacent enemy.,,
+Night Ambush,Paradise Harbor,Rare,Spell,2,-,-,Deal 5 damage to an enemy.,,
+Allopatric Viper,Paradise Harbor,Rare,Unit,2,1,1,Poisonous (Destroy any unit physically damaged by this unit.),,
+Darkwater Swiftblade,Paradise Harbor,Rare,Unit,2,2,2,"First strike
+Debut: Insight 1",,
+Desperado,Paradise Harbor,Rare,Unit,2,4,1,Deployment phase: Uproar 1,,
+Night Marksman,Paradise Harbor,Rare,Unit,2,2,2,When this unit attacks the enemy: Deal 1 damage to a random enemy,,
+Pot of Souls,Paradise Harbor,Rare,Unit,2,0,3,"Defender:whenever ally dies: your health -1, draw a card",,
+Angry Pumpkin,Paradise Harbor,Common,Spell,2,-,-,Random enemy unit -2/-2.,,
+Cursed Iceshield,Paradise Harbor,Common,Spell,2,-,-,Give target Unit -1/-1 and armor 3.,,
+Durable Trap,Paradise Harbor,Common,Spell,2,-,-,"Cast on unoccupied area, enemy entering area takes 3 damage, then add Durable Trap to your hand.",,
+Leira's Fire Missle,Paradise Harbor,Common,Spell,2,-,-,"Deal 3 damage to first target row enemy. If no enemy's in the row, that player takes the damage.",,
+Lucky Pumpkin,Paradise Harbor,Common,Spell,2,-,-,Give random ally +2/+2.,,
+Outland Letter,Paradise Harbor,Common,Spell,2,-,-,"Discard 1 card from your hand, draw 2 cards.",,
+Overdraft,Paradise Harbor,Common,Spell,2,-,-,"Give +3/+3 to target ally, Deal 3 damage to your Health.",,
+Volley of Arrows,Paradise Harbor,Common,Spell,2,-,-,Deal 2 damage to Enemies in target Row.,,
+Crafty Trainee,Paradise Harbor,Common,Unit,2,2,1,"Debut: If the first unit in the opposing row just entered the board, return it to its owner's hand.",,
+Exploding Barrel,Paradise Harbor,Common,Unit,2,0,2,"Defender
+Death: Deal 3 damage to a random unit in the row.",,
+Little Witch,Paradise Harbor,Common,Unit,2,1,2,"Pre-strike: Every time using spell card in this round, a random enemy -1/-1",,
+Sea Explorer,Paradise Harbor,Common,Unit,2,1,2,"Debut: Insight 1
+ If there's no enemy inthe opposing row, gain +2/-1",,
+Seaman,Paradise Harbor,Common,Unit,2,2,2,,,
+"Eisele, Bloody Soul",Paradise Harbor,Legendary,Unit,3,5,1,Turn start: Move to a square with no enemies in the opposing row. (Stay in the same column),,
+"Marsa, Blackgold rose",Paradise Harbor,Legendary,Unit,3,2,1,"Double strike
+ Invisibility",,
+"Powley, Petrel",Paradise Harbor,Legendary,Unit,3,1,1,"Debut: Summon a 2/2 Seaman.
+Pre-Strike: Deal 1 damage to a random enemy.
+Turn end: Return this unit to your hand. ",,
+Sea Storm,Paradise Harbor,Epic,Spell,3,-,-,Deal 2 damage to all units.,,
+Kiko,Paradise Harbor,Epic,Unit,3,1,2,"Decrease opponent's Mana by 1. 
+Turn end: If this unit took any damage, transform it into a 5/10 Mad Kiko.",,ERROR
+Blackgold Augur,Paradise Harbor,Epic,Unit,3,2,2,"Pre-strike: Insight 1, if there are more allies than enemeis, draw a card. ",,
+Deadwind Ranger,Paradise Harbor,Epic,Unit,3,4,3,"Debut: Insight 1,
+if there is no enemy in the opposite row gain -1/-1 and Double Strike.",,
+Space of Happiness,Paradise Harbor,Epic,Unit,3,1,5,When you restore Health:Draw a card.,,
+Thundercloud Summoner,Paradise Harbor,Epic,Unit,3,3,3,Turn end: Deal X damage to random enemy area (X equals to remaining Mana),,
+Magic Storm,Paradise Harbor,Rare,Spell,3,-,-,Deal 3 damage to the enemies in taget row.,,
+Mindstorm,Paradise Harbor,Rare,Spell,3,-,-,"Return Enemy on target area to owner's hand, then Enemy Player discard a card.",,
+Sell Your Faith,Paradise Harbor,Rare,Spell,3,-,-,"Draw 3 cards, Deal 2 damage to your Health.",,
+Stowaway Monster,Paradise Harbor,Rare,Spell,3,-,-,"Turn end: If opponent has no unit on board, summon a 8/8 Hesitated Giant, Insight 2
+If opponent does have a unit, draw 2 cards.",,
+Passionate Shaman,Paradise Harbor,Rare,Unit,3,2,3,Pre-strike: Give all allies +1/+0 for every spell card played this turn. ,,
+Exotic Hermit,Paradise Harbor,Rare,Unit,3,2,3,"Gain Heritage:Draw a card.
+ Death:If this Unit has Heritage.draw a card.",,
+Festival Girl,Paradise Harbor,Rare,Unit,3,1,1,"Debut: Give another ally +2/+1
+ Turn end: Return this unit to owner's hand",,
+Firetrick Sorceror,Paradise Harbor,Rare,Unit,3,1,1,Turn start: Deal 2 damage to both you and a random enemy.,,
+Navigator,Paradise Harbor,Rare,Unit,3,2,2,"Increase your Mana limit by 1.
+Reduce enemy Player's Mana limit by 1.",,
+Petrel's Mortar,Paradise Harbor,Rare,Unit,3,0,3,"Defender
+Synergy 2.
+Turn start: X Crash damage to an enemy area in the opposite row.(X=its attack.)",,
+Psionic Engineer,Paradise Harbor,Rare,Unit,3,1,3,"Turn End: enemy player summon a 0/1 Psionic Bomb.
+ Debut: If there are any Recluse allies on the board, gain +0/+3.",,
+Assassination,Paradise Harbor,Common,Spell,3,-,-,"Insight 2
+ Deal 6 damage to an enemy on target square",,
+Captain's Greed,Paradise Harbor,Common,Spell,3,-,-,Target ally absorbs 1 Attack from every enemy on the board.,,
+Pillage,Paradise Harbor,Common,Spell,3,-,-,Drain 4 Health from Enemy Player.,,
+Poisoning,Paradise Harbor,Common,Spell,3,-,-,"Deal 1 damage to Enemies in target Row.
+ Draw a card.",,
+Black Fleet Crew,Paradise Harbor,Common,Unit,3,2,4,Turn end: If your Health is higher than opponent's gain +1/+0,,
+Camel,Paradise Harbor,Common,Unit,3,1,4,Increase your Mana limit by 1.,,
+Chuckle Snowman,Paradise Harbor,Common,Unit,3,4,5,Turn end: If doesn't freeze your random area gain -2/-2,,
+Elderly Hatchetman,Paradise Harbor,Common,Unit,3,2,3,"Debut: Insight 1
+ If there are more allies than enemies, gain +2/-1",,
+Elderly Predictor,Paradise Harbor,Common,Unit,3,1,2,Turn end: 50% chance to draw a card.,,
+Greedy Old Witch,Paradise Harbor,Common,Unit,3,1,4,"Turn end: Every time you use a spell card in this turn, drain 2 health from the opponent",,
+Noisy Pirate,Paradise Harbor,Common,Unit,3,3,1,Rejuvenation (When this unit attacks the enemy: Restore your health equal to the damage it dealt.),,
+Passionate Miner,Paradise Harbor,Common,Unit,3,2,2,Turn end: enemy Player takes damage equal to this unit's Attack.,,
+Slave Gorilla,Paradise Harbor,Common,Unit,3,5,4,Pre-strike: Can't attack unless there are more allies than enemies on the board.,,
+Sottish Drunk,Paradise Harbor,Common,Unit,3,1,3,Debut: Deal 2 damage to the last enemy in the opposing row.,,
+Sottish Thug,Paradise Harbor,Common,Unit,3,1,5,Turn end: Gain +2/-1,,
+"Benny, Silver Tongue",Paradise Harbor,Legendary,Unit,4,1,1,When this unit attacks the enemy: Move this unit and a random enemy to your hand,,
+"Mekki, Illusionist",Paradise Harbor,Legendary,Unit,4,1,4,"Hit player: Draw a card,
+ Your opponent discard a card.",,
+Passionate Engineer,Paradise Harbor,Epic,Unit,4,3,5,When you restore health: Add Loam Wall to your hand. ,,
+Alchemist,Paradise Harbor,Epic,Unit,4,2,3,"Pre-strike: Give a random enemy -1/-1, If there's no enemy deployed, give a random",,
+Genie's Lamp,Paradise Harbor,Epic,Unit,4,5,6,Turn end: Return this unit to your hand.,,
+Prison Breaker,Paradise Harbor,Epic,Unit,4,6,6,Turn end: Enemy Player summons a 1/1 Village Militias,,
+Petrel's Command,Paradise Harbor,Rare,Spell,4,-,-,Turn end: Summon a 2/2 Seaman for each Enemy on board.,,
+Black Fleet Axeman,Paradise Harbor,Rare,Unit,4,3,4,Pre-strike: if your health is higher than opponent's deal 3 damage to random area in opposite row,,
+Dojo Gatekeeper,Paradise Harbor,Rare,Unit,4,3,4,"Pre-strike: If there are more allies than enemies deployed, gain +1/+1.",,
+Gift Tree,Paradise Harbor,Rare,Unit,4,0,6,"Defender, Turn end: you have 33% chance to draw a card, 33% chance to restore 5 healthc 33% chance to give ally +1/+1",,
+Greedy Captain,Paradise Harbor,Rare,Unit,4,2,4,Debut: Absort 1 Attack from every enemy in the opposing row.,,
+Mentor Of Light,Paradise Harbor,Rare,Unit,4,1,3,Turn start: Give a random Empirte ally +2/+2.,,
+Sexy Witch,Paradise Harbor,Rare,Unit,4,3,2,Pre-strike: For every spell card used this turn give one random enemy -2/0 and a random ally 0/+2,,
+Zoologist,Paradise Harbor,Rare,Unit,4,3,4,Turn start: Give Roughrock ally +1/+1 and zen ally +1/+1,,
+Navigation Supply,Paradise Harbor,Common,Spell,4,-,-,"Turn End: Summon two 0/2 Supply Barrels, restore 5 Health.",,
+Harbour Blacksmith,Paradise Harbor,Common,Unit,4,1,5,Turn end: Give this unit and another random ally +1/+0,,
+Lightning Sorceror,Paradise Harbor,Common,Unit,4,2,1,Debut: Deal 1 damage to 2 random enemies.,,
+"Burian, Iron Roar",Paradise Harbor,Legendary,Unit,5,5,5,"Armor 1
+ Turn end: Increase this Unit's Defense to 5.",,
+"Leira, Raging Flame",Paradise Harbor,Legendary,Unit,5,3,3,"Debut: Add two Leira's Fire Missles to your hand. 
+Turn end: Add Leira's Fire Missile to your hand.",,
+Disarm & Counter,Paradise Harbor,Epic,Spell,5,-,-,"Give all enemies -2/-0/
+ Give all allies +2/+0.",,
+Vast Conspiracy,Paradise Harbor,Epic,Spell,5,-,-,Turn end: Destroy all units.,,
+Blackgold Trickster,Paradise Harbor,Epic,Unit,5,3,3,"Pre-strike: Give a random enemy -1/-0.
+Pre-strike: If you have more allies than enemies, return an enemy to their owner's hand. ",,
+Forge Master,Paradise Harbor,Epic,Unit,5,3,6,Turn end: Give this un and another random ally +1/+1.,,
+Red-Suited Dwarf,Paradise Harbor,Epic,Unit,5,3,5,"Debut: Deal 3 crash damage to area in opposite row
+ Turn end: Return this unit to owner's",,
+Solar Archmage,Paradise Harbor,Epic,Unit,5,2,5,"Turn start: Give a random Empire ally +1/+3,
+ Give a random Roughrock ally +2/+1.",,
+Black Fleet Gunner,Paradise Harbor,Rare,Unit,5,4,3,"Pre-strike:if your health is higher than opponent's,deal 1 damage to two random enemy units",,
+Blackgold Hangman,Paradise Harbor,Rare,Unit,5,5,3,For every ally on the board: Reduce the cost of this card by 1.,,
+Blade Hunter,Paradise Harbor,Rare,Unit,5,3,2,When this unit attacks the enemy: Deal 5 damage to a random enemy.,,
+Chained Beast,Paradise Harbor,Rare,Unit,5,6,6,"Defender, Arnor 2
+ When gets injuried: lose Defender",,
+Deadly Scarecrow,Paradise Harbor,Rare,Unit,5,0,2,"Turn start:if the first enemy in target row just entered, destroy it",,
+Snake Charmer,Paradise Harbor,Rare,Unit,5,0,3,Turn start: Summon a 1/1 Allopatric viper on a random adjacent square.,,
+Sorcery Trap,Paradise Harbor,Common,Spell,5,-,-,Deal 4 damage to Enemy Player and the Enemy just enter on target area,,
+Blackgold Corrupter,Paradise Harbor,Common,Unit,5,1,4,Debut: Return a random enemy to its owner's hand.,,
+Dire Hound Guardian,Paradise Harbor,Common,Unit,5,4,4,Debut: Summon a 0/1 Dog on a random adjacent square.,,
+Plated Axeman,Paradise Harbor,Common,Unit,5,4,3,"Armor 1
+ (Reduce physical damage to this unit by 1.)",,
+Skynet,Paradise Harbor,Epic,Spell,6,-,-,"Deal 1 damage to all Enemies, and they can't Strike in this turn.",,
+Black Fleet Captain,Paradise Harbor,Epic,Unit,6,2,5,"Turn start:absorb 2 health from your opponent. Pre-strike:if your health is higher than opponent's, absorb 2 attack from an enemy",,
+Draught Elephant,Paradise Harbor,Rare,Unit,6,4,4,"Debut: Restore 4 Health, draw a card.
+ Any Roughrock ally on the board reduces that card's cost by 1.",,
+Mountain Axeman,Paradise Harbor,Rare,Unit,6,0,8,Turn End: Deal 6 Crash damage to a random enemy area in the opposite row.,,
+Roaring Tide,Paradise Harbor,Common,Spell,6,-,-,Deal 2 damage to all Enemies.,,
+Blackgold Hammer,Paradise Harbor,Common,Unit,6,4,4,"Pre-strike: If there are more allies than enemies deployed, gain +1/+1.",,
+"Meson, The Third",Paradise Harbor,Legendary,Unit,7,4,5,Pre-strike: Destroy the first enemy in the opposing row.,,
+Mad Kiko,Paradise Harbor,Epic,Unit,7,5,5,Decrease opponent's Mana limit by 3.,,
+Bewitching Shadow,Paradise Harbor,Epic,Unit,7,3,2,Debut: Move the first enemy in the opposing row to your hand.,,
+Furious Bull,Paradise Harbor,Rare,Unit,7,4,6,Debut: add three Aggressive Buffalo to your hand,,
+Treasure Cruiser,Paradise Harbor,Rare,Unit,7,3,5,"Hit player: Restore 6 Health, draw a card.",,
+Blackgold Dynamiter,Paradise Harbor,Common,Unit,7,3,6,Debut: Summon a 0/2 Exploding Barrel in the same column.,,
+Chained Behemoth,Paradise Harbor,Epic,Unit,8,10,10,"Defender, Armor 4, Trample
+ When gets injuried: lose defender.",,

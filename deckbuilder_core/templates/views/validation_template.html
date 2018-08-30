@@ -1,0 +1,20 @@
+{% extends "views/base.html" %}
+
+{% block meta_tags %}
+    {{ block.super }}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+{% endblock %}
+
+{% block title %}Validation{% endblock title %}
+
+{% block content %}
+    <div class="col-xs-12" align="center" style="margin-top: 20px;">
+        <div class="col-xs-12 center-block" align="center">
+            <h1>{{ title }}</h1>
+            <h3 style="margin-bottom: 20px;">{{ message }}</h3>
+            <a href="{% url 'portal' %}" class="btn btn-primary" role="button">Go Home</a>
+        </div>
+    </div>
+{% endblock content %}

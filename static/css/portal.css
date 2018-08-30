@@ -1,0 +1,42 @@
+.inline-headers h6 {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.inline-block h3 {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.inline-block h4 {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+hr.line-style2 {
+    border-top: 3px double #8c8b8b;
+}
+
+hr.line-style1 {
+	border-top: 1px solid  #8c8b8b;
+}
+
+.mycontent-right {
+  border-left: 1px solid #8c8b8b;
+}
+
+.project-description {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-thumbnail {
+    margin: auto;
+    display: block;
+}
+
+.sumary-top-projects {
+    font-size: xx-small;
+}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block body %}
+    <h1>Decks</h1>
+    <a href="new/"><button>New</button></a>
+    <table class="table" id="decksTable">
+        <tbody id="decksTableBody">
+        <tr>
+            <th>Name</th>
+            <th>Races</th>
+        </tr>
+        {% for deck in object_list %}
+            <tr>
+                <td><a href="{{ deck.id }}">{{ deck.name }}</a></td>
+                <td>
+                    {% for deck_race in deck.get_deck_races %}
+                        <div style="float: left; margin-right: 10px;">
+                            <p>
+                                <img class="img-fluid race-icon race-{{ deck_race.0 }}"/>
+                                {{ deck_race.1 }}
+                            </p>
+                        </div>
+                    {% endfor %}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
