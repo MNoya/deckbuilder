@@ -6,3 +6,5 @@
 *.xml
 
 deckbuilder\.log
+
+\.idea/
