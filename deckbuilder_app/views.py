@@ -10,7 +10,7 @@ from django.urls import reverse
 from django.views.generic import ListView, DetailView
 
 from deckbuilder_app.constants import RACES
-from deckbuilder_app.forms import UserProfileForm, RegisterForm, ResetPasswordForm
+from deckbuilder_app.forms import UserProfileForm, RegisterForm, ResetPasswordForm, RequestResetPasswordForm
 from deckbuilder_app.models import Deck, Card, CardInDeck
 from deckbuilder_app.user_model import User, EmailToken
 
@@ -56,6 +56,40 @@ def register(request):
         return response
 
 
+def recover_password(request):
+    """
+    View to ask for the mail in the case the user wants to change his password
+    :param request: Django request object
+    :return: HTML template
+    """
+    # GET requests
+    if request.method == GET:
+        # render page with reset password form
+        form =  RequestResetPasswordForm()
+        return render(request, 'views/password_recovery.html', {'form': form})
+    # POST request
+    elif request.method == POST:
+        form = RequestResetPasswordForm(request.POST)
+        if form.is_valid():
+            reset_email = form.cleaned_data['email']
+            user = User.get_user_by_email(reset_email)
+            if user:
+                user.recover_password()
+                template = 'views/validation_template.html'
+                context = {'title': 'Success',
+                           'message': 'Great %s! Now please check your email to '
+                                      'reset your password.' % user.username}
+                return render(request, template, context)
+            else:
+                messages.error(request, 'Email not found')
+                return redirect(reverse('reset_password_form'))
+        else:
+            # show errors and redirect to form
+            messages.error(request, 'Invalid form data')
+            response = redirect(reverse('reset_password_form'))
+        return response
+
+
 def reset_password(request, token=None):
     """
     View used to reset password
@@ -66,8 +100,8 @@ def reset_password(request, token=None):
     # GET requests
     if request.method == GET:
         # render page with reset password form
-        form = ResetPasswordForm(initial={'token': token})
-        return render(request, 'views/reset_password.html', {'form': form})
+        form = ResetPasswordForm()
+        return render(request, 'views/password_reset.html', {'form': form, 'token': token})
     # POST request
     elif request.POST:
         template = 'views/validation_template.html'
@@ -76,7 +110,7 @@ def reset_password(request, token=None):
         form = ResetPasswordForm(request.POST)
         if form.is_valid():
             token_value = form.cleaned_data.get('token')
-            updated, errors = User.update_password(token_value, form.cleaned_data.get('password1'))
+            updated, errors = User.update_password(token_value, form.cleaned_data.get('password'))
             if updated:
                 # password was updated
                 response = render(request, template, context)
@@ -168,7 +202,7 @@ def user_profile(request, pk):
 
 class DeckListView(ListView):
     model = Deck
-    template_name = 'deck_list.html'
+    template_name = 'views/deck_list.html'
 
     def get_context_data(self, **kwargs):
         context = super(DeckListView, self).get_context_data(**kwargs)
@@ -181,7 +215,7 @@ class DeckListView(ListView):
 
 class DeckDetailView(DetailView):
     model = Deck
-    template_name = 'deck_detail.html'
+    template_name = 'views/deck_detail.html'
 
     def get_context_data(self, **kwargs):
         context = super(DeckDetailView, self).get_context_data(**kwargs)
@@ -194,7 +228,7 @@ class DeckDetailView(DetailView):
 
 class CardDetailView(DetailView):
     model = Card
-    template_name = 'card_detail.html'
+    template_name = 'views/card_detail.html'
 
     def get_context_data(self, **kwargs):
         context = super(CardDetailView, self).get_context_data(**kwargs)
@@ -204,7 +238,7 @@ class CardDetailView(DetailView):
 
 def deck_edit(request, pk):
     # TODO: Only deck creator can edit it
-    template_name = 'deck_edit.html'
+    template_name = 'views/deck_edit.html'
     deck = Deck.objects.get(pk=pk)
 
     if request.POST:
@@ -275,7 +309,7 @@ def deck_edit(request, pk):
 
 
 def new_deck(request):
-    template_name = 'new_deck.html'
+    template_name = 'views/new_deck.html'
 
     if request.POST:
         deck_data = json.loads(request.body)
@@ -287,6 +321,7 @@ def new_deck(request):
                 card = Card.objects.get(name=card_name)
             except Card.DoesNotExist:
                 log.error("Card Does Not Exist: {}".format(card_name))
+                continue
 
             CardInDeck.objects.create(deck=new_deck, card=card, copies=number)
 

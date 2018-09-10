@@ -11,22 +11,15 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+from decouple import config
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
+SECRET_KEY = config('SECRET_KEY')
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'v@=#d_vvi^yd1k8035!zkg6rl2a$__rtl9^#tu4a!9%ucrqzxo'
-
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -54,7 +47,7 @@ ROOT_URLCONF = 'deckbuilder_core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'deckbuilder_core', 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'deckbuilder_app', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,6 +71,20 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# Optional Postgresql configuration.
+# Probably need to install driver (pip install psycopg2)
+# Add missing config to .env file
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'config('DB_NAME'),
+#         'USER': 'config('DB_USER'),
+#         'PASSWORD': 'config('DB_PASS'),
+#         'HOST': 'config('DB_HOST'),
+#         'PORT': 'config('DB_PORT'),
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -110,21 +117,9 @@ USE_L10N = True
 
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.1/howto/static-files/
+DOMAIN = config('DOMAIN')
 
-STATIC_URL = '/static/'
-
-# Specify the custom user model which django is going to use
-AUTH_USER_MODEL = 'deckbuilder_app.User'
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
-
-import logging.config
-
-LOGGING_CONFIG = None
-logging.config.dictConfig({
+LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
     'formatters': {
@@ -165,7 +160,30 @@ logging.config.dictConfig({
             'propagate': True,
         },
     },
+}
 
-})
+# Specify the custom user model which django is going to use
+AUTH_USER_MODEL = 'deckbuilder_app.User'
 
+# Assets configuration
+MEDIA_FOLDER = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_FOLDER)
+MEDIA_URL = '/media/'
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/2.1/howto/static-files/
+
+STATIC_FOLDER = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, STATIC_FOLDER)
+STATIC_URL = '/static/'
+
+# Email manager configuration
+EMAIL_HOST = config('EMAIL_HOST', default='localhost')
+EMAIL_PORT = config('EMAIL_PORT', default=587, cast=int)
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
+EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='')
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=False, cast=bool)
+
+# set login redirect url
 LOGIN_REDIRECT_URL = '/decks/'
+# in order to change the logout redirect, add a dicc with the att next and the url to redirect in the logout url

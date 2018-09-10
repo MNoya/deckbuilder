@@ -5,8 +5,8 @@
 {% block stylesheets %}
 {{ block.super }}
 <!-- Custom styles for this template -->
-<link href="/static/css/portal.css" rel="stylesheet"/>
-<link href="/static/css/profile.css" rel="stylesheet"/>
+<link href="/deckbuilder_app/static/css/portal.css" rel="stylesheet"/>
+<link href="/deckbuilder_app/static/css/profile.css" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
 {% endblock stylesheets %}
 {{profile.username}}
@@ -92,5 +92,5 @@
 {% block javascript_footer %}
 {{block.super}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-<script src="/static/js/profile.js"></script>
+<script src="/deckbuilder_app/static/js/profile.js"></script>
 {% endblock javascript_footer %}

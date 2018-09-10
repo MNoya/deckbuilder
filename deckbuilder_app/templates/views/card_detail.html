@@ -1,5 +1,5 @@
 {% extends "views/base.html" %}
-{% block body %}
+{% block content %}
     <h1>{{ object.name }} <img class="img-fluid race-icon race-{{ object.race }}"/></h1>
     <h2>({{ object.cost }}) {{ object.get_card_type_display }}</h2>
     <h3>{{ object.get_rarity_display }}</h3>

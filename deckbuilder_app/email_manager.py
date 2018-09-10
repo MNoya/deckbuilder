@@ -19,11 +19,10 @@ class EmailManager:
         :param user: The user to activate
         """
         try:
-
             html_message = loader.render_to_string(
                 'email/register_email.html',
                 {
-                    'user_name': user.first_name,
+                    'username': user.username,
                     'url_token': urllib.parse.urljoin(settings.DOMAIN,
                                                       reverse('validate_email_token', args=(user.email_token.value,))),
                 }
@@ -32,7 +31,7 @@ class EmailManager:
             send_mail(
                 subject='Welcome!',
                 message='',
-                from_email='',
+                from_email=settings.EMAIL_HOST_USER,
                 recipient_list=(user.email,),
                 fail_silently=False,
                 html_message=html_message
@@ -50,13 +49,13 @@ class EmailManager:
         """
         try:
             url = urllib.parse.urljoin(settings.DOMAIN,
-                                       reverse('recover_password_get', args=[str(user.reset_password_token.value)]))
+                                       reverse('reset_password_get', args=[str(user.reset_password_token.value)]))
 
             # render template
             html_message = loader.render_to_string(
                 'email/reset_password.html',
                 {
-                    'user_first_name': user.first_name.capitalize(),
+                    'user_first_name': user.username,
                     'url_token': url,
                 }
             )
@@ -66,7 +65,7 @@ class EmailManager:
             send_mail(
                 subject='Reset password',
                 message='',
-                from_email='',
+                from_email=settings.EMAIL_HOST_USER,
                 recipient_list=(user.email,),
                 fail_silently=False,
                 html_message=html_message

@@ -102,12 +102,10 @@ class User(AbstractUser):
         return free_email and free_username, errors
 
     @staticmethod
-    def register(username, first_name, last_name, email, password):
+    def register(username, email, password):
         """
         Method to register a new user into the system
         :param str username: Username
-        :param str first_name: First name
-        :param str last_name: Last name
         :param str email: Email
         :param str password: The password
         :return: User instance if created and errors if any
@@ -125,8 +123,6 @@ class User(AbstractUser):
                 if user_free:
                     user = User.objects.create_user(
                         username=username,
-                        first_name=first_name,
-                        last_name=last_name,
                         email=email,
                         password=password,
                     )
@@ -183,15 +179,14 @@ class User(AbstractUser):
             token = ResetPasswordToken.objects.select_related('user').get(value=token_value)
             if token.is_valid():
                 with transaction.atomic():
-                    # update user password if the password is valid
-                    if token.user.check_password(password):
-                        token.user.set_password(password)
-                        token.user.save()
-                        token.delete()
-                        updated = True
-                    else:
-                        log.debug('Invalid new password for user %s' % token.user.username)
-                        errors.append(err.Error(err.ERROR_INVALID_PASSWORD))
+                    # update user password if the token is valid
+                    token.user.set_password(password)
+                    token.user.save()
+                    token.delete()
+                    updated = True
+            else:
+                log.debug('Token expired')
+                errors.append(err.Error(err.ERROR_RESET_PASSWORD_EXPIRED))
         except ResetPasswordToken.DoesNotExist:
             log.error('Trying to reset password with non existent token %s' % token_value)
             errors.append(err.Error(err.ERROR_TOKEN_NOT_VALID))

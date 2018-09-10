@@ -15,8 +15,23 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.auth import views as auth_views
+from deckbuilder_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('decks/', include('deckbuilder_app.urls'))
+    path('decks/', include('deckbuilder_app.urls')),
+    path('login/', auth_views.LoginView.as_view(template_name='views/login.html'), name='login'),
+    path('logout/', auth_views.LogoutView.as_view(template_name='views/logout.html'), name='logout'),
+    path('register/', views.register, name='register'),
+
+    # url(r'^profile/$', views.my_profile, name='my_profile'),
+    # url(r'^profile/(?P<pk>[0-9]+)/$', views.user_profile, name='user_profile'),
+    #
+    path('validate/<token>/', views.validate_email, name='validate_email_token'),
+
+    path('recover-password/', views.recover_password, name='recover_password'),
+    path('reset-password/', views.reset_password, name='reset_password_post'),
+    path('reset-password/<token>/', views.reset_password, name='reset_password_get'),
+
 ]

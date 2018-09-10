@@ -8,3 +8,5 @@
 deckbuilder\.log
 
 \.idea/
+
+deckbuilder_core/\.env

@@ -1,0 +1,54 @@
+{% extends "views/base.html" %}
+{% load bootstrap3 %}
+{% load staticfiles i18n %}
+
+{% block title %}Register{% endblock title %}
+
+{% block stylesheets %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static "css/login.css" %}">
+{% endblock stylesheets %}
+
+{% block header %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    <form class="form-signin" action="{% url 'register' %}" method="POST">
+        <img class="mb-4" src="" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <div class="form-group">
+            <input type="submit" class="btn btn-lg btn-primary btn-block" value="Register">
+        </div>
+    </form>
+{% endblock content %}
+
+{% block javascript_footer %}
+    <script>
+        function addStyleToForm() {
+            $("form.register_form label").each(function () {
+                var input = $(this);
+                input.addClass('input_label');
+            });
+            $("form.register_form input[type=email]").each(function () {
+                var input = $(this);
+                input.addClass('form-control input_password');
+            });
+            $("form.register_form input[type=text]").each(function () {
+                var input = $(this);
+                input.addClass('form-control input_password');
+            });
+            $("form.register_form input[type=password]").each(function () {
+                var input = $(this);
+                input.addClass('form-control input_password');
+            });
+            $("form.register_form input[type=submit]").each(function () {
+                var input = $(this);
+                input.addClass('btn btn-lg btn-primary btn-block submit_button');
+            });
+        }
+        //$(document).ready(addStyleToForm());
+    </script>
+{% endblock javascript_footer %}
