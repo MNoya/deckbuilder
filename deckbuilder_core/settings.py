@@ -174,7 +174,7 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_FOLDER = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, STATIC_FOLDER)
+STATIC_ROOT = '/var/www/deckbuilder/static'
 STATIC_URL = '/static/'
 
 # Email manager configuration
