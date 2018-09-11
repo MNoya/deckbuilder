@@ -1,17 +1,17 @@
 {% extends "views/base.html" %}
+{% load staticfiles i18n %}
+
+{% block stylesheets %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static "css/deck_detail.css" %}"/>
+{% endblock %}
+
+
 {% block content %}
     <div class="container">
-        <div class="container" style="margin-top: 10px; padding: 0; overflow: auto;">
-            <div style="float: left; height: 45px; line-height: 45px; font-size: 20pt; text-align: left; margin-left: 30px; margin-bottom: 0;">
-                {{ object.name }}
-            </div>
-            <div style="float: right; height: 45px; line-height: 45px;">
-                {% for deck_race in object.get_deck_races reversed %}
-                    <div style="float: right; margin-right: 5px; text-align: right; font-size: 18pt; margin-bottom: 0;">
-                        <img class="img-fluid race-icon race-{{ deck_race.0 }}"/>
-                        {{ deck_race.1 }}
-                    </div>
-                {% endfor %}
+        <div class="container" style="padding: 0; overflow: auto;">
+            <div class="main_title">
+                <h1 class="heading_h1">{{ object.name }}</h1>
             </div>
         </div>
         <table class="table">
@@ -38,9 +38,18 @@
                 </tr>
             {% endfor %}
             </tbody>
+
         </table>
-        <h2>{{ card_count }}/30</h2>
-    <a href="{% url 'deck_edit' object.pk %}"><button>Edit</button></a>
+        {% for deck_race in object.get_deck_races reversed %}
+            <div class="races-deck-detail">
+                <img class="img-fluid race-icon race-{{ deck_race.0 }}"/>
+                {{ deck_race.1 }}
+            </div>
+        {% endfor %}
+        <h2 style="color: white">{{ card_count }}/30</h2>
+        <a href="{% url 'deck_edit' object.pk %}">
+            <button>Edit</button>
+        </a>
     </div>
     <style>
         #decksTableBody td {

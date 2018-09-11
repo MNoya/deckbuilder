@@ -1,0 +1,17 @@
+.decks-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.deck-name {
+    color: var(--color-1);
+}
+
+#filters{
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    /* border: dotted 1px #ecddd5; */
+    border-radius: 4px;
+    background-color: var(--color-1);
+}
