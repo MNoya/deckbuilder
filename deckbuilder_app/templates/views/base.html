@@ -50,7 +50,7 @@
 <body>
 {% block header %}
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{% url 'deck_list' %}">
+        <a href="{% url 'deck_list' %}"> {# class="navbar-brand" #}
             <img src="{% static "img/logo.jpg" %}" width="48px" height="48px" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
