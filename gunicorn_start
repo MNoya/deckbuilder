@@ -2,7 +2,7 @@
 
 NAME="deckbuilder_app"                              # Name of the application
 DJANGODIR=/home/mnoya/deckbuilder                   # Django project directory
-VIRTUALENV=/home/mnoya/venvs/bin/activate           # virtualenv directory
+VIRTUALENV=/home/mnoya/venvs/deckbuilder/           # virtualenv directory
 SOCKFILE=/home/mnoya/deckbuilder/run/gunicorn.sock  # we will communicte using this unix socket
 USER=mnoya                                          # the user to run as
 GROUP=www-data                                      # the group to run as
@@ -14,7 +14,7 @@ echo "Starting $NAME as `whoami`"
 
 # Activate the virtual environment
 cd $DJANGODIR
-source VIRTUALENV
+source $VIRTUALENV/bin/activate
 export DJANGO_SETTINGS_MODULE=$DJANGO_SETTINGS_MODULE
 export PYTHONPATH=$DJANGODIR:$PYTHONPATH
 
@@ -24,7 +24,7 @@ test -d $RUNDIR || mkdir -p $RUNDIR
 
 # Start your Django Unicorn
 # Programs meant to be run under supervisor should not daemonize themselves (do not use --daemon)
-exec ../bin/gunicorn ${DJANGO_WSGI_MODULE}:application \
+exec $VIRTUALENV/bin/gunicorn ${DJANGO_WSGI_MODULE}:application \
   --name $NAME \
   --workers $NUM_WORKERS \
   --user=$USER --group=$GROUP \
