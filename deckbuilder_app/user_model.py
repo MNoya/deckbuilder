@@ -5,11 +5,9 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models, transaction, IntegrityError
 from django.utils import timezone
 
-import deckbuilder_app.constants as const
-import deckbuilder_app.errors as err
-
 from deckbuilder_app.common import default_expiration_delta
 from deckbuilder_app.email_manager import EmailManager
+from deckbuilder_app.constants import DEFAULT_PROFILE_IMAGE
 
 log = logging.getLogger(__name__)
 
@@ -22,7 +20,7 @@ class User(AbstractUser):
         username
         password
     """
-    avatar = models.ImageField(upload_to='avatars', default=const.DEFAULT_PROFILE_IMAGE_USER)
+    avatar = models.ImageField(upload_to='avatars', default=DEFAULT_PROFILE_IMAGE)
     email = models.EmailField(unique=True, db_index=True)
     is_active = models.BooleanField(default=False)
 

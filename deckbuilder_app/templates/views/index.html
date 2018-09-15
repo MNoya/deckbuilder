@@ -1,0 +1,36 @@
+{% extends "views/base.html" %}
+{% load staticfiles i18n %}
+
+{% block stylesheets %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static "css/deck_list.css" %}"/>
+{% endblock %}
+
+{% block content %}
+
+    <div class="container col-md-12" style="text-align: center; margin-top: 15px;">
+        <h2 style="text-align: center; color: white;">
+            Find the best Fist of Truth decks
+        </h2>
+        <div>
+            <img class="img-fluid race-icon-big race-0"/>
+            <img class="img-fluid race-icon-big race-1"/>
+            <img class="img-fluid race-icon-big race-2"/>
+            <img class="img-fluid race-icon-big race-3"/>
+            <img class="img-fluid race-icon-big race-4"/>
+            <img class="img-fluid race-icon-big race-5"/>
+            <img class="img-fluid race-icon-big race-6"/>
+        </div>
+
+        <div class="container col-md-12" style="margin-top: 15px;">
+            {% for deck in decks %}
+                <a href="{% url 'deck_detail' deck.id %}">
+                    <div class="deck-showcase">
+                        <strong class="deck-name ">{{ deck.name }}</strong>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock content %}
