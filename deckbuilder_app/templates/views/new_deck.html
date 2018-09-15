@@ -115,7 +115,7 @@
                 }
             }
 
-            $('.card').click(function (evt) {
+            $('.deckbuilder-card').click(function (evt) {
                 var cardID = $(this).attr('id');
                 console.log("Selected card " + cardID);
                 if (totalCards < 30) {
@@ -197,15 +197,18 @@
                 default:
                     card_name_in_rarity = card_name;
             }
-            result = '<div class="card" style="display: block;" id="' + card['name'] + '">(' + card["cost"] + ") ";
+            id = card['name'];
+            result = '<div class="deckbuilder-card" style="display: block;" id="' + id + '">(" + card["cost"] + ") ';
             result += card_name_in_rarity;
             if (card['attack'] != null) {
                 result += " " + card['attack'] + "/" + card['defense']
             }
             result += " " + card['text'];
-            /*if (card['art']){
-                result += '<img src="' + card['art'] + '" class="img-fluid">'
-            }*/
+            if (card['art']){
+                return '<img src="' + card['art'] + '" id="' + id + '" class="img-fluid deckbuilder-card">';
+            } else {
+                return '<img src="/static/img/default/card_image.png" id="' + id + '" class="img-fluid deckbuilder-card">'
+            }
             return result + '<div>'
         }
 
