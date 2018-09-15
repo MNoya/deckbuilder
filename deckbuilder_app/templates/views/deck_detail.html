@@ -40,7 +40,7 @@
             </tbody>
 
         </table>
-        {% for deck_race in object.get_deck_races reversed %}
+        {% for deck_race in object.deck_races reversed %}
             <div class="races-deck-detail">
                 <img class="img-fluid race-icon race-{{ deck_race.0 }}"/>
                 {{ deck_race.1 }}

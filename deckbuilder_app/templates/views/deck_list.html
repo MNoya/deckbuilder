@@ -30,7 +30,7 @@
                 {% for deck in object_list %}
                     <tr>
                         <td class="race-column">
-                            {% for deck_race in deck.get_deck_races %}
+                            {% for deck_race in deck.deck_races %}
                                 <div style="float: left; margin-right: 10px;">
                                     <img class="img-fluid race-icon race-{{ deck_race.0 }}"/>
                                     {{ deck_race.1 }}

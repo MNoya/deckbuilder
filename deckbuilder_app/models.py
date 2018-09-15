@@ -1,4 +1,5 @@
 from collections import defaultdict
+from random import sample
 
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
@@ -39,12 +40,10 @@ class Deck(models.Model):
     cards = models.ManyToManyField(Card, through='CardInDeck')
     time_created = models.DateTimeField(auto_now_add=True)
     last_updated = models.DateTimeField(auto_now=True)
-    # TODO: PvP/Galaxy-specific
-    # TODO: Creator Notes
-    # TODO: User Likes
-    # TODO: User Comments on Deck (and Answers from Creator)
-    # TODO: Cost Mana-Curve Graph
-    # TODO: Sample Hand generator
+    description = models.TextField(null=True)
+    views = models.IntegerField(default=0)
+    likes = models.IntegerField(default=0)
+    tags = models.ManyToManyField('Tag')
 
     class Meta:
         db_table = 'deck'
@@ -52,19 +51,39 @@ class Deck(models.Model):
     def __str__(self):
         return self.name
 
-    def get_decklist(self):
-        result = []
-        for card in self.cards.all().order_by(*Card.order_by_fields):
-            result += card.name
+    @property
+    def decklist(self):
+        """dict of card name: copies"""
+        result = {}
+        for card_in_deck in self.cardindeck_set.all():
+            result[card_in_deck.name] = card_in_deck.copies
         return result
 
-    def get_deck_races(self):
+    @property
+    def mana_curve(self):
+        """dict of cost: copies"""
+        result = defaultdict(int)
+        for card in self.cardindeck_set.all():
+            result[card.cost] += card.copies
+        return result
+
+    @property
+    def deck_races(self):
         # First race is the one with more cards
         deck_races = defaultdict(int)
         for card_in_deck in self.cardindeck_set.all():
             deck_races[card_in_deck.card.race] += card_in_deck.copies
         sorted_races = sorted(dict(deck_races), key=deck_races.get, reverse=True)
         return [(race, deck_races[race]) for race in sorted_races]
+
+    def generate_sample_hand(self):
+        """returns a possible starting hand from the deck cards, considering copies"""
+        cards = []
+        num_starting_cards = 4
+        for card_name, copies in self.decklist.items():
+            for n in range(copies):
+                cards.append(card_name)
+        return sample(cards, num_starting_cards)
 
 
 class CardInDeck(models.Model):
@@ -77,3 +96,36 @@ class CardInDeck(models.Model):
     class Meta:
         db_table = 'card_in_deck'
         unique_together = ('card', 'deck')
+
+
+class Tag(models.Model):
+    # TODO: script to create tags
+    name = models.CharField(max_length=50, unique=True)
+
+
+class GalaxyMap(models.Model):
+    # TODO: script to create maps
+    DIFFICULTIES = ['Normal', 'Nightmare', 'Hell']
+    name = models.CharField(max_length=50)
+    cards = models.ManyToManyField(Card)
+    difficulty = models.CharField(max_length=10, choices=[(i, name) for i, name in enumerate(DIFFICULTIES)])
+    related_decks = models.ManyToManyField('Deck', through='GalaxyDeck')
+    # TODO: turn order?
+
+    class Meta:
+        unique_together = ('name', 'difficulty')
+
+
+class GalaxyDeck(models.Model):
+    deck = models.ForeignKey(Deck, on_delete=models.CASCADE)
+    map = models.ForeignKey(GalaxyMap, on_delete=models.CASCADE)
+    likes = models.IntegerField(default=0)
+    # winrate?
+
+
+class DeckComment(models.Model):
+    deck = models.ForeignKey(Deck, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    comment = models.TextField()
+    parent = models.OneToOneField('self', on_delete=models.CASCADE)
+    answers = models.ManyToManyField('self')

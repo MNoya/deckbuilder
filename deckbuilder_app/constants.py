@@ -29,7 +29,13 @@ class CardTypes:
     UNIT = 'Unit'
     SPELL = 'Spell'
 
+class Difficulties:
+    NORMAL = 'Normal'
+    NIGHTMARE = 'Nightmare'
+    HELL = 'Hell'
+
 
 RARITIES = [Rarities.NEWBIE, Rarities.COMMON, Rarities.RARE, Rarities.EPIC, Rarities.LEGEND]
 RACES = [Races.EMPIRE, Races.ROCK, Races.INFERNO, Races.DEUS, Races.ZEN, Races.RECLUSE, Races.PARADISE]
 CARD_TYPES = [CardTypes.UNIT, CardTypes.SPELL]
+DIFFICULTIES = [Difficulties.NORMAL, Difficulties.NIGHTMARE, Difficulties.HELL]
