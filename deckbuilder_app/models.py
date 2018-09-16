@@ -152,7 +152,7 @@ class GalaxyMap(models.Model):
     # TODO: turn order?
 
     def __str__(self):
-        return "{} ({})".format(self.name, self.get_difficulty_display())
+        return "{}".format(self.name)
 
 
 class GalaxyDeck(models.Model):

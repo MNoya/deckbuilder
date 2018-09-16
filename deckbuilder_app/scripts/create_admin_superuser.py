@@ -11,5 +11,10 @@ def create_admin_superuser():
 
     try:
         User.objects.create_superuser(username, email, password)
+        print("Created superuser")
     except IntegrityError:
-        pass
+        user = User.objects.get(username=username)
+        user.set_password(password)
+        user.email = email
+        user.save()
+        print("Updated superuser")
