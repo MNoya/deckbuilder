@@ -11,6 +11,8 @@ log = logging.getLogger(__name__)
 
 
 def update_cards():
+    print("=" * 60)
+    print("Updating Cards...")
     csv_name = "Fist Of Truth - All Cards.csv"
     file_name = os.path.join(settings.BASE_DIR, "deckbuilder_app", "data", csv_name)
 
@@ -50,14 +52,14 @@ def update_cards():
         try:
             card_obj, created = Card.objects.get_or_create(name=name, race=race, rarity=rarity, defaults={**card_data})
             if created:
-                log.info("Created '{}'".format(name))
+                print("Created '{}'".format(name))
             else:
-                log.info("Updated '{}'".format(name))
+                print("Updated '{}'".format(name))
         except Exception as e:
-            log.error("Error creating card {}: {}".format(name, str(e)))
+            print("ERROR creating card {}: {}".format(name, str(e)))
 
-    log.info("Finished updating cards.")
+    print("Finished updating Cards")
     if error_lines:
-        log.error("Errors:")
+        print("Errors:")
         for line_n, row in error_lines.items():
-            log.error("  Line {}: {}".format(line_n, row))
+            print("  Line {}: {}".format(line_n, row))
