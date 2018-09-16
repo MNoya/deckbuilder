@@ -40,7 +40,8 @@ class Deck(models.Model):
     cards = models.ManyToManyField(Card, through='CardInDeck')
     time_created = models.DateTimeField(auto_now_add=True)
     last_updated = models.DateTimeField(auto_now=True)
-    description = models.TextField(null=True)
+    description = models.CharField(max_length=255, null=True, blank=True)
+    notes = models.TextField(null=True, blank=True)
     views = models.IntegerField(default=0)
     likes = models.IntegerField(default=0)
     tags = models.ManyToManyField('Tag')
@@ -53,15 +54,15 @@ class Deck(models.Model):
 
     @property
     def decklist(self):
-        """dict of card name: copies"""
+        """returns dict of card name: copies"""
         result = {}
         for card_in_deck in self.cardindeck_set.all():
-            result[card_in_deck.name] = card_in_deck.copies
+            result[card_in_deck.card.name] = card_in_deck.copies
         return result
 
     @property
     def mana_curve(self):
-        """dict of cost: copies"""
+        """returns dict of cost: copies"""
         result = defaultdict(int)
         for card in self.cardindeck_set.all():
             result[card.cost] += card.copies
@@ -69,6 +70,7 @@ class Deck(models.Model):
 
     @property
     def deck_races(self):
+        """returns list of tuple (race: number)"""
         # First race is the one with more cards
         deck_races = defaultdict(int)
         for card_in_deck in self.cardindeck_set.all():
@@ -84,6 +86,38 @@ class Deck(models.Model):
             for n in range(copies):
                 cards.append(card_name)
         return sample(cards, num_starting_cards)
+
+    def compare_to_deck(self, target_deck):
+        """
+        Compares this deck to another, returning the difference in each card copies
+        :param target_deck: Deck object
+        :return: dict of card_name: copies (negative when the card is removed on target_deck)
+        """
+        result = {}
+        compared_decklist = target_deck.decklist
+
+        # Remove cards that dont exist on target deck
+        for card, copies in self.decklist.items():
+            if compared_decklist.get(card):
+                difference = compared_decklist[card] - copies
+                if difference:
+                    result[card] = difference
+            else:
+                result[card] = -copies
+
+        # Add new cards from the target deck
+        for card, copies in compared_decklist.items():
+            if not self.decklist.get(card):
+                result[card] = copies
+        return result
+
+    def update_owner(self, new_user):
+        """
+        Change ownership of a deck, for credit purposes
+        :param new_user:
+        """
+        self.user = new_user
+        self.save()
 
 
 class CardInDeck(models.Model):
@@ -102,18 +136,23 @@ class Tag(models.Model):
     # TODO: script to create tags
     name = models.CharField(max_length=50, unique=True)
 
+    def __str__(self):
+        return self.name
+
 
 class GalaxyMap(models.Model):
-    # TODO: script to create maps
-    DIFFICULTIES = ['Normal', 'Nightmare', 'Hell']
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, unique=True)
     cards = models.ManyToManyField(Card)
-    difficulty = models.CharField(max_length=10, choices=[(i, name) for i, name in enumerate(DIFFICULTIES)])
+    difficulty = models.CharField(max_length=30, null=True, blank=True)
     related_decks = models.ManyToManyField('Deck', through='GalaxyDeck')
+    notes = models.TextField(null=True, blank=True)
+    campaign = models.CharField(max_length=50, null=True, blank=True)
+    is_final = models.BooleanField(default=False)
+
     # TODO: turn order?
 
-    class Meta:
-        unique_together = ('name', 'difficulty')
+    def __str__(self):
+        return "{} ({})".format(self.name, self.get_difficulty_display())
 
 
 class GalaxyDeck(models.Model):
