@@ -30,7 +30,24 @@ class CardInlineAdmin(admin.TabularInline):
 
 class DeckAdmin(admin.ModelAdmin):
     inlines = [CardInlineAdmin]
+    filter_horizontal = ('tags',)
+
+
+class DeckTagAdmin(admin.TabularInline):
+    model = models.Deck
+
+
+class TagAdmin(admin.ModelAdmin):
+    inlines = [DeckTagAdmin]
+
+
+class GalaxyMapAdmin(admin.ModelAdmin):
+    list_filter = ('is_final',)
+    filter_horizontal = ('cards',)
 
 
 admin.site.register(models.Card, CardAdmin)
 admin.site.register(models.Deck, DeckAdmin)
+admin.site.register(models.Tag)
+admin.site.register(models.GalaxyMap, GalaxyMapAdmin)
+admin.site.register(models.User)
