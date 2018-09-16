@@ -27,8 +27,7 @@ def update_galaxy_maps(map_list, is_final=False):
         else:
             cards_in_map = []
 
-
-        map, created = GalaxyMap.objects.get_or_create(name=map_name, is_final=is_final, defaults={**map_data})
+        map, created = GalaxyMap.objects.update_or_create(name=map_name, is_final=is_final, defaults={**map_data})
         if not created:
             print("Updating Galaxy Map '{}'".format(map_name))
         else:
@@ -54,13 +53,12 @@ def load_galaxy_csv(file_name):
         for row in reader:
             map_data = {
                 'name': row[0],
+                'difficulty': row[2],
                 'notes': row[3],
                 'campaign': row[4]
             }
             if row[1]:
                 map_data['card_names'] = [card_name.strip() for card_name in row[1].split(card_splitter)]
-            if row[2]:
-                map_data['difficulty'] = [difficulty_name.strip() for difficulty_name in row[2].split(',')]
 
             result.append(map_data)
     return result

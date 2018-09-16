@@ -50,7 +50,7 @@ def update_cards():
         race = card_data.pop('race')
         rarity = card_data.pop('rarity')
         try:
-            card_obj, created = Card.objects.get_or_create(name=name, race=race, rarity=rarity, defaults={**card_data})
+            card_obj, created = Card.objects.update_or_create(name=name, race=race, rarity=rarity, defaults={**card_data})
             if created:
                 print("Created '{}'".format(name))
             else:
