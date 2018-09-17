@@ -13,7 +13,7 @@
     <title>
         {% block title %}Deckbuilder{% endblock title %}
     </title>
-    <link href="{% static "img/favicon.ico" %}" rel="icon"/>
+    <link href="{% static "img/logo.jpg" %}" rel="icon"/>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -51,7 +51,7 @@
 {% block header %}
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a href="{% url 'index' %}"> {# class="navbar-brand" #}
-            <img src="{% static "img/logo.jpg" %}" width="48px" height="48px" alt="">
+            <img src="{% static "img/logo.jpg" %}" width="40px" height="40px" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,6 +66,10 @@
 
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'new_deck' %}">Deckbuilder</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'galaxy' %}">Galaxy</a>
                 </li>
 
                 {% if user.is_authenticated %}

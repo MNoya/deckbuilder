@@ -24,6 +24,7 @@ body {
     background-color: var(--color-0);
 
     font-family: Helvetica Neue, sans-serif;
+    color: lightgray;
 
     /*The fixed navbar will overlay your other content, unless you add padding to the top of the body.*/
     padding-top: 65px;
@@ -138,6 +139,13 @@ td.race-column {
     background-image: url('../img/races/6.png');
 }
 
+#deck-container {
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
 /** Text **/
 
 .text-wrap {
@@ -240,4 +248,14 @@ td.race-column {
     background-color: var(--color-gray);
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+.galaxy-map-row {
+    border-bottom: 1px solid var(--color-1);
+    background-color: var(--color-beige-2);
+    color: var(--color-1);
+}
+
+.galaxy-map-row:hover {
+    filter: brightness(1.2);
 }

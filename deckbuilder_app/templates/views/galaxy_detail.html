@@ -1,0 +1,52 @@
+{% extends "views/base.html" %}
+{% load staticfiles i18n %}
+
+{% block stylesheets %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static "css/deck_detail.css" %}"/>
+{% endblock %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="container" style="padding: 0; overflow: auto;">
+            <div class="main_title">
+                <h1 class="heading_h1">{{ object.name }}</h1>
+            </div>
+        </div>
+        <table class="table">
+            <tbody id="decksTableBody">
+            {% for card in object.cards.all %}
+                <tr>
+                    <td id="{{ card.name }}">
+                        {% if card.rarity == 0 %}
+                            <font color="gray"><b>{{ card.name }}</b></font>
+                        {% elif card.rarity == 1 %}
+                            <font color="black"><b>{{ card.name }}</b></font>
+                        {% elif card.rarity == 2 %}
+                            <font color="blue"><b>{{ card.name }}</b></font>
+                        {% elif card.rarity == 3 %}
+                            <font color="purple"><b>{{ card.name }}</b></font>
+                        {% elif card.rarity == 4 %}
+                            <font color="orange"><b>{{ card.name }}</b></font>
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+
+        </table>
+        {% for deck_race in object.deck_races reversed %}
+            <div class="races-deck-detail">
+                <img class="img-fluid race-icon race-{{ deck_race.0 }}"/>
+                {{ deck_race.1 }}
+            </div>
+        {% endfor %}
+
+    </div>
+    <style>
+        #decksTableBody td {
+            padding: 0px;
+        }
+    </style>
+{% endblock %}

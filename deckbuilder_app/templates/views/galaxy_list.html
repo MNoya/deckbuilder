@@ -1,0 +1,61 @@
+{% extends "views/base.html" %}
+{% load staticfiles i18n %}
+
+{% block stylesheets %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static "css/deck_list.css" %}"/>
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="main_title">
+            <h1 class="heading_h1">Galaxy Maps List</h1>
+        </div>
+
+        <div id="filters-container" class="container">
+            {# name filter #}
+            <input type="text" id="text-filter" placeholder="Search" onkeyup="updateMaps()"/>
+
+            {# checkbox filters #}
+            {# <input type="checkbox" name="final" id="final-filter" onchange="updateMaps()"> #}
+            {# <label for="final-filter">Final Mission</label> #}
+        </div>
+
+        <div class="container" id="maps-container">
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var maps = JSON.parse('{{ maps | escapejs }}');
+
+        function updateMaps() {
+            container = $("#maps-container");
+            container.empty();
+            var text = $("#text-filter").val().toLowerCase();
+
+            for (map of maps){
+                if (!text || map['name'].toLowerCase().includes(text)) {
+                    container.append(mapHTML(map));
+                }
+            }
+        }
+
+        function mapHTML(map){
+            result = "<a href='" + map['id'] + "'>";
+            result += "<div class='row galaxy-map-row'>";
+            result += "<div style='width: 25%;'><strong>" +  map['name'] + "</strong></div>";
+            if (map['cards'].length) {
+                result += "<div><strong>" +  map['cards'] + "</strong></div>";
+            }
+            result += "</div></a>";
+            return result
+        }
+
+        $(document).ready(function () {
+            updateMaps();
+        })
+    </script>
+
+{% endblock %}
