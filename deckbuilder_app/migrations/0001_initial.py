@@ -63,6 +63,7 @@ class Migration(migrations.Migration):
             ],
             options={
                 'db_table': 'card',
+                'ordering': ['cost', '-rarity', '-race', '-card_type', 'name'],
             },
         ),
         migrations.CreateModel(
@@ -74,6 +75,7 @@ class Migration(migrations.Migration):
             ],
             options={
                 'db_table': 'card_in_deck',
+                'ordering': ['card__cost', '-card__rarity', '-card__race', '-card__card_type', 'card__name']
             },
         ),
         migrations.CreateModel(

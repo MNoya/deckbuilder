@@ -20,18 +20,14 @@ class Card(models.Model):
     art = models.ImageField(upload_to='cards', null=True, blank=True)
 
     fields = ['name', 'race', 'cost', 'text', 'card_type', 'rarity', 'attack', 'defense']
-    order_by_fields = ['cost', '-rarity', '-race', '-card_type', 'name']
 
     class Meta:
         db_table = 'card'
         unique_together = ('name', 'race', 'rarity')
+        ordering = ['cost', '-rarity', '-race', '-card_type', 'name']
 
     def __str__(self):
         return self.name
-
-    @staticmethod
-    def get_all_cards():
-        return Card.objects.all().order_by(*Card.order_by_fields)
 
 
 class Deck(models.Model):
@@ -125,12 +121,10 @@ class CardInDeck(models.Model):
     deck = models.ForeignKey(Deck, on_delete=models.CASCADE)
     copies = models.PositiveIntegerField(default=1, validators=[MaxValueValidator(3), MinValueValidator(1)])
 
-    order_by_fields = ['card__cost', '-card__rarity', '-card__race', '-card__card_type', 'card__name']
-
     class Meta:
         db_table = 'card_in_deck'
         unique_together = ('card', 'deck')
-
+        ordering = ['card__cost', '-card__rarity', '-card__race', '-card__card_type', 'card__name']
 
 class Tag(models.Model):
     # TODO: script to create tags

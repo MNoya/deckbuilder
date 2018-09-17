@@ -37,7 +37,7 @@ class DeckDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super(DeckDetailView, self).get_context_data(**kwargs)
         context['card_count'] = 0
-        context['cards'] = context['object'].cardindeck_set.all().order_by(*CardInDeck.order_by_fields)
+        context['cards'] = context['object'].cardindeck_set.all()
         for card_in_deck in context['cards']:
             context['card_count'] += card_in_deck.copies
         return context
@@ -102,7 +102,7 @@ def deck_edit(request, pk):
     else:
         fields = Card.fields
         card_list = []
-        for card in Card.get_all_cards():
+        for card in Card.objects.all():
             card_data = {}
             for field in fields:
                 card_data[field] = getattr(card, field)
@@ -111,7 +111,7 @@ def deck_edit(request, pk):
             card_list.append(card_data)
 
         deck_cards = {}
-        for card_in_deck in deck.cardindeck_set.all().order_by(*CardInDeck.order_by_fields):
+        for card_in_deck in deck.cardindeck_set.all():
             deck_cards[card_in_deck.card.name] = card_in_deck.copies
 
         return render(request,
@@ -146,7 +146,7 @@ def new_deck(request):
     else:
         fields = Card.fields
         card_list = []
-        for card in Card.get_all_cards():
+        for card in Card.objects.all():
             card_data = {}
             for field in fields:
                 card_data[field] = getattr(card, field)
