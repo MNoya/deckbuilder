@@ -30,6 +30,9 @@ def update_galaxy_maps(map_list, is_final=False):
         map, created = GalaxyMap.objects.update_or_create(name=map_name, is_final=is_final, defaults={**map_data})
         if not created:
             print("Updating Galaxy Map '{}'".format(map_name))
+            for card in map.cards.all():
+                if card.name not in cards_in_map:
+                    map.cards.remove(card)
         else:
             print("Creating Galaxy Map '{}'".format(map_name))
 
@@ -41,6 +44,13 @@ def update_galaxy_maps(map_list, is_final=False):
                 print("\tAdded '{}'".format(card.name, map.name))
             except Card.DoesNotExist:
                 print("\tERROR: Card '{}' does not exist, could not be added".format(card_name, map_name))
+                continue
+            except Card.MultipleObjectsReturned:
+                card = Card.objects.filter(name=card_name).first()
+                map.cards.add(card)
+                print("\tWARN: Multiple cards match name '{}', adding the first one: Race {} Cost {}".
+                      format(card_name, card.get_race_display(), card.cost))
+
 
 
 def load_galaxy_csv(file_name):

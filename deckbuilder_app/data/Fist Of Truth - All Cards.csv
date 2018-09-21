@@ -243,7 +243,7 @@ Regenerative Ogre,Roughrock Weald,Common,Unit,5,3,4,"Turn end: If this unit is i
 Scavenger Vulture,Roughrock Weald,Common,Unit,5,4,1,"Debut: Insight 1 (Expose 1 card in enemy player's hand)
 Death: Draw a card.",,
 Wild Berserker,Roughrock Weald,Common,Unit,5,4,4,Trample,,
-Ancient Eartshaker,Roughrock Weald,Legendary,Unit,6,15,15,"Double strike, Shroud, Suspend
+Ancient Earthshaker,Roughrock Weald,Legendary,Unit,6,15,15,"Double strike, Shroud, Suspend
  Reduce your Mana limit by 9.",,
 Blade of the Tyrant,Roughrock Weald,Epic,Spell,6,-,-,"Give target ally +3/+6 and Double strike.
 Give all other allies -1/-1.",,
@@ -329,7 +329,7 @@ Scorched Corpse,Inferno,Common,Unit,3,2,2,Increase physical damage to player by 
 Sorcery Zombie,Inferno,Epic,Unit,4,1,6,"Double Strike
 Pre-strike: Gain +1/+1 for every spell card played this turn.",,
 Bitter Watcher,Inferno,Epic,Unit,4,3,4,"Turn end: If you have no cards, gain +1/-1 and draw a card.",,
-Blood-Flame Erinyes,Inferno,Epic,Unit,4,3,2,Turn end: Enemy Player discards a card. If he has no cards in hand. takes 4 health damage.,,
+Blood-flame Erinyes,Inferno,Epic,Unit,4,3,2,Turn end: Enemy Player discards a card. If he has no cards in hand. takes 4 health damage.,,
 Bloodlust Osyluth,Inferno,Epic,Unit,4,4,3,"Trample
  When this unit attacks the enemy: Gain +1/+1.",,
 Demon Scarecrow,Inferno,Epic,Unit,4,0,4,"Turn start:if the first enemy in target row just entered, gain +4/+4",,
@@ -887,7 +887,7 @@ Sexy Witch,Paradise Harbor,Rare,Unit,4,3,2,Pre-strike: For every spell card used
 Zoologist,Paradise Harbor,Rare,Unit,4,3,4,Turn start: Give Roughrock ally +1/+1 and zen ally +1/+1,,
 Navigation Supply,Paradise Harbor,Common,Spell,4,-,-,"Turn End: Summon two 0/2 Supply Barrels, restore 5 Health.",,
 Harbour Blacksmith,Paradise Harbor,Common,Unit,4,1,5,Turn end: Give this unit and another random ally +1/+0,,
-Lightning Sorceror,Paradise Harbor,Common,Unit,4,2,1,Debut: Deal 1 damage to 2 random enemies.,,
+Lightning Sorcerer,Paradise Harbor,Common,Unit,4,2,1,Debut: Deal 1 damage to 2 random enemies.,,
 "Burian, Iron Roar",Paradise Harbor,Legendary,Unit,5,5,5,"Armor 1
  Turn end: Increase this Unit's Defense to 5.",,
 "Leira, Raging Flame",Paradise Harbor,Legendary,Unit,5,3,3,"Debut: Add two Leira's Fire Missles to your hand. 
