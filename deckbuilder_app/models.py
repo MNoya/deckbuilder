@@ -17,7 +17,7 @@ class Card(models.Model):
     attack = models.PositiveSmallIntegerField(null=True, blank=True)
     defense = models.PositiveSmallIntegerField(null=True, blank=True)
     text = models.TextField(null=True, blank=True)
-    art = models.ImageField(upload_to='cards', null=True, blank=True)
+    art = models.CharField(max_length=250, null=True, blank=True)  # static path
 
     fields = ['name', 'race', 'cost', 'text', 'card_type', 'rarity', 'attack', 'defense']
 

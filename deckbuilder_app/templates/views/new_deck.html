@@ -135,7 +135,7 @@
                     }
                 }
             }
-            container.append("<div>" + totalCards + "/30</div>");
+            container.append("<div class='deck-count'>" + totalCards + "/30</div>");
 
             $('.deck-card').click(function (evt) {
                 var clicked = evt.target;
@@ -191,8 +191,9 @@
                 result += " " + card['attack'] + "/" + card['defense']
             }
             result += " " + card['text'];
+            card_url = "/static/" + card['art'];
             if (card['art']){
-                return '<img src="' + card['art'] + '" id="' + id + '" class="img-fluid deckbuilder-card">';
+                return '<img src="' + card_url + '" id="' + id + '" class="img-fluid deckbuilder-card">';
             } else {
                 return '<img src="/static/img/default/card_image.png" id="' + id + '" class="img-fluid deckbuilder-card">'
             }

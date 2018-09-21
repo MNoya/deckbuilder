@@ -51,6 +51,20 @@ def update_cards():
         rarity = card_data.pop('rarity')
         try:
             card_obj, created = Card.objects.update_or_create(name=name, race=race, rarity=rarity, defaults={**card_data})
+            # Attempt to set card art
+            try:
+                image_name = card_obj.name.replace(" ", "_") + ".png"
+                card_path = "img/cards/" + image_name
+                card_media_path = os.path.join(settings.BASE_DIR, "deckbuilder_app") + settings.STATIC_URL + card_path
+                if os.path.exists(card_media_path):
+                    card_obj.art = card_path
+                    card_obj.save()
+                    print("Updated card art at {}".format(card_media_path))
+                else:
+                    print("Missing card art at {}".format(card_media_path))
+            except:
+                pass
+
             if created:
                 print("Created '{}'".format(name))
             else:

@@ -107,7 +107,7 @@ def deck_edit(request, pk):
             for field in fields:
                 card_data[field] = getattr(card, field)
             if card.art:
-                card_data['art'] = str(card.art.url)
+                card_data['art'] = str(card.art)
             card_list.append(card_data)
 
         deck_cards = {}
@@ -151,7 +151,8 @@ def new_deck(request):
             for field in fields:
                 card_data[field] = getattr(card, field)
             if card.art:
-                card_data['art'] = str(card.art.url)
+                card_data['art'] = str(card.art)
+                # image_name = card['name'].replace(" ", "_") + ".png";
             card_list.append(card_data)
 
         return render(request,

@@ -240,7 +240,16 @@ td.race-column {
 }
 
 .deckbuilder-card {
-    width: 20%;
+    max-width: 130px;
+    max-height: 185px;
+}
+
+.deck-card {
+    color: black;
+}
+
+.deck-count {
+    color: black;
 }
 
 #filters-container {
