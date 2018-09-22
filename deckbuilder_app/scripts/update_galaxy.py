@@ -12,16 +12,22 @@ def update_galaxy():
     final_maps = load_galaxy_csv('Galaxy Maps - Final Missions.csv')
     normal_maps = load_galaxy_csv('Galaxy Maps - Missions.csv')
 
-    update_galaxy_maps(final_maps, is_final=True)
-    update_galaxy_maps(normal_maps)
+    final_map_names = update_galaxy_maps(final_maps, is_final=True)
+    mission_map_names = update_galaxy_maps(normal_maps)
+
+    all_map_names = final_map_names + mission_map_names
+    for galaxy_map in GalaxyMap.objects.all():
+        if galaxy_map.name not in all_map_names:
+            galaxy_map.delete()
 
     print("Finished updating Galaxy Maps")
 
 
 def update_galaxy_maps(map_list, is_final=False):
+    map_names = []
     for map_data in map_list:
         map_name = map_data.pop('name')
-
+        map_names.append(map_name)
         if map_data.get('card_names'):
             cards_in_map = map_data.pop('card_names')
         else:
@@ -51,6 +57,7 @@ def update_galaxy_maps(map_list, is_final=False):
                 print("\tWARN: Multiple cards match name '{}', adding the first one: Race {} Cost {}".
                       format(card_name, card.get_race_display(), card.cost))
 
+    return map_names
 
 
 def load_galaxy_csv(file_name):
