@@ -22,7 +22,7 @@
             {# <label for="final-filter">Final Mission</label> #}
         </div>
 
-        <div class="container" id="maps-container">
+        <div id="maps-container">
 
         </div>
     </div>
@@ -32,7 +32,7 @@
 
         function updateMaps() {
             container = $("#maps-container");
-            container.empty();
+            container.empty();  // TODO: Hide divs instead
             var text = $("#text-filter").val().toLowerCase();
 
             for (map of maps){
@@ -43,23 +43,23 @@
         }
 
         function mapHTML(galaxy_map){
-            result = "<div class='row galaxy-map-row' style='height: 185px;'>";
-            result += "<div style='width: 25%; display: flex; align-items: center; justify-content: center; '>";
-            result += "<a href='" + galaxy_map['id'] + "'>";
-            result += "<strong>" +  galaxy_map['name'] + "</strong></div></a>";
-            result += "<div style='width: 75%;'>";
+            result = "<a href='" + galaxy_map['id'] + "'>";
+            result += "<div class='galaxy-map-row'>";
+            result += "<div style='text-align: center;'>";
+            result += "<strong>" +  galaxy_map['name'] + "</strong></div>";
+            result += "<div style='text-align: center;'>";
             if (galaxy_map['cards'].length) {
                 for (let i = 0; i < galaxy_map['cards'].length; i++) {
                     card_data = galaxy_map['cards'][i];
                     if (card_data['art']) {
                         card_url = "/static/" + card_data['art'];
-                        result +=  '<img src="' + card_url + '" class="img-fluid deckbuilder-card">'
+                        result +=  '<img src="' + card_url + '" class="img-fluid galaxy-card">'
                     } else {
-                        result += '<img src="/static/img/default/card_image.png" class="img-fluid deckbuilder-card">';
+                        result += '<img src="/static/img/default/card_image.png" class="img-fluid galaxy-card">';
                     }
                 }
             }
-            result += "</div>";
+            result += "</div></a>";
             return result
         }
 

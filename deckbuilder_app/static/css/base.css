@@ -32,6 +32,12 @@ body {
 }
 
 a {
+    color: #333333;
+    text-decoration: none !important;
+}
+
+a:-webkit-any-link {
+    color: #333333;
     text-decoration: none !important;
 }
 
@@ -229,7 +235,7 @@ td.race-column {
 
     justify-content: center;
 
-    border: dotted 1px #594535;
+    border: 1px #594535;
     -webkit-border-radius: 4px;
     border-radius: 4px;
     background-color: #a59a94;
@@ -241,7 +247,10 @@ td.race-column {
 
 .deckbuilder-card {
     max-width: 130px;
-    max-height: 185px;
+}
+
+.galaxy-card {
+    max-width: 125px;
 }
 
 .deck-card {
@@ -263,6 +272,8 @@ td.race-column {
     border-bottom: 1px solid var(--color-1);
     background-color: var(--color-beige-2);
     color: var(--color-1);
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 .galaxy-map-row:hover {
