@@ -9,6 +9,8 @@ from deckbuilder_app.common import default_expiration_delta
 from deckbuilder_app.email_manager import EmailManager
 from deckbuilder_app.constants import DEFAULT_PROFILE_IMAGE
 
+from deckbuilder_app import errors as err
+
 log = logging.getLogger(__name__)
 
 
@@ -22,7 +24,7 @@ class User(AbstractUser):
     """
     avatar = models.ImageField(upload_to='avatars', default=DEFAULT_PROFILE_IMAGE)
     email = models.EmailField(unique=True, db_index=True)
-    is_active = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
 
     def save(self, *args, **kwargs):
         """
@@ -123,6 +125,7 @@ class User(AbstractUser):
                         username=username,
                         email=email,
                         password=password,
+                        is_active=False,
                     )
                     # create account verification token and assign it to user
                     EmailToken.objects.create(user=user)

@@ -257,6 +257,14 @@ SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.user.user_details',
 )
 
+# SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/logged-in/'
+# SOCIAL_AUTH_LOGIN_ERROR_URL = '/login-error/'
+# SOCIAL_AUTH_LOGIN_URL = '/login-url/'
+# SOCIAL_AUTH_NEW_USER_REDIRECT_URL = '/new-users-redirect-url/'
+# SOCIAL_AUTH_NEW_ASSOCIATION_REDIRECT_URL = '/new-association-redirect-url/'
+# SOCIAL_AUTH_DISCONNECT_REDIRECT_URL = '/account-disconnected-redirect-url/'
+# SOCIAL_AUTH_INACTIVE_USER_URL = '/inactive-user/'
+
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
 LOGIN_REDIRECT_URL = 'index'
