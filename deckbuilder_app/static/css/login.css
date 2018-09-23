@@ -1,9 +1,14 @@
+body {
+    color: var(--color-gray);
+}
+
 .form-signin {
     width: 70%;
     max-width: 330px;
     padding: 15px;
     margin: auto;
     background-color: var(--color-beige-2);
+    border-radius: 5px;
 }
 
 .form-signin .checkbox {
@@ -13,9 +18,10 @@
 .form-signin .form-control {
     position: relative;
     box-sizing: border-box;
-    height: auto;
+    height: 34px;
     padding: 10px;
-    font-size: 16px;
+    padding-left: 32px;
+    font-size: 14px;
 }
 
 .form-signin .form-control:focus {
@@ -30,6 +36,85 @@
 
 .form-signin input[type="password"] {
     margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+}
+
+.social-signup {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    font-weight: 400;
+    padding: 10px 15px;
+    border-width: 0;
+    line-height: 1;
+    color: #fff;
+}
+
+.social-signup-title {
+    margin-bottom: 8px;
+}
+
+.btn-social {
+    min-width: 105px;
+    font-weight: 600 !important;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.btn-facebook {
+    background: #3864a3 !important;
+    color: #fff !important;
+}
+
+.btn-facebook:hover {
+    background-color: #2b4d7d!important;
+}
+
+.fa-facebook {
+    margin-right: 4px;
+}
+
+.btn-google {
+    background: #fff!important;
+    color: #333!important;
+    border: 1px solid #ddd!important;
+}
+
+.btn-google:hover {
+    background: #fffbf7!important;
+    border-color: #e2a6a0;
+}
+
+.has-feedback {
+    position: relative;
+}
+
+.form-signin .form-control-feedback {
+    left: 0;
+    color: var(--color-1);
+}
+
+.form-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.redirect-link {
+    color: #2b4d7d !important;
+    font-weight: bold;
+    text-decoration: underline !important;
+}
+.redirect-link:-webkit-any-link:hover {
+    text-decoration: underline !important;
 }

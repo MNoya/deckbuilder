@@ -14,28 +14,42 @@
 
 {% block content %}
     <form class="form-signin" action="{% url 'login' %}" method="POST">
-        <img class="mb-4" src="" alt="" width="72" height="72">
-        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-{#        <label for="inputEmail" class="sr-only">Email address</label>#}
-{#        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>#}
+        <h1 class="h5 font-weight-normal">Please sign in</h1>
         {% csrf_token %}
+        <div class="form-group has-feedback">
+            <input type="text" name="{{ form.username.html_name }}"
+                   class="form-control" placeholder="Username" required autofocus>
 
-        <span id="reauth-email" class="reauth-email"></span>
-        <input type="text" name="{{ form.username.html_name }}"
-               class="form-control" placeholder="Username" required autofocus>
-        <input type="password" name="{{ form.password.html_name }}"
-               class="form-control" placeholder="Password" required>
-        <div class="checkbox mb-3">
+            <span class="fa fa-envelope form-control-feedback" aria-hidden="true"></span>
+        </div>
+        <div class="form-group has-feedback">
+            <input type="password" name="{{ form.password.html_name }}"
+                   class="form-control" placeholder="Password" required>
+            <span class="fa fa-lock form-control-feedback" aria-hidden="true"></span>
+        </div>
+        <div class="checkbox">
             <label>
                 <input type="checkbox" value="remember-me"> Remember me
             </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        <div class="panel-footer" style="text-align: center;">
-            Don't have an account? <a href="{% url 'register' %}"> Register Here </a>
+        <button class="btn btn-md btn-primary btn-block" type="submit">Sign in</button>
+        <div class="social-signup">
+            <p class="social-signup-title">
+                <span>Or login with</span>
+            </p>
+            <a href="{% url 'social:begin' 'facebook' %}" class="btn btn-social btn-facebook">
+                <i class="fa fa-facebook" title="Facebook"></i>Facebook
+            </a>
+            <a href="{% url 'social:begin' 'google-oauth2' %}" class="btn btn-social btn-google">
+                <img src="{% static "img/google-icon.svg" %}" alt="Google" height="13">
+                Google
+            </a>
         </div>
         <div class="panel-footer" style="text-align: center;">
-            <a href="{% url 'recover_password' %}">Lost your password?</a>
+            Don't have an account? <a href="{% url 'register' %}" class="redirect-link"> Register Here </a>
+        </div>
+        <div class="panel-footer" style="text-align: center;">
+            <a href="{% url 'recover_password' %}" class="redirect-link">Lost your password?</a>
         </div>
     </form>
 {% endblock content %}

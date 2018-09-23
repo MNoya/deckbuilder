@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.conf.urls.static import static
-from django.urls import path
+from django.urls import path, include
 from django.contrib.auth import views as auth_views
 
 from deckbuilder_app.views import decks as deck_views
@@ -31,6 +31,8 @@ urlpatterns = \
         path('recover-password/', user_views.recover_password, name='recover_password'),
         path('reset-password/', user_views.reset_password, name='reset_password_post'),
         path('reset-password/<token>/', user_views.reset_password, name='reset_password_get'),
+
+        path('auth/', include('social_django.urls', namespace='social')),
 
         # url(r'^profile/$', views.my_profile, name='my_profile'),
         # url(r'^profile/(?P<pk>[0-9]+)/$', views.user_profile, name='user_profile'),

@@ -23,7 +23,9 @@ body {
     align-items: center;
     background-color: var(--color-0);
 
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
     color: lightgray;
 
     /*The fixed navbar will overlay your other content, unless you add padding to the top of the body.*/
