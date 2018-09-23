@@ -194,6 +194,8 @@ AUTHENTICATION_BACKENDS = [
     'social_core.backends.google.GoogleOpenId',  # for Google authentication
     'social_core.backends.google.GoogleOAuth2',  # for Google authentication
     'social_core.backends.facebook.FacebookOAuth2',  # for Facebook authentication
+    'deckbuilder_app.auth_backend.UsernameAuthBackend',
+    'deckbuilder_app.auth_backend.EmailAuthBackend',
 ]
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = config('SOCIAL_AUTH_GOOGLE_OAUTH2_KEY', default='')
