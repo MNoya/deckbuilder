@@ -1,92 +1,80 @@
 Map Name,Cards,Difficulties,Notes,Campaign
-Mountainbreak Brute,Beast Smuggler | Petrel's Mortar | Night Ambush | Mountain Axeman,Normal,,
-Passion of Warrior,Roving Monk | Zax Commander | Behemoth Hunter | Hero of Liquor,"Normal, Nightmare",,
-Fence art of the Temple,Temple Guard | Sword Guardian | Imperial Cuirassier | Seize Position,"Normal, Nightmare, Hell",,
+Mountainbreak Brute,Beast Smuggler | Petrel's Mortar | Night Ambush | Mountain Axeman,Normal,,POT 16
+Passion of Warrior,Shaman of Madness | Roving Monk | Zax Commander | Behemoth Hunter | Hero of Liquor,"Normal, Nightmare",,
+Fence art of the Temple,Temple Guard | Sword Guardian | Imperial Cuirassier | Seize Position,"Normal, Nightmare, Hell",,POT 12
 Slaughter Black Worker,Night Marksman | Alchemist | Blade Hunter | Enchanted Steel,"Normal, Nightmare",,
 Roughrock Cavalry,Swift Spearman | Unstoppable | Wake of Force,,,
-Fortification of Ice,Fortification | Polar Trebuchet | Night Ambush,,,
-Passionate Blacksmith,,,,
+Fortification of Ice,Fortification | Polar Trebuchet | Night Ambush,Normal,,
+Passionate Blacksmith,Passionate Miner | Harbour Blacksmith | Imperial Hammersmith | Overdraft,Hell,,
 Everfrozen Fiesta,Winter Warlock | Temple Flamen | Avatar of Deus | Killing Freeze,,,
-Infernal Ushioni,Devil Fly | Furious Ushioni | Lava Bovine,,,
-Enlightmenf of Bamboo,,,,
+Infernal Ushioni,Devil Fly | Furious Ushioni | Lava Bovine,Hell,,
+Vermin of Ice and Fire,Lightning Sorcerer | Scorched Corpse | Iceplague Worm,Normal,,
 College of Warp,Droid-Plug-in | Conjuration Scholar | Magic-drug Scholar | Vigor Gift | Force of Warp,Normal,,
-Seed of Heaven,,,,
-Winter-Veil Knight,Frostiron Soldier | Winter-Veil Knight | Winter-Veil Warrior,Normal,,
-Temple Resuscitation,,,,
+Seed of Heaven,Parasitic Seed | Seal of Paradise | Frigate-Pangu,Hell,,
+Winter-Veil Knight,Frostiron Soldier | Winter-Veil Knight | Winter-Veil Warrior,"Normal, Nightmare, Hell",,POT 11
 Steel Structures,"Fortification | Siege Tower | Dire Puppy | Achilles, the Destroyer",,,
-Evileye Rift,Evil Eye | Thunderbolt | Blackflame Rift,,,
-Redmoon Shaman,Scarlet Minion | Scarlet Warrior | Wild Paean Singer,Normal,,
-Night Skaab,Screwy Skaab | Night Ambush | Abyssal Devil,,,
+Evileye Rift,Evil Eye | Thunderbolt | Blackflame Rift,,,POT 17
+Redmoon Shaman,Scarlet Minion | Scarlet Warrior | Wild Paean Singer,Normal,,POT 8
+Night Skaab,Screwy Skaab | Night Ambush | Abyssal Devil,Nightmare,,POT 9
 Flaming Ironarm,Hell Reaper | Devil Warlord | Flaming Ironarm | Mind Collapser | Demon Eye,"Nightmare, Hell",,
 Flame of the Temple,Temple Guard | Firetrick Sorceror | Temple Captain | Adaptability,,,
 Holylight Archer,Power-charge Archer | Battlefield Priest | Seize Position,Hell,,
-Conspiracy of Sorcerer,Crafty Trainee | Ancient Earthshaker | Dire Puppy,,,
-Jubilate Beast,Roughrock Pangolin | Burrow Badger | Behemoth Hunter | Cull,,,
-Demon Mortar,Hell Recruit | Petrel's Mortar | Howler,,,
-Screaming Warlord,Evil Eye | Devil Warlord | Howler,,,
-Testudo Warrior,Testudo Monk | Shield Builder | Testudo Arhat | Tiger Palms,,,
-Roughrock Warlord,Shaman of Madness | Behemoth Hunter | Zax Commander | Fearless Hunter,,,
-Nightmare,Night Ambush | Howling Fiend | Bewitching Shadow,,,
-Happy Reception,,,,
-Elder's Reunion,,,,
-Armor of,Hellplate Revenant,,,
+Conspiracy of Sorcerer,Crafty Trainee | Ancient Earthshaker | Dire Puppy,Nightmare,,
+Jubilate Beast,Roughrock Pangolin | Burrow Badger | Behemoth Hunter | Cull | Prime of Life,Nightmare,,
+Demon Mortar,Hell Recruit | Petrel's Mortar | Howler,Nightmare,,POT 17
+Screaming Warlord,Evil Eye | Devil Warlord | Howler,Nightmare,,POT 17
+Testudo Warrior,Testudo Monk | Shield Builder | Testudo Arhat | Tiger Palms,Hell,,
+Roughrock Warlord,Shaman of Madness | Behemoth Hunter | Zax Commander | Fearless Hunter,Nigthmare,,POT 10
+Nightmare,Night Ambush | Howling Fiend | Bewitching Shadow,Nightmare,,
+Armor of Bloodlust,Hellplate Revenant,,,POT 13
 Temple Project,Careful Arrangement | Guard Professor | Alloy Engineer | Battlefield Priest,,,
-Bloodlust Osyluth,Evil Eye | Skullcrusher | Bloodlust Osyluth | Wrath of Insanity,Nightmare,,
-Beast of Burning,Blazing Devil | Scorched Demon | Infernal Magma-Throat,,,
-Barrack,Scarlet Minion | Scarlet Warrior | Howler | Scarlet Lord,,,
+Bloodlust Osyluth,Evil Eye | Skullcrusher | Bloodlust Osyluth | Wrath of Insanity,Nightmare,,POT 13
+Beast of Burning Sky,Blazing Devil | Scorched Demon | Infernal Magma-Throat,,,POT 14
+Barrack,Scarlet Minion | Scarlet Warrior | Howler | Scarlet Lord,,,POT 14
 Gluttonous Monster,Hook of Atrocity | Bloodfire Scorch | Gluttonous Wing | Thunderstorm,,,
-Hammerman Hall,,,,
 Dream Ticket,Leaf Mesmer | Timorous Ambusher | Vigor Gift | Tornado,Hell,,
-Dinin's Garden,Obstructing Guard | Dinin No.9 | Hoary Root,,,
-Vital Marmot,,,,
-Curse of the,,,,
-Abbey of Wind,,,,
-Wolves' Whisper,,,,
-Predatory Redeye,Skullcrusher | Greedy Redeye | Cull,,,
-Professors Fluid,,,,
-Senior Mammon,Senior Mammon | Vigor Gift | Spring Breeze,,,
+Dinin's Garden,Obstructing Guard | Dinin No.9 | Hoary Root,,,POT 17
+Vital Marmot,Fat Marmot | Empire's Vitality | Pinaster Hermit | Plants Rise,Nightmare,,POT 7
+Curse of the,Parasitic Seed | Oasis Guide | Life Guardian | Droid-Luminosity,Hell,,
+Abbey of Wind,Sika Strider | Ascetic Monk | Nun of Cloud | Tornado,,,
+Wolves' Whispers,Wolf-Moon Shaman | Coyote | Elite Scout | Khan's Decree,Nightmare,,
+Predatory Redeye,Skullcrusher | Greedy Redeye | Cull | Prime of Life,Normal,,
+Professor's Fluid,Winter is Coming | Guard Professor | Pulp Fluid,,,POT 17
+Senior Mammon,Senior Mammon | Vigor Gift | Spring Breeze,,,POT 19
 Evergreen Ranch,Animaivy | Immortal Ficus | Courage Teacher,,,
-Red Bamboo,Fargesia Guard | Bloodfire Scorch | Torment Fire,,,
-Dire Shoebill,Clumsy Shoebill | Tornado | Tiger Palms | Thick-Skinned Hippo,Nightmare,,
-Petrel's Ambush,"Petrel's Bodyguard | Dojo Gatekeeper | Powley, Petrel | Night Ambush",,,
-Artic Supression,Skeleton Soulhunter | Frost Flamen | Piercing Ice,,,
-Wildlife Rider,,,,
-Dire Ironarm,Stygian Guard | Flaming Ironarm | Furious Fireball,,,
-Bigear Village,,,,
+Red Bamboo Grove,Fargesia Guard | Bloodfire Scorch | Torment Fire,,,POT 18
+Dire Shoebill,Clumsy Shoebill | Tornado | Tiger Palms | Thick-Skinned Hippo | Rage Predator,Nightmare,,POT 16
+Petrel's Ambush,"Petrel's Bodyguard | Dojo Gatekeeper | Powley, Petrel | Night Ambush",,,POT 16
+Artic Supression,Skeleton Soulhunter | Frost Flamen | Piercing Ice,,,POT 11
+Dire Ironarm,Stygian Guard | Flaming Ironarm | Furious Fireball,,,POT 19
 Vermin of Ice and Fire,Lightning Sorcerer | Scorched Corpse | Iceplague Worm,Normal,,
 Seize Position,Crafty Trainee | Seize Position | Imperial Cuirassier | Retribution Angel,,,
-Fence Art of the Wind,Leaf Mesmer | Tornado | Windwalk Martialist,,,
+Fence art of the Wind,Leaf Mesmer | Tornado | Windwalk Martialist,,,
 Troop of Hunter,Petrel's Bodyguard | Cautious Hackbuteer | Black Fleet Gunner,,,
-Gobi Hunter,,,,
+Gobi Hunter,Loam Wall | Sika Huntsman | Rain of Pebbles,Normal,,POT 2 (bit different)
 Aunt's Farm,Dire Puppy | Radiant Scarecrow | Pumpkin Aunt,,,
 Holy Glim,Nun | Firetrick Sorceror | Genie's Lamp,,,
-Heaven Bamboo,Fargesia Guard | Night Ghost | Seal of Paradise,,,
-Carnivorous,,,,
+Heaven Bamboo Grove,Fargesia Guard | Night Ghost | Seal of Paradise,Hell,,POT 16
+Carnivorous Clansman,Weald Warrior | Regenerative Ogre | Weald Minotaur | Volley of Arrows,Nightmare,,
 Hunt the Devil,Crafty Trainee | Blade Hunter | Bewitching Shadow,Hell,,
-Fanatic Apostle,Deus Acolyte | Polar Fanatic | Deus Herald,Nightmare,,
+Fanatic Apostle,Deus Acolyte | Polar Fanatic | Deus Herald,Nightmare,,POT 4
 Seal of Bloodlizard,Seal of Roughrock | Roughrock Blood Lizard | Chief Bigmouth,,,
-Military Soul of the Temple,"Temple Guard | Reinhardt, Militant | Temple Marksman",,,
-Baron's Marksman,Fortification | Temple Marksman | Village Baron,,,
-Bamboo Grove,,,,
-Stygian Guard,Stygian Guard | Obstructing Guard | Howler,,,
+Military Soul of the Temple,"Temple Guard | Reinhardt, Militant | Temple Marksman",Hell,,
+Baron's Marksman,Fortification | Temple Marksman | Village Baron,"Normal, Nightmare, Hell",,
+Stygian Guard,Stygian Guard | Obstructing Guard | Howler,,,POT 19
 Royal Marksman,Imperial Archer | Ballista | Royal Archer,,,
-Animal Paradise,Coyote | Clumsy Shoebill | Zoologist | Red Panda Trio | Golden Bristle King,,,
-Mask of Madness,Shaman of Madness | Bloodlust Osyluth,,,
-Defensive Barrier,,,,
+Animal Paradise,Coyote | Clumsy Shoebill | Zoologist | Red Panda Trio | Golden Bristle King,Nightmare,,
+Mask of Madness,Shaman of Madness | Bloodlust Osyluth | Wrath of Insanity | Fireball,Normal,,
 Hunter of Vine,"Intelligent Vine | Sika Huntsman | Taste House, Cook",Normal,,
-Potion's Apprentice,,,,
+Potions Apprentice,Droid Plug-in | Droid Enhancement | Magic-drug Scholar,,,POT 5
 Cold Cemetery,Bone Mound | Cold Scarecrow | Conversion | Gemini Shadow,Normal,,
 Blood-flame Erinyes,Evil Eye | Blood-flame Erinyes | Fireball,,,
-Bone Vanguard,,,,
-Green Leaf,,,,
-Crusader of Retribution,,,,
-Gluttonous Dog,,,,
-Sacrifice of Goat,,,,
-Sanctuary,,,,
-Mad Dog House,,,,
+Crusader of Retribution,Temple Guard | Temple Knight | Light Paladin | Light's Retribution,,,POT 16
+Gluttonous Dog,Gluttonous Wing | Hellhound | Hook of Atrocity | Cerberus,,,POT 17
+Sacrifice of Goat,Desperado | Mind Collapser | Pool of Grime | Vigorous Ovis,,,POT 18
 Dog's Howl,Hellhound | Howler | Cerberus | Infernal Biter,Hell,,
 Militia Fortification,Field Worker | Ballista | Siege Tower | Kitchen Handyman,Normal,,
-Night Raid Thief,Elite Scout | Pathfinder | Treasure Cruiser | Night Ambush | Mind Collapser,,,
+Night Raid Thief,Elite Scout | Pathfinder | Treasure Cruiser | Night Ambush | Mind Collapser,Hell,,POT 7
 Artic Vermin,Winter Warlock | Cold-marrow Vermin | Polar Hunter,,,
 Bloodfire Root,Hoary Root | Hell Recruit | Fireball,Normal,,
 Pirate Gang,Seaman | Noisy Pirate | Greedy Captain | Pillage,Hell,,
@@ -94,12 +82,27 @@ Righteous Man of Shangri-la,Peach Hermit | Vigor Gift | Roving Monk | Hero of Li
 Militia Charge,Security Guard | Militia Warrior | Vanguard Cavalry,Normal,,
 Nightmare of Blacksea,Navigator | Crafty Trainee | Nightmare Horror,Normal,,
 Pioneer of Believer,Animated Wight | Deus Disciple | Animated Bones | Skeleton Hound,,,
-Roughrock Heroine,Fearless Warrior | Swift Spearman | Axe Lady,,,
-Black House Hatchetman,,,,
+Roughrock Heroine,Fearless Warrior | Swift Spearman | Axe Lady,,,POT 16
 Dazzling Explosion,Fortification | Temple Missionary | Fearless Dynamiter | Loam Wall,,,
 Mountainbreak Night,Desperado | Night Ambush | Mountain Axeman,,,
-Fearless Charge,,,,
 Temple Siege Corps,"Temple Guard | Temple Knight | The Empire Tent | Achilles, the Destroyer",Normal,,
-Thunder-fire,,,,
-Frostiron Ghost,,,,
-Seal of Hunter,Sika Huntsman | Dire Puppy | Seal of Chivalry,Nightmare,,
+Frostiron Ghost,Frostiron Soldier | Polar Night Ghost | Endless Wintersoul,,,POT 18
+Seal of Hunter,Sika Huntsman | Dire Puppy | Seal of Chivalry,"Nightmare, Hell",,
+Roving Apprentice,Mechanic Apprentice | Tornado | Kunlun Rover | Seal of Chivalry,,,
+Fearless Charge,Fearless Hunter | Armed Force | Zax Commander,,,
+Thunder-fire,Hellplate Revenant,,,
+Wildlife Rider,Swift Spearman | Elite Scout,,,
+Bone Vanguard,Skeleton Hound | Military Skeleton | Frostiron Soldier,,,
+Green Leaf,"Animaivy | Sottish Thug | Bartender",,,
+Defensive Barrier,Supply Barrel | Cautious Hackbuteer | Wall of Glory,Normal,,
+Sanctuary,Angel Nectar | Sanctuary Keeper | Imperial Hammerman | Spearhead,Normal,,
+Psionic,Behind Enemy Lines | Obstructing Guard | Psionic Engineer,Hell,,
+Passionate Charge,Village Vagrant | Spearhead | Imperial Hammersmith,Normal,,
+Temple Resuscitation,Animated Wight | Ruin Temple | Animated Bones,Hell,,
+Mad Dog House,Dire Puppy | Seaman | Elderly Hatchetman | Blackgold Hammer,Hell,,
+Black House Hatchetman,Seaman | Elderly Hatchetman | Blackgold Hammer,Normal,,
+Enlightment of Bamboo,,,,
+Happy Reception,,,,
+Elder's Reunion,,,,
+Bigear Village,,,,
+Bamboo Grove,,,,
