@@ -15,6 +15,10 @@
     --color-beige-1: #ecddd5;
     --color-beige-2: #c1b4ad;
     --color-beige-3: #afa39d;
+
+    --color-deck-title: #d4b474;
+    --color-card-background-container: #fae9c0;
+    --color-card-background-title: #f2d5aa;
 }
 
 body {
@@ -41,35 +45,6 @@ a {
 a:-webkit-any-link {
     color: #333333;
     text-decoration: none !important;
-}
-
-td, th {
-    border-bottom: 1px solid var(--color-1);
-    padding: 8px;
-}
-
-tr:nth-child(odd) {
-    background-color: var(--color-beige-2);
-}
-
-tr:nth-child(even) {
-    background-color: var(--color-beige-3);
-}
-
-tr:hover {
-    background-color: var(--color-beige-1);
-}
-
-th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: var(--color-brown);
-    color: white;
-}
-
-td.race-column {
-    width: 15%;
 }
 
 /** Main Styles **/
@@ -145,6 +120,27 @@ td.race-column {
 
 .race-6 {
     background-image: url('../img/races/6.png');
+}
+
+/* Rarity Colors */
+.card-rarity-newbie {
+    color: gray;
+}
+
+.card-rarity-common {
+    color: black;
+}
+
+.card-rarity-rare {
+    color: blue;
+}
+
+.card-rarity-epic {
+    color: purple;
+}
+
+.card-rarity-legendary {
+    color: #eb9b4b;
 }
 
 #deck-container {

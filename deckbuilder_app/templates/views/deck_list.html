@@ -14,36 +14,45 @@
 
         {#<div id="filters"></div>#}
 
-        <div>
-            <table class="decks-table">
-                <tbody id="decksTableBody">
-                <tr>
-                    <th>Races</th>
-                    <th>Name</th>
-                    {#<th>Type</th>#}
-                    {#<th>Curve</th>#}
-                    {#<th>Stats</th>#}
-                    {#<th>Rating</th>#}
-                    {#<th>Views</th>#}
-                    {#<th>Date</th>#}
-                </tr>
-                {% for deck in object_list %}
-                    <tr>
-                        <td class="race-column">
-                            {% for deck_race in deck.deck_races %}
-                                <div style="float: left; margin-right: 10px;">
-                                    <img class="img-fluid race-icon race-{{ deck_race.0 }}"/>
-                                    {{ deck_race.1 }}
-                                </div>
-                            {% endfor %}
-                        </td>
-                        {# TODO: Make whole row clickable  #}
-                        <td><a href="{{ deck.id }}" class="nav-link"><strong class="deck-name">{{ deck.name }}</strong></a></td>
-                    </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+        <div class="table">
+            <div class="table-row">
+                <div class="table-header-cell">
+                    Races
+                </div>
+                <div class="table-header-cell">
+                    Name
+                </div>
+                {#<th>Type</th>#}
+                {#<th>Curve</th>#}
+                {#<th>Stats</th>#}
+                {#<th>Rating</th>#}
+                {#<th>Views</th>#}
+                {#<th>Date</th>#}
+            </div>
 
+            {% for deck in object_list %}
+                <a class="table-row" href="{{ deck.id }}">
+                    <div class="table-cell race-column">
+                        {% for deck_race in deck.deck_races %}
+                            <div style="float: left; margin-right: 10px;">
+                                <img class="img-fluid race-icon race-{{ deck_race.0 }}"/>
+                                {{ deck_race.1 }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="table-cell name-column">
+                        <div class="deck-name">{{ deck.name }}</div>
+                        <div class="deck-user">
+                            {% if deck.user %}
+                                by {{ deck.user }}
+                            {% else %}
+                                by Anonymous
+                            {% endif %}
+                        </div>
+
+                    </div>
+                </a>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}

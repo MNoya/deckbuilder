@@ -3,57 +3,64 @@
 
 {% block stylesheets %}
     {{ block.super }}
+    <link rel="stylesheet" href="{% static "css/deck_list.css" %}"/>
     <link rel="stylesheet" href="{% static "css/deck_detail.css" %}"/>
 {% endblock %}
 
 
 {% block content %}
     <div class="container">
-        <div class="container" style="padding: 0; overflow: auto;">
-            <div class="main_title">
-                <h1 class="heading_h1">{{ object.name }}</h1>
+
+        <div class="main_title">
+            <h1 class="heading_h1">{{ object.name }}</h1>
+        </div>
+
+        <div class="deck-details-container">
+            <div class="table deck-details-left">
+                {% for card_in_deck in cards %}
+                    <div class="table-row card-row">
+                        <div class="gradient_overlay"></div>
+
+                        <div class="table-cell card-cost">
+                            {{ card_in_deck.card.cost }}
+                        </div>
+                        <div id="{{ card_in_deck.card.name }}"
+                             class="table-cell card-name card-rarity-{{ card_in_deck.card.get_rarity_display|lower }}">
+                            <b>{{ card_in_deck.card.name }}</b>
+                        </div>
+                        <div class="table-cell card-copies">
+                            {{ card_in_deck.copies }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="deck-details-right">
+                <div class="mana-curve-container">
+                    MANA CURVE GOES HERE
+                </div>
+
+                <div class="analysis-container">
+                    <div>
+                        5 C | 5 R | 10 E | 5 L
+                    </div>
+                    <div class="cell races-container">
+                        {% for deck_race in object.deck_races reversed %}
+                            <div class="races-deck-detail">
+                                <img class="img-fluid race-icon race-{{ deck_race.0 }}"/>
+                                {{ deck_race.1 }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div>
+                        15 Units | 15 Spells
+                    </div>
+                </div>
+
+                <div class="comments-container">
+                    Comments go Here
+                </div>
             </div>
         </div>
-        <table class="table">
-            <tbody id="decksTableBody">
-            {% for card_in_deck in cards %}
-                <tr>
-                    <td style="width: 30px;">({{ card_in_deck.card.cost }})</td>
-                    <td id="{{ card_in_deck.card.name }}">
-                        {% if card_in_deck.card.rarity == 0 %}
-                            <font color="gray"><b>{{ card_in_deck.card.name }}</b></font>
-                        {% elif card_in_deck.card.rarity == 1 %}
-                            <font color="black"><b>{{ card_in_deck.card.name }}</b></font>
-                        {% elif card_in_deck.card.rarity == 2 %}
-                            <font color="blue"><b>{{ card_in_deck.card.name }}</b></font>
-                        {% elif card_in_deck.card.rarity == 3 %}
-                            <font color="purple"><b>{{ card_in_deck.card.name }}</b></font>
-                        {% elif card_in_deck.card.rarity == 4 %}
-                            <font color="orange"><b>{{ card_in_deck.card.name }}</b></font>
-                        {% endif %}
-                    </td>
-                    <td>
-                        x{{ card_in_deck.copies }}
-                    </td>
-                </tr>
-            {% endfor %}
-            </tbody>
-
-        </table>
-        {% for deck_race in object.deck_races reversed %}
-            <div class="races-deck-detail">
-                <img class="img-fluid race-icon race-{{ deck_race.0 }}"/>
-                {{ deck_race.1 }}
-            </div>
-        {% endfor %}
-        <h2 style="color: white">{{ card_count }}/30</h2>
-        <a href="{% url 'deck_edit' object.pk %}">
-            <button>Edit</button>
-        </a>
     </div>
-    <style>
-        #decksTableBody td {
-            padding: 0px;
-        }
-    </style>
 {% endblock %}

@@ -1,13 +1,64 @@
-.decks-table {
-    border-collapse: collapse;
+.table {
+    display: table;
+    width: 100%;
+    margin-bottom: 0 !important;
+}
+
+.table-row {
+    display: table-row;
+    background-color: var(--color-beige-1);
+}
+
+/*.table-row:nth-child(odd) {*/
+    /*background-color: var(--color-card-background-container);*/
+/*}*/
+
+/*.table-row:nth-child(even) {*/
+    /*background-color: var(--color-card-background-container);*/
+/*}*/
+
+.table-row:hover {
+    background-color: var(--color-card-background-container);
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5px;
+    border-bottom: 1px solid var(--color-1);
+}
+
+.table-header-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+    text-align: left;
+    background-color: var(--color-brown);
+    color: white;
+}
+
+.race-column {
+    color: var(--color-1);
+    min-width: 150px;
+    max-width: 200px;
+}
+
+.name-column {
+    color: var(--color-1);
     width: 100%;
 }
 
 .deck-name {
-    color: var(--color-1);
+    font-weight: 600;
+    font-size: 15px;
 }
 
-#filters{
+.deck-user {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#filters {
     margin-bottom: 10px;
     padding: 10px;
     text-align: center;
