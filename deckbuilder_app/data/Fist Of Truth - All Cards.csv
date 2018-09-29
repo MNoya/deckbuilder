@@ -169,7 +169,7 @@ Power Charging,Roughrock Weald,Epic,Spell,3,-,-,"Give target ally +5/+10.
  The unit can't attack in this turn.",,
 Wild Sage,Roughrock Weald,Epic,Unit,3,2,2,"Debut: Insight 2
  Increase your mana limit by 2.",,
-Wolf-Moon Shaman,Roughrock Weald,Epic,Unit,3,3,1,"Debut: Insight 1
+Wolf-moon Shaman,Roughrock Weald,Epic,Unit,3,3,1,"Debut: Insight 1
  Turn end: summons a 2/1 Coyote",,
 Khan's Decree,Roughrock Weald,Rare,Spell,3,-,-,Give all allies +2/+0.,,
 Life Bond,Roughrock Weald,Rare,Spell,3,-,-,Turn end: Heal 2 health and draw a card for each Ally on board.,,
@@ -326,6 +326,8 @@ Devil Fly,Inferno,Common,Unit,3,1,2,"Debut:If there's no enemy in the opposing r
 Greedy Redeye,Inferno,Common,Unit,3,2,1,"Debut: Insight 1 You take 2 damage, draw a card.",,
 Hungry Giant Mouth,Inferno,Common,Unit,3,3,1,Debut: Sacrifice random adjacent ally Gain +3/+3,,
 Scorched Corpse,Inferno,Common,Unit,3,2,2,Increase physical damage to player by 3.,,
+Ahriman Spellfire,Inferno,Epic,Spell,4,,,"Deal 5 Crash damage to target square.
+If you have no cards in hand, deal 8 Crash damage"
 Sorcery Zombie,Inferno,Epic,Unit,4,1,6,"Double Strike
 Pre-strike: Gain +1/+1 for every spell card played this turn.",,
 Bitter Watcher,Inferno,Epic,Unit,4,3,4,"Turn end: If you have no cards, gain +1/-1 and draw a card.",,
@@ -542,7 +544,7 @@ Sika Fencer,Zen Valley,Common,Unit,2,2,1,"Vanguard debut: Gain +0/+1
  Rearguard debut: Gain +1/+0",,
 Sika Strider,Zen Valley,Common,Unit,2,1,2,Turn end: Gain +1/+0.,,
 Young Fencer,Zen Valley,Common,Unit,2,2,2,,,
-Holy Blade . Lin,Zen Valley,Legendary,Unit,3,2,3,"Turn start:switch position with random adjacent ally 
+"Holy Blade, Lin",Zen Valley,Legendary,Unit,3,2,3,"Turn start:switch position with random adjacent ally
 When gets heritage, gain +1 double strike permanently and gain invisibility for 1 turn. ",,
 Master of Cosmos,Zen Valley,Legendary,Unit,3,1,3,"Heritage 3
  Turn end: Give a random adjacent ally +1/+2.",,
@@ -695,7 +697,7 @@ Obstructing Guard,Recluse,Common,Unit,2,1,3,"Debut: Insight 1
 Spellbreak Obelist,Recluse,Common,Unit,2,0,4,"Defender(Can't attack)
  Reduce enemy Player's Mana limit by 1.",,
 Wisdom Subassembly,Recluse,Common,Unit,2,0,1,Death: Draw a card.,,
-Spellblade No.5,Recluse,Legendary,Unit,3,1,3,"Shroud
+SpellBlade No.5,Recluse,Legendary,Unit,3,1,3,"Shroud
 First Strike
 Double Strike
 Turn end: Gain +1/+0 for every spell card played this turn. ",,
@@ -821,7 +823,7 @@ Sea Explorer,Paradise Harbor,Common,Unit,2,1,2,"Debut: Insight 1
  If there's no enemy inthe opposing row, gain +2/-1",,
 Seaman,Paradise Harbor,Common,Unit,2,2,2,,,
 "Eisele, Bloody Soul",Paradise Harbor,Legendary,Unit,3,5,1,Turn start: Move to a square with no enemies in the opposing row. (Stay in the same column),,
-"Marsa, Blackgold rose",Paradise Harbor,Legendary,Unit,3,2,1,"Double strike
+"Marsa, Blackgold Rose",Paradise Harbor,Legendary,Unit,3,2,1,"Double strike
  Invisibility",,
 "Powley, Petrel",Paradise Harbor,Legendary,Unit,3,1,1,"Debut: Summon a 2/2 Seaman.
 Pre-Strike: Deal 1 damage to a random enemy.

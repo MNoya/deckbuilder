@@ -45,11 +45,13 @@ def update_cards():
 
             cards_list.append(card_data)
 
+    card_names = []
     for card_data in cards_list:
         name = card_data.pop('name')
         race = card_data.pop('race')
         rarity = card_data.pop('rarity')
         try:
+            card_names.append(name)
             card_obj, created = Card.objects.update_or_create(name=name, race=race, rarity=rarity, defaults={**card_data})
             # Attempt to set card art
             try:
@@ -71,6 +73,12 @@ def update_cards():
                 print("Updated '{}'".format(name))
         except Exception as e:
             print("ERROR creating card {}: {}".format(name, str(e)))
+
+    # Remove cards that have changed names
+    for card in Card.objects.all():
+        if card.name not in card_names:
+            card.delete()
+            print("Deleted {}".format(card.name))
 
     print("Finished updating Cards")
     if error_lines:
