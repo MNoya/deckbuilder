@@ -1,10 +1,19 @@
 {% extends 'views/base.html' %}
+{% load staticfiles i18n %}
 
 {% block title %}Logout{% endblock title %}
 
-{% block content %}
-    <p>Thanks for spending some quality time with the Web site today.</p>
+{% block stylesheets %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static "css/login.css" %}">
+{% endblock stylesheets %}
 
-    <p><a href="{% url 'login' %}">Log in again</a></p>
+{% block content %}
+    <div class="central-box">
+        <h1 class="h5 mb-3 font-weight-normal">Logout</h1>
+        <p>Thanks for spending some quality time with the web site today.</p>
+
+        <a href="{% url 'login' %}" class="redirect-link">Log in again</a>
+    </div>
 {% endblock content %}
 

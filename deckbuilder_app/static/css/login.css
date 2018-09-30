@@ -3,8 +3,7 @@ body {
 }
 
 .form-signin {
-    width: 70%;
-    max-width: 330px;
+    max-width: 350px;
     padding: 15px;
     margin: auto;
     background-color: var(--color-beige-2);
@@ -26,12 +25,6 @@ body {
 
 .form-signin .form-control:focus {
     z-index: 2;
-}
-
-.form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
 }
 
 .form-signin input[type="password"] {
@@ -117,4 +110,21 @@ body {
 }
 .redirect-link:-webkit-any-link:hover {
     text-decoration: underline !important;
+}
+
+/* Django Form error class */
+.errorlist {
+    list-style: none;
+    margin-top: 5px;
+    margin-left: -10px;
+    font-weight: 400;
+    color: red;
+}
+
+li.error {
+    list-style: none;
+    margin-top: 5px;
+    margin-left: -10px;
+    font-weight: 400;
+    color: red;
 }

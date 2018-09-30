@@ -7,7 +7,7 @@ from django.shortcuts import render, redirect
 from django.urls import reverse
 
 import deckbuilder_app.errors as err
-from deckbuilder_app.constants import GET, POST
+from deckbuilder_app.constants import GET, POST, USER_CREATED_MESSAGE
 from deckbuilder_app.forms import UserProfileForm, RegisterForm, ResetPasswordForm, RequestResetPasswordForm
 from deckbuilder_app.user_model import User, EmailToken
 
@@ -25,28 +25,26 @@ def register(request):
         return render(request, 'views/register.html', {'form': form})
     elif request.method == POST:
         # create form from request POST params
+        log.info("Received Register Request")
         form = RegisterForm(request.POST)
         template = 'views/validation_template.html'
-        context = {'title': 'Success', 'message': 'Great! Your account was created, now please check your email to '
-                                                  'activate your account.'}
+
         # check if the form is valid
         if form.is_valid():
             # try to create an user
-            form.cleaned_data.pop('password_confirmation')
             user, errors = User.register(**form.cleaned_data)
             if user:
-                # render success
-                return render(request, template, context)
+                log.info("User created")
+                return render(request, template, context={'title': 'Success', 'message': USER_CREATED_MESSAGE})
             else:
                 # show errors and redirect to register form
                 for error in errors:
                     messages.error(request, error.text)
-                return redirect(reverse('register'))
+                return render(request, 'views/register.html', {'form': form, **form.cleaned_data})
         else:
             # show errors and redirect to form
-            messages.error(request, 'Invalid form data')
-            response = redirect(reverse('register'))
-        return response
+            log.error("Errors found on form: {}".format(form.errors.as_data()))
+            return render(request, 'views/register.html', {'form': form, **form.cleaned_data})
 
 
 def recover_password(request):
@@ -66,21 +64,19 @@ def recover_password(request):
         if form.is_valid():
             reset_email = form.cleaned_data['email']
             user = User.get_user_by_email(reset_email)
-            if user:
-                user.recover_password()
+            email_sent = user.recover_password()
+            if email_sent:
                 template = 'views/validation_template.html'
                 context = {'title': 'Success',
                            'message': 'Great %s! Now please check your email to '
                                       'reset your password.' % user.username}
                 return render(request, template, context)
             else:
-                messages.error(request, 'Email not found')
-                return redirect(reverse('reset_password_form'))
+                # show errors and redirect to form
+                messages.error(request, 'Error sending recover password email')
+                return redirect(reverse('recover_password'))
         else:
-            # show errors and redirect to form
-            messages.error(request, 'Invalid form data')
-            response = redirect(reverse('reset_password_form'))
-        return response
+            return render(request, 'views/password_recovery.html', {'form': form})
 
 
 def reset_password(request, token=None):

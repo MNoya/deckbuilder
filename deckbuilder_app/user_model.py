@@ -112,6 +112,7 @@ class User(AbstractUser):
         """
         user = None
         errors = [err.Error(err.ERROR_UNKNOWN)]
+        log.info("Trying to register user '{}' with email {}".format(username, email))
         try:
             with transaction.atomic():
                 # if user is not free then we return empty user
@@ -163,8 +164,12 @@ class User(AbstractUser):
         # assign token here to avoid additional query in send email
         self.reset_password_token = token
 
-        # send email with link to recover password to user
-        EmailManager.send_reset_password_email(self)
+        try:
+            # send email with link to recover password to user
+            EmailManager.send_reset_password_email(self)
+            return True
+        except Exception:
+            return False
 
     @staticmethod
     def update_password(token_value, password):

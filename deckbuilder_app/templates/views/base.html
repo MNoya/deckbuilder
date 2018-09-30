@@ -29,7 +29,7 @@
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- Base -->
+        <!-- Base CSS -->
         <link rel="stylesheet" href="{% static "css/base.css" %}"/>
     {% endblock stylesheets %}
 
@@ -45,7 +45,10 @@
                 integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
                 crossorigin="anonymous"></script>
 
-        <!-- Base -->
+        <!-- Bootstrap Validator -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+
+        <!-- Base JS -->
         <script src="{% static "js/base.js" %}"></script>
     {% endblock javascript_top %}
 </head>
@@ -95,7 +98,7 @@
                 <ul class="navbar-nav">
                     {% if user.is_authenticated %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'logout' %}">My Profile</a>
+                            <a class="nav-link" href="{% url 'login' %}">My Profile</a>
                         </li>
                     {% else %}
                         <li class="nav-item">

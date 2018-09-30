@@ -40,6 +40,8 @@ class EmailManager:
             logger.error('Error sending registration email to %s-%s. %s' % (user.id, user.username, e))
         except AttributeError as e:
             logger.error('Error obtaining token of %s-%s. %s' % (user.id, user.username, e))
+        except Exception as e:
+            logger.error('Unexpected error: {}'.format(e))
 
     @staticmethod
     def send_reset_password_email(user):
@@ -73,5 +75,10 @@ class EmailManager:
             logger.debug('Email sent to %s' % user.email)
         except SMTPException as e:
             logger.error('Error sending recover password email to %s-%s. %s' % (user.id, user.username, e))
+            raise e
         except AttributeError as e:
             logger.error('Error obtaining token of %s-%s. %s' % (user.id, user.username, e))
+            raise e
+        except Exception as e:
+            logger.error('Unexpected error: {}'.format(e))
+            raise e

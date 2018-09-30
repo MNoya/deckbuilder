@@ -3,6 +3,7 @@ from datetime import timedelta
 DEFAULT_PROFILE_IMAGE = 'img/default/profile_image.jpg'
 DEFAULT_CARD_IMAGE = 'img/default/card_image.png'
 EXPIRY_TOKEN_DELTA = timedelta(days=7)
+USER_CREATED_MESSAGE = 'Great! Your account was created, now please check your email to activate your account.'
 
 GET = 'GET'
 POST = 'POST'

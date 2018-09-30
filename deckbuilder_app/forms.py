@@ -15,15 +15,15 @@ class RegisterForm(forms.Form):
     username = forms.CharField(max_length=40, required=True)
     email = forms.EmailField()
     password = forms.CharField(required=True, widget=forms.PasswordInput())
-    password_confirmation = forms.CharField(widget=forms.PasswordInput(), required=True, label="Confirm password")
-
-    def clean(self):
-        cleaned_data = super(RegisterForm, self).clean()
-        password = cleaned_data.get("password")
-        confirm_password = cleaned_data.get("password_confirmation")
-
-        if password != confirm_password:
-            raise forms.ValidationError("Passwords do not match")
+    # password_confirmation = forms.CharField(widget=forms.PasswordInput(), required=True, label="Confirm password")
+    #
+    # def clean(self):
+    #     cleaned_data = super(RegisterForm, self).clean()
+    #     password = cleaned_data.get("password")
+    #     confirm_password = cleaned_data.get("password_confirmation")
+    #
+    #     if password != confirm_password:
+    #         raise forms.ValidationError("Passwords do not match")
 
 
 class ResetPasswordForm(forms.Form):
@@ -43,7 +43,20 @@ class RequestResetPasswordForm(forms.Form):
     """
     Request a password reset form
     """
-    email = forms.EmailField(required=True)
+    email_or_username = forms.CharField(required=True)
+
+    def clean(self):
+        cleaned_data = super(RequestResetPasswordForm, self).clean()
+        email_or_username = cleaned_data.get("email_or_username")
+        # Find User with the email or the username
+        try:
+            user = User.objects.get(username=email_or_username)
+        except User.DoesNotExist:
+            try:
+                user = User.objects.get(email=email_or_username)
+            except User.DoesNotExist:
+                raise forms.ValidationError("Email not found")
+        cleaned_data['email'] = user.email
 
     def is_valid(self):
         valid = super(RequestResetPasswordForm, self).is_valid()

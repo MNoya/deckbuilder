@@ -1,5 +1,4 @@
 {% extends "views/base.html" %}
-{% load bootstrap3 %}
 {% load staticfiles i18n %}
 
 {% block title %}Register{% endblock title %}
@@ -14,41 +13,75 @@
 {% endblock %}
 
 {% block content %}
-    <form class="form-signin" action="{% url 'register' %}" method="POST">
-        <img class="mb-4" src="" alt="" width="72" height="72">
-        <h1 class="h3 mb-3 font-weight-normal">Register</h1>
-        {% csrf_token %}
-        {% bootstrap_form form %}
-        <div class="form-group">
-            <input type="submit" class="btn btn-lg btn-primary btn-block" value="Register">
-        </div>
-    </form>
-{% endblock content %}
+    {% if user.is_authenticated %}
+        <div class="central-box">
+            <h1 class="h5 mb-3 font-weight-normal">Register</h1>
+            <p>
+                You are currently logged in as <strong>{{ user.email }}</strong>.
+                <a href="{% url 'logout' %}" class="redirect-link">Log out »</a>
+            </p>
 
-{% block javascript_footer %}
-    <script>
-        function addStyleToForm() {
-            $("form.register_form label").each(function () {
-                var input = $(this);
-                input.addClass('input_label');
-            });
-            $("form.register_form input[type=email]").each(function () {
-                var input = $(this);
-                input.addClass('form-control input_password');
-            });
-            $("form.register_form input[type=text]").each(function () {
-                var input = $(this);
-                input.addClass('form-control input_password');
-            });
-            $("form.register_form input[type=password]").each(function () {
-                var input = $(this);
-                input.addClass('form-control input_password');
-            });
-            $("form.register_form input[type=submit]").each(function () {
-                var input = $(this);
-                input.addClass('btn btn-lg btn-primary btn-block submit_button');
-            });
-        }
-        //$(document).ready(addStyleToForm());
-    </script>
-{% endblock javascript_footer %}
+            <a href="{% url 'recover_password' %}" class="redirect-link">Lost your password?</a>
+        </div>
+    {% else %}
+        <form class="form-signin" action="{% url 'register' %}" method="POST">
+            <h1 class="h5 mb-3 font-weight-normal">Register</h1>
+            {% csrf_token %}
+
+            {{ form.non_field_errors }}
+
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+            <label for="{{ form.username.html_name }}">Username</label>
+            <div class="form-group has-feedback">
+                <input type="text" name="{{ form.username.html_name }}" value="{{ username }}"
+                       class="form-control" placeholder="Pick a username" required>
+                <span class="fa fa-user form-control-feedback" aria-hidden="true"></span>
+                {% if form.username.errors %}
+                    <strong>{{ form.username.errors.as_text }}</strong>
+                {% endif %}
+            </div>
+
+            <label for="{{ form.email.html_name }}">Email</label>
+            <div class="form-group has-feedback">
+                <input type="email" name="{{ form.email.html_name }}" value="{{ email }}"
+                       class="form-control" placeholder="you@example.com" required>
+                <span class="fa fa-envelope form-control-feedback" aria-hidden="true"></span>
+                {% if form.email.errors %}
+                    <strong>{{ form.email.errors }}</strong>
+                {% endif %}
+            </div>
+
+            <label for="{{ form.password.html_name }}">Password</label>
+            <div class="form-group has-feedback">
+                <input type="password" name="{{ form.password.html_name }}" value="{{ password }}"
+                       class="form-control" placeholder="Create a password" required>
+                <span class="fa fa-lock form-control-feedback" aria-hidden="true"></span>
+                {% if form.password.errors %}
+                    <strong>{{ form.password.errors.as_text }}</strong>
+                {% endif %}
+            </div>
+
+            <button class="btn btn-md btn-primary btn-block" type="submit">Register</button>
+
+            <div class="social-signup" style="margin-bottom: 0;">
+                <p class="social-signup-title">
+                    <span>Or login with</span>
+                </p>
+                <a href="{% url 'social:begin' 'facebook' %}" class="btn btn-social btn-facebook">
+                    <i class="fa fa-facebook" title="Facebook"></i>Facebook
+                </a>
+                <a href="{% url 'social:begin' 'google-oauth2' %}" class="btn btn-social btn-google">
+                    <img src="{% static "img/google-icon.svg" %}" alt="Google" height="13">
+                    Google
+                </a>
+            </div>
+        </form>
+    {% endif %}
+{% endblock content %}

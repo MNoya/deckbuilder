@@ -81,6 +81,18 @@ a:-webkit-any-link {
     background-color: #c1b4ad
 }
 
+.central-box {
+    width: 70%;
+    padding: 15px;
+    margin: auto;
+    background-color: var(--color-beige-2);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 32px;
+    font-size: 14px;
+    color: var(--color-1);
+}
+
 /** Race Icons */
 .race-icon {
     width: 35px;
