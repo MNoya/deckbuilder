@@ -104,7 +104,6 @@ Temple Captain,Quadruple Radiance Empire,Rare,Unit,5,3,4,"Rejuvenation
 Temple Missionary,Quadruple Radiance Empire,Rare,Unit,5,2,5,Turn start: random enemy can't strike in this round,,
 Thick Hide,Quadruple Radiance Empire,Common,Spell,5,-,-,Give target unit +1/+6 and Armor 1.,,
 Kitchen Handyman,Quadruple Radiance Empire,Common,Unit,5,2,3,Turn start: Give random ally +1/+2.,,
-Mutinous Warrior,Quadruple Radiance Empire,Common,Unit,5,4,1,,,
 Sturdy Foreman,Quadruple Radiance Empire,Newbie's,Unit,5,3,4,,,
 "Ian, Archbishop of Yang",Quadruple Radiance Empire,Legendary,Unit,6,3,6,"Rejuvenation
 When you restore health: Double the heal value and this unit gains +0/+4.",,
@@ -297,7 +296,7 @@ Chaotic Imp,Inferno,Common,Unit,2,2,1,Debut: Deal 2 damage to both players.,,
 Hell Reaper,Inferno,Common,Unit,2,3,1,"Turn Start: If you have no cards in your hand, this unit gains +2/+0",,
 Infernal Biter,Inferno,Common,Unit,2,1,1,Double strike,,
 Scarlet Minion,Inferno,Common,Unit,2,1,2,Death: enemy player takes damage. (Equal to this unit's attack.),,
-Lava Ball,Inferno,Epic,Spell,3,-,-,"Deal 6 damage to the first enemy in target row.
+Meteor,Inferno,Epic,Spell,3,-,-,"Deal 6 damage to the first enemy in target row.
  If there's no unit, enemy player takes the damage.",,
 Fire Conjurer,Inferno,Epic,Unit,3,2,2,"Hit opponent: Add fireball to your hand. 
 Turn end: Add fireball to your hand. ",,
@@ -449,7 +448,7 @@ Bone Explosion,Deus of Winter's Apostle,Rare,Spell,4,-,-,"Sacrifice target Ally,
 Piercing Ice,Deus of Winter's Apostle,Rare,Spell,4,-,-,"Give two random enemies -1/-1, freeze the squares they occupy.",,
 Deus Acolyte,Deus of Winter's Apostle,Rare,Unit,4,4,3,"Debut: Insight 1
  Whenever a unit dies: Gain+1/+0",,
-Hibernal Sorceror,Deus of Winter's Apostle,Rare,Unit,4,3,4,Turn end: if this unit has been frozen summon a 2/1 skeleton,,
+Hibernal Sorcerer,Deus of Winter's Apostle,Rare,Unit,4,3,4,Turn end: if this unit has been frozen summon a 2/1 skeleton,,
 Polar Hunter,Deus of Winter's Apostle,Rare,Unit,4,1,5,"Debut: Freeze a random square occupied by the enemy.
  The enemy can't attack this turn.",,
 Winter Spellbreaker,Deus of Winter's Apostle,Rare,Unit,4,2,4,"Reduce enemy player's Mana limit by 1.
