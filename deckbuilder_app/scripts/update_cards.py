@@ -46,6 +46,7 @@ def update_cards():
             cards_list.append(card_data)
 
     card_names = []
+    missing_cards_art = []
     for card_data in cards_list:
         name = card_data.pop('name')
         race = card_data.pop('race')
@@ -63,6 +64,7 @@ def update_cards():
                     card_obj.save()
                     print("Updated card art at {}".format(card_media_path))
                 else:
+                    missing_cards_art.append(card_obj.name)
                     print("Missing card art at {}".format(card_media_path))
             except:
                 pass
@@ -85,3 +87,7 @@ def update_cards():
         print("Errors:")
         for line_n, row in error_lines.items():
             print("  Line {}: {}".format(line_n, row))
+    if missing_cards_art:
+        print("Missing Cards Art:")
+        for card_name in missing_cards_art:
+            print("  {}".format(card_name))
