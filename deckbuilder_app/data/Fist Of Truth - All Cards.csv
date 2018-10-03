@@ -1,7 +1,7 @@
 Name,Race,Rarity,Type,Cost,Att,Def,Text,Notes,
 Adaptability,Quadruple Radiance Empire,Common,Spell,1,-,-,"If there's no enemy in target ally's opposing row, it gans +4/+0, or it gains +0/+4.",,
 Adventurer's Gear,Quadruple Radiance Empire,Common,Spell,1,-,-,Deal X damage to target enemy. (Where X is the number of all allies on the board.),,
-Beam of faith,Quadruple Radiance Empire,Common,Spell,1,-,-,,,
+Beam of Faith,Quadruple Radiance Empire,Common,Spell,1,-,-,,,
 Spearhead,Quadruple Radiance Empire,Common,Spell,1,-,-,Give target all +3/+0.,,
 Wall of Holylight,Quadruple Radiance Empire,Epic,Unit,1,0,2,"Defender
 Death: If there is another ally on the board, return this card to your hand. ",,
@@ -193,7 +193,7 @@ If there are no other allies deployed, deal 1 damaget to a random enemy.",,
 Noisy Dancer,Roughrock Weald,Common,Unit,3,2,1,Debut: Give random adjacent ally +2/+0.,,
 Pathfinder,Roughrock Weald,Common,Unit,3,3,1,"Debut:Insight 1. If there's no enemy in the opposite row, draw a card.",,
 Roughrock Warrior,Roughrock Weald,Common,Unit,3,2,4,,,
-Short-haird Boar Cub,Roughrock Weald,Common,Unit,3,2,2,Death: Restore 2 health.,,
+Short-haired Boar Cub,Roughrock Weald,Common,Unit,3,2,2,Death: Restore 2 health.,,
 Totem of Motivation,Roughrock Weald,Common,Unit,3,0,4,Turn start: Give random adjacent ally +1/+0.,,
 Weald Warrior,Roughrock Weald,Common,Unit,3,2,3,"Turn end: If this unit is injured in this turn, gain +2/+1.",,
 Wild Breadfruit,Roughrock Weald,Common,Unit,3,0,5,"Defender 
@@ -216,7 +216,7 @@ Behemoth Hunter,Roughrock Weald,Rare,Unit,4,3,5,Debut: Restore 2 health.,,
 Blood Lizard Scout,Roughrock Weald,Rare,Unit,4,4,2,When you restore health: Deal 2 damage to a random enemy.,,
 Bright Breadfruit,Roughrock Weald,Rare,Unit,4,0,4,"Defender 
 Increase your Mana limit by 2",,
-Excited Wilding,Roughrock Weald,Rare,Unit,4,3,3,Turn end: if this unit gets injured in this round gain +3/+3 and Trample,,
+Excited Wildling,Roughrock Weald,Rare,Unit,4,3,3,Turn end: if this unit gets injured in this round gain +3/+3 and Trample,,
 Provision Scout,Roughrock Weald,Rare,Unit,4,3,3,When this unit attacks the enemy: Give another random ally +2/+2.,,
 Wild Paean Singer,Roughrock Weald,Rare,Unit,4,2,3,Turn start: Give another random ally +2/+0.,,
 Sand Cyclone,Roughrock Weald,Common,Spell,4,-,-,Deal 3 damage randomly split among all enemies,,
@@ -238,7 +238,7 @@ Rockfall,Roughrock Weald,Common,Spell,5,-,-,Deal 4 damage to an enemy on target 
 Savage Growth,Roughrock Weald,Common,Spell,5,-,-,"Give target Unit +3/+3.
  Draw a card.",,
 Aggressive Buffalo,Roughrock Weald,Common,Unit,5,5,3,,,
-Red Bristle Board,Roughrock Weald,Common,Unit,5,3,3,Death: Restore 3 health.,,
+Red Bristle Boar,Roughrock Weald,Common,Unit,5,3,3,Death: Restore 3 health.,,
 Regenerative Ogre,Roughrock Weald,Common,Unit,5,3,4,"Turn end: If this unit is injured in this turn, gain +1/+2.",,
 Scavenger Vulture,Roughrock Weald,Common,Unit,5,4,1,"Debut: Insight 1 (Expose 1 card in enemy player's hand)
 Death: Draw a card.",,
@@ -377,7 +377,7 @@ Abyssal Tentacle,Inferno,Common,Unit,6,3,5,"Turn Start: If enemy player has no c
 Nightmare Horror,Inferno,Epic,Unit,7,7,5,Debut: each player discard all cards in their hands.,,
 Poisonous Vermin,Inferno,Rare,Unit,7,2,7,Pre-strike: Deal 3 damage randomly split among all enemy units.,,
 Infernal Magma-Throat,Inferno,Legendary,Unit,8,6,6,"Pre-Strike, Turn Start, and End: Deal 2 damage to an enemy. If there are no enemy units, enemy player is damaged.",,
-Silver Mouth,Inferno,Rare,Unit,8,4,4,"Debut: Deal 3 damage to all enemies in opposite row.
+Sliver Mouth,Inferno,Rare,Unit,8,4,4,"Debut: Deal 3 damage to all enemies in opposite row.
  Whenever an enemy dies, gain +1/+1.",,
 Scarlet Lord,Inferno,Legendary,Unit,9,9,7,"Debut: Summon two 1/2 Scarlet Minions.
  Pre-Strike: Give all other allies +2/+0.",,
@@ -522,7 +522,7 @@ Shield Builder,Zen Valley,Epic,Unit,2,1,3,"Armor 1
  Turn Start: Deal 1 damage to every adjacent ally gain Armor 1",,
 Tornado,Zen Valley,Rare,Spell,2,-,-,Return an enemy on target square and random adjacent enemy to their owner's hand.,,
 Vines Rage,Zen Valley,Rare,Spell,2,-,-,Deal 3 damage to the enemy Player and the enemy that was just deployed on target square.,,
-Yin & Yan Symbol,Zen Valley,Rare,Spell,2,-,-,"Give target enemy -1/-1 and Defender. 
+Yin & Yang Symbol,Zen Valley,Rare,Spell,2,-,-,"Give target enemy -1/-1 and Defender.
  Or
  Give target ally +1/+1 and First strike.",,
 Big-ear Tailor,Zen Valley,Rare,Unit,2,1,1,"Heritage 1
@@ -689,12 +689,12 @@ Heavy Burden,Recluse,Common,Spell,2,-,-,Give Enemy on target area -3/-0 and sile
 Planar Switch,Recluse,Common,Spell,2,-,-,"Give target Unit +1/+1 and
  Penetration.(Directly deal physical damage to Player.)",,
 Cursed Cat,Recluse,Common,Unit,2,3,1,Pre-strike: everytime using spell in this round gain +1/+1,,
-Droid Plug-in,Recluse,Common,Unit,2,1,4,Charge:Gain +1/+0.,,
+Droid-Plug-in,Recluse,Common,Unit,2,1,4,Charge:Gain +1/+0.,,
 Magic-drug Apprentice,Recluse,Common,Unit,2,1,2,Debut:Deal 1 damage to a random enemy.,,
 Mechanic Apprentice,Recluse,Common,Unit,2,2,2,Penetration (Deal physical damage directly to the Player.),,
 Obstructing Guard,Recluse,Common,Unit,2,1,3,"Debut: Insight 1
  Increase the cost of the card revealed by 2.",,
-Spellbreak Obelist,Recluse,Common,Unit,2,0,4,"Defender(Can't attack)
+Spellbreak Obelisk,Recluse,Common,Unit,2,0,4,"Defender(Can't attack)
  Reduce enemy Player's Mana limit by 1.",,
 Wisdom Subassembly,Recluse,Common,Unit,2,0,1,Death: Draw a card.,,
 SpellBlade No.5,Recluse,Legendary,Unit,3,1,3,"Shroud
@@ -742,8 +742,8 @@ Epic Scholar,Recluse,Rare,Unit,4,1,4,"Debut: Gain a random epic card from your d
  if no epic card gain +1/+1",,
 Pulp Fluid,Recluse,Rare,Unit,4,3,3,"Turn End: If this unit took any damage this turn, summon a copy of it on an adjacent square.",,
 Citadel Gargoyle,Recluse,Common,Unit,4,3,5,"Debut: In this turn, this unit gains Armor 3 but can't attack.",,
-Droid - Provision,Recluse,Common,Unit,4,2,5,"Charge: Sacrifice the unit, draw a card. (This will occur at the start of the battle if used when deploying)",,
-Droid Enhancement,Recluse,Common,Unit,4,3,4,"Charge: Gain +1/+1. (If Charge is used when deploying, trigger this at the start of the Battle.)",,
+Droid-Provision,Recluse,Common,Unit,4,2,5,"Charge: Sacrifice the unit, draw a card. (This will occur at the start of the battle if used when deploying)",,
+Droid-Enhancement,Recluse,Common,Unit,4,3,4,"Charge: Gain +1/+1. (If Charge is used when deploying, trigger this at the start of the Battle.)",,
 Support Guardian,Recluse,Common,Unit,4,1,7,Charge: Drain 1 attack point from random enemy unit,,
 Meara No.2,Recluse,Legendary,Unit,5,2,2,"Return Spell card to your hand after it's been cast.
  Death: Return this unit to your hand.",,
@@ -846,7 +846,7 @@ Exotic Hermit,Paradise Harbor,Rare,Unit,3,2,3,"Gain Heritage:Draw a card.
  Death:If this Unit has Heritage.draw a card.",,
 Festival Girl,Paradise Harbor,Rare,Unit,3,1,1,"Debut: Give another ally +2/+1
  Turn end: Return this unit to owner's hand",,
-Firetrick Sorceror,Paradise Harbor,Rare,Unit,3,1,1,Turn start: Deal 2 damage to both you and a random enemy.,,
+Firetrick Sorcerer,Paradise Harbor,Rare,Unit,3,1,1,Turn start: Deal 2 damage to both you and a random enemy.,,
 Navigator,Paradise Harbor,Rare,Unit,3,2,2,"Increase your Mana limit by 1.
 Reduce enemy Player's Mana limit by 1.",,
 Petrel's Mortar,Paradise Harbor,Rare,Unit,3,0,3,"Defender
@@ -884,7 +884,7 @@ Black Fleet Axeman,Paradise Harbor,Rare,Unit,4,3,4,Pre-strike: if your health is
 Dojo Gatekeeper,Paradise Harbor,Rare,Unit,4,3,4,"Pre-strike: If there are more allies than enemies deployed, gain +1/+1.",,
 Gift Tree,Paradise Harbor,Rare,Unit,4,0,6,"Defender, Turn end: you have 33% chance to draw a card, 33% chance to restore 5 healthc 33% chance to give ally +1/+1",,
 Greedy Captain,Paradise Harbor,Rare,Unit,4,2,4,Debut: Absort 1 Attack from every enemy in the opposing row.,,
-Mentor Of Light,Paradise Harbor,Rare,Unit,4,1,3,Turn start: Give a random Empirte ally +2/+2.,,
+Mentor of Light,Paradise Harbor,Rare,Unit,4,1,3,Turn start: Give a random Empirte ally +2/+2.,,
 Sexy Witch,Paradise Harbor,Rare,Unit,4,3,2,Pre-strike: For every spell card used this turn give one random enemy -2/0 and a random ally 0/+2,,
 Zoologist,Paradise Harbor,Rare,Unit,4,3,4,Turn start: Give Roughrock ally +1/+1 and zen ally +1/+1,,
 Navigation Supply,Paradise Harbor,Common,Spell,4,-,-,"Turn End: Summon two 0/2 Supply Barrels, restore 5 Health.",,
@@ -900,7 +900,7 @@ Vast Conspiracy,Paradise Harbor,Epic,Spell,5,-,-,Turn end: Destroy all units.,,
 Blackgold Trickster,Paradise Harbor,Epic,Unit,5,3,3,"Pre-strike: Give a random enemy -1/-0.
 Pre-strike: If you have more allies than enemies, return an enemy to their owner's hand. ",,
 Forge Master,Paradise Harbor,Epic,Unit,5,3,6,Turn end: Give this un and another random ally +1/+1.,,
-Red-Suited Dwarf,Paradise Harbor,Epic,Unit,5,3,5,"Debut: Deal 3 crash damage to area in opposite row
+Red-suited Dwarf,Paradise Harbor,Epic,Unit,5,3,5,"Debut: Deal 3 crash damage to area in opposite row
  Turn end: Return this unit to owner's",,
 Solar Archmage,Paradise Harbor,Epic,Unit,5,2,5,"Turn start: Give a random Empire ally +1/+3,
  Give a random Roughrock ally +2/+1.",,

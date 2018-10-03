@@ -62,10 +62,8 @@ def update_cards():
                 if os.path.exists(card_media_path):
                     card_obj.art = card_path
                     card_obj.save()
-                    print("Updated card art at {}".format(card_media_path))
                 else:
                     missing_cards_art.append(card_obj.name)
-                    print("Missing card art at {}".format(card_media_path))
             except:
                 pass
 
@@ -84,10 +82,10 @@ def update_cards():
 
     print("Finished updating Cards")
     if error_lines:
-        print("Errors:")
+        print("{} Errors:".format(len(error_lines)))
         for line_n, row in error_lines.items():
             print("  Line {}: {}".format(line_n, row))
     if missing_cards_art:
-        print("Missing Cards Art:")
+        print("{} Missing Cards Art:".format(len(missing_cards_art)))
         for card_name in missing_cards_art:
             print("  {}".format(card_name))
