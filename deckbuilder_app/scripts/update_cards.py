@@ -47,21 +47,25 @@ def update_cards():
 
     card_names = []
     missing_cards_art = []
+    base_card_path = os.path.join(settings.BASE_DIR, "deckbuilder_app") + settings.STATIC_URL + "img/cards/"
+    used_image_names = []
     for card_data in cards_list:
         name = card_data.pop('name')
         race = card_data.pop('race')
         rarity = card_data.pop('rarity')
         try:
             card_names.append(name)
-            card_obj, created = Card.objects.update_or_create(name=name, race=race, rarity=rarity, defaults={**card_data})
+            card_obj, created = Card.objects.update_or_create(name=name, race=race, rarity=rarity,
+                                                              defaults={**card_data})
             # Attempt to set card art
             try:
                 image_name = card_obj.name.replace(" ", "_") + ".png"
                 card_path = "img/cards/" + image_name
-                card_media_path = os.path.join(settings.BASE_DIR, "deckbuilder_app") + settings.STATIC_URL + card_path
+                card_media_path = base_card_path + image_name
                 if os.path.exists(card_media_path):
                     card_obj.art = card_path
                     card_obj.save()
+                    used_image_names.append(image_name)
                 else:
                     missing_cards_art.append(card_obj.name)
             except:
@@ -80,6 +84,12 @@ def update_cards():
             card.delete()
             print("Deleted {}".format(card.name))
 
+    # List unused art
+    unused_art = []
+    for c in os.listdir(base_card_path):
+        if c not in used_image_names:
+            unused_art.append(c)
+
     print("Finished updating Cards")
     if error_lines:
         print("{} Errors:".format(len(error_lines)))
@@ -89,3 +99,7 @@ def update_cards():
         print("{} Missing Cards Art:".format(len(missing_cards_art)))
         for card_name in missing_cards_art:
             print("  {}".format(card_name))
+    if unused_art:
+        print("{} Unused images:".format(len(unused_art)))
+        for p in unused_art:
+            print("\t{}".format(p))

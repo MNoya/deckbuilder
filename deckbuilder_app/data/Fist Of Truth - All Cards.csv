@@ -27,6 +27,7 @@ Imperial Soldier,Quadruple Radiance Empire,Common,Unit,2,1,1,Synergy 2 (Gain +2/
 Nun,Quadruple Radiance Empire,Common,Unit,2,1,2,Turn end: Restore 2 health.,,
 Radiant Scarecrow,Quadruple Radiance Empire,Common,Unit,2,0,3,"Turn start: If the 1st enemy in opp. row just entered the board, it can't strike in this round.",,
 Village Vagrant,Quadruple Radiance Empire,Common,Unit,2,1,1,Rejuvenation (When this unit attacks the enemy: Restore your health equal to the damage it dealt.),,
+Furious Farmer,Quadruple Radiance Empire,Common,Unit,2,1,1,"Pre-strike: If there's no enemy in the opposing row, gain +1/+0",,
 Parry & Riposte,Quadruple Radiance Empire,Newbie's,Spell,2,-,-,Give target ally +1/+3.,,
 Field Worker,Quadruple Radiance Empire,Newbie's,Unit,2,1,3,,,
 Security Guard,Quadruple Radiance Empire,Newbie's,Unit,2,2,1,,,
@@ -281,7 +282,7 @@ Seal of Inferno,Inferno,Epic,Spell,2,-,-,"Deal 1 Crash damage to target area.
 Skullcrusher,Inferno,Epic,Unit,2,3,4,"Trample
  Debut: You take 4 health damage.",,
 Fire Charge,Inferno,Rare,Spell,2,-,-,Deal 2 Crash damage to target square. Give random ally +2/+-0,,
-Fireball,Inferno,Rare,Spell,2,-,-,"Deal 4 damage to the first enemy in target row.
+Fireball 2,Inferno,Rare,Spell,2,-,-,"Deal 4 damage to the first enemy in target row.
  If there's no unit, enemy player takes the damage.",,
 Poisonous Eye of Sorcery,Inferno,Rare,Spell,2,2,2,Pre-strike: Deal 2 damage to the opponent for every spell cast this turn. ,,
 Parasite Bite,Inferno,Rare,Spell,2,-,-,"Turne end: Destroy an enemy on target square, summon a 1/1 Infernal Biter.",,
@@ -315,6 +316,7 @@ Scarlet Warrior,Inferno,Rare,Unit,3,3,2,Death: enemy player takes damage. (Equal
 Screwy Skaab,Inferno,Rare,Unit,3,2,3,"Pre-strike: If there's no enemy in the opposing row, gain +2/+0",,
 Stinky Giant Worm,Inferno,Rare,Unit,3,4,4,"Armor 1
  Turn start: Other Allies take 1 damage",,
+Scorpion Monster,Inferno,Rare,Unit,3,2,4,Pre-strike: Every time you use a spell card in this turn deal 1 damage to a random enemy.,,
 Heart Devouring,Inferno,Common,Spell,3,-,-,Draw a card. Enemy Player discard a card.,,
 Thunder Strike,Inferno,Common,Spell,3,-,-,Deal 4 Crash damage to target square.,,
 Torment Fire,Inferno,Common,Spell,3,-,-,Deal 2 damage to the enemy Player and enemies in target row.,,
@@ -429,7 +431,7 @@ Polar Fanatic,Deus of Winter's Apostle,Rare,Unit,3,3,2,"Debut: Sacrifice a rando
  If the sacrifice has been done, destroy a random enemy.",,
 Polar Night Ghost,Deus of Winter's Apostle,Rare,Unit,3,3,1,"Invisibility, Penetration",,
 Temple Flamen,Deus of Winter's Apostle,Rare,Unit,3,1,3,Pre-strike: Drain X Health from enemy player/ (X = this unit's attack),,
-Conversion,Deus of Winter's Apostle,Common,Spell,3,-,-,"Turn End: Summon a 4/4 Skaab
+Conversion 2,Deus of Winter's Apostle,Common,Spell,3,-,-,"Turn End: Summon a 4/4 Skaab
  Drain 1 health from enemy",,
 Frost Drain,Deus of Winter's Apostle,Common,Spell,3,-,-,"Deal X damage to target enemy and restore X health
 (X equals to number of frozen areas on enemey fist)",,
@@ -645,7 +647,7 @@ Swotting Student,Zen Valley,Rare,Unit,6,1,4,"Debut:Draw 3 cards.
 Poplar Taoist,Zen Valley,Common,Unit,6,1,13,Turn end:When gets injured: all allies +0/+1,,
 Reckless Tiger,Zen Valley,Common,Unit,6,5,3,Trample (Overflow attack that deals damage to enemies behind.),,
 "Yiyun Sword-master Ren",Zen Valley,Legendary,Unit,7,6,3,,,
-Moe!?,Zen Valley,Epic,Spell,7,-,-,Transform three random enemies into 0/2 Red Pandas.,,
+Moe,Zen Valley,Epic,Spell,7,-,-,Transform three random enemies into 0/2 Red Pandas.,,
 Chief of Taste House,Zen Valley,Epic,Unit,7,1,8,"Turn start: Heal 2 health.
 End at Debuting turn: Double your Health.",,
 Pine Village Vanguard,Zen Valley,Rare,Unit,7,12,6,,,
@@ -882,7 +884,7 @@ Petrel's Command,Paradise Harbor,Rare,Spell,4,-,-,Turn end: Summon a 2/2 Seaman 
 Black Fleet Axeman,Paradise Harbor,Rare,Unit,4,3,4,Pre-strike: if your health is higher than opponent's deal 3 damage to random area in opposite row,,
 Dojo Gatekeeper,Paradise Harbor,Rare,Unit,4,3,4,"Pre-strike: If there are more allies than enemies deployed, gain +1/+1.",,
 Gift Tree,Paradise Harbor,Rare,Unit,4,0,6,"Defender, Turn end: you have 33% chance to draw a card, 33% chance to restore 5 healthc 33% chance to give ally +1/+1",,
-Greedy Captain,Paradise Harbor,Rare,Unit,4,2,4,Debut: Absort 1 Attack from every enemy in the opposing row.,,
+Greedy Captain,Paradise Harbor,Rare,Unit,4,2,4,Debut: Absorb 1 Attack from every enemy in the opposing row.,,
 Mentor of Light,Paradise Harbor,Rare,Unit,4,1,3,Turn start: Give a random Empirte ally +2/+2.,,
 Sexy Witch,Paradise Harbor,Rare,Unit,4,3,2,Pre-strike: For every spell card used this turn give one random enemy -2/0 and a random ally 0/+2,,
 Zoologist,Paradise Harbor,Rare,Unit,4,3,4,Turn start: Give Roughrock ally +1/+1 and zen ally +1/+1,,
