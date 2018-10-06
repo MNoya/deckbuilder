@@ -12,14 +12,14 @@ urlpatterns = \
         path('', deck_views.index, name='index'),
         path('decks/', deck_views.DeckListView.as_view(), name='deck_list'),
         path('decks/<int:pk>/', deck_views.DeckDetailView.as_view(), name='deck_detail'),
-        path('decks/<int:pk>/edit/', deck_views.deck_edit, name='deck_edit'),
 
         path('deckbuilder/', deck_views.new_deck, name='new_deck'),
+        path('deckbuilder/<int:pk>/', deck_views.deck_edit, name='deck_edit'),
 
         path('galaxy/', galaxy_views.galaxy_map_list, name='galaxy'),
-        path('galaxy/<int:pk>', galaxy_views.GalaxyDetailView.as_view(), name='galaxy_detail'),
+        path('galaxy/<int:pk>/', galaxy_views.GalaxyDetailView.as_view(), name='galaxy_detail'),
 
-        path('cards/<int:pk>', deck_views.CardDetailView.as_view(), name='card_detail'),
+        path('cards/<int:pk>/', deck_views.CardDetailView.as_view(), name='card_detail'),
 
         ## User Management ##
         path('login/', auth_views.LoginView.as_view(template_name='views/login.html'), name='login'),

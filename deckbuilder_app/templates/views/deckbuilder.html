@@ -36,19 +36,6 @@
         <input type="checkbox" name="rare" id="rare-filter" onchange="updateCards()">
         <label for="rare-filter">High Class Cards Only</label>
 
-        <style>
-            #deck-container {
-                background-color: #fff;
-                background-clip: border-box;
-                border: 1px solid rgba(0, 0, 0, .125);
-                border-radius: .25rem;
-            }
-
-            input.invalid::-webkit-input-placeholder {
-                color: red;
-            }
-
-        </style>
     </div>
 
     {# cards #}
@@ -92,7 +79,7 @@
             deckCardNames.push(cardName)
             totalCards += deckCards[cardName]
         }
-        $("#deck-name").val('{{ deck_name }}')
+        $("#deck-name").val('{{ deck_name }}');
         var allCards = JSON.parse('{{ cards | escapejs }}');
 
         function updateCards() {
@@ -120,7 +107,7 @@
                 }
             }
 
-            $('.card').click(function (evt) {
+            $('.deckbuilder-card').click(function (evt) {
                 var cardID = $(this).attr('id');
                 console.log("Selected card " + cardID);
                 if (totalCards < 30) {
@@ -153,7 +140,7 @@
                     }
                 }
             }
-            container.append("<div>" + totalCards + "/30</div>");
+            container.append("<div class='deck-count'>" + totalCards + "/30</div>");
 
             $('.deck-card').click(function (evt) {
                 var clicked = evt.target;
@@ -161,7 +148,7 @@
                 if (deckCards[cardID]) {
                     deckCards[cardID] = deckCards[cardID] - 1;
                     totalCards -= 1;
-                    if (deckCards[cardID] > 0) {
+                    if (deckCards[cardID]) {
                         console.log("Removed 1 " + cardID);
                     } else {
                         deckCardNames.splice(deckCardNames.indexOf(cardID), 1);
@@ -202,15 +189,19 @@
                 default:
                     card_name_in_rarity = card_name;
             }
-            result = '<div class="card" style="display: block;" id="' + card['name'] + '">(' + card["cost"] + ") ";
+            id = card['name'];
+            result = '<div class="deckbuilder-card" style="display: block;" id="' + id + '">(" + card["cost"] + ") ';
             result += card_name_in_rarity;
             if (card['attack'] != null) {
                 result += " " + card['attack'] + "/" + card['defense']
             }
             result += " " + card['text'];
-            /*if (card['art']){
-                result += '<img src="' + card['art'] + '" class="img-fluid">'
-            }*/
+            card_url = "/static/" + card['art'];
+            if (card['art']) {
+                return '<img src="' + card_url + '" id="' + id + '" class="img-fluid deckbuilder-card">';
+            } else {
+                return '<img src="/static/img/default/card_image.png" id="' + id + '" class="img-fluid deckbuilder-card">'
+            }
             return result + '<div>'
         }
 
@@ -225,25 +216,45 @@
                 'name': deckName,
                 'cards': deckCards,
             };
-            console.log(deckCards);
-            $.ajax({
-                type: "POST",
-                url: '/decks/{{ deck_id }}/edit/',
-                data: JSON.stringify(data),
-                dataType: "json",
-                success: function (response) {
-                    console.log("SUCCESS", response);
-                    window.location.href = response['message']
-                }, error: function (msg) {
-                    console.log("ERROR: " + msg)
-                }
-            });
+
+            updatingDeck = false;
+            if ('{{ deck_id }}') {
+                // Updating Deck
+                $.ajax({
+                    type: "POST",
+                    url: '/deckbuilder/{{ deck_id }}/',
+                    data: JSON.stringify(data),
+                    dataType: "json",
+                    success: function (response) {
+                        console.log("SUCCESS", response);
+                        window.location.href = response['message']
+                    }, error: function (msg) {
+                        console.log("ERROR", msg)
+                    }
+                });
+            } else {
+
+                // New Deck
+                $.ajax({
+                    type: "POST",
+                    url: '/deckbuilder/',
+                    data: JSON.stringify(data),
+                    dataType: "json",
+                    success: function (response) {
+                        console.log("SUCCESS", response);
+                        window.location.href = response['message']
+                    }, error: function (msg) {
+                        console.log("ERROR", msg)
+                    }
+                });
+            }
+
         }
 
         $(document).ready(function () {
             updateCards();
             updateDeck();
-        })
+        });
     </script>
 
 

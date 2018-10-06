@@ -5,7 +5,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 
 from deckbuilder_app.constants import RARITIES, CARD_TYPES, RACES
-from deckbuilder_app.user_model import User
+from deckbuilder_app.user_model import User, log
 
 
 class Card(models.Model):
@@ -19,7 +19,8 @@ class Card(models.Model):
     text = models.TextField(null=True, blank=True)
     art = models.CharField(max_length=250, null=True, blank=True)  # static path
 
-    fields = ['name', 'race', 'cost', 'text', 'card_type', 'rarity', 'attack', 'defense']
+    fields = ['name', 'race', 'cost', 'text', 'card_type', 'rarity', 'attack', 'defense', 'art']
+    exclude_card_names = ['Dragon Descendant, Peng']
 
     class Meta:
         db_table = 'card'
@@ -28,6 +29,17 @@ class Card(models.Model):
 
     def __str__(self):
         return self.name
+
+    @classmethod
+    def cards_list(cls):
+        fields = Card.fields
+        card_list = []
+        for card in Card.objects.all().exclude(name__in=cls.exclude_card_names):
+            card_data = {}
+            for field in fields:
+                card_data[field] = getattr(card, field)
+            card_list.append(card_data)
+        return card_list
 
 
 class Deck(models.Model):
@@ -116,6 +128,69 @@ class Deck(models.Model):
         self.user = new_user
         self.save()
 
+    @classmethod
+    def create(cls, user, name, cards):
+        log.info("Creating New Deck\nName: {}\nUser: {}\nCards: {}".format(name, user, cards))
+        if user.is_anonymous:
+            new_deck = Deck.objects.create(name=name)
+        else:
+            new_deck = Deck.objects.create(name=name, user=user)
+
+        for card_name, number in cards.items():
+            try:
+                card = Card.objects.get(name=card_name)
+            except Card.DoesNotExist:
+                log.error("Card Does Not Exist: {}".format(card_name))
+                continue
+
+            CardInDeck.objects.create(deck=new_deck, card=card, copies=number)
+        return new_deck
+
+    def update(self, deck_data):
+        log.info("Updating deck '{}' id {}".format(self.name, self.pk))
+
+        # Update deck name
+        name = deck_data['name']
+        if name != self.name:
+            log.info("Updating name to '{}'".format(name))
+            self.name = name
+            self.save()
+        cards_data = deck_data['cards']
+
+        # Add, update or remove cards
+        updated_cards = set(cards_data.keys())
+        current_cards = set(self.cards.values_list('name', flat=True))
+        removed_cards = []
+
+        for card_name, number in cards_data.items():
+            if number == 0:
+                removed_cards.append(card_name)
+                updated_cards.remove(card_name)
+        added_cards = updated_cards - current_cards
+
+        log.info("Removed cards: {}".format(removed_cards))
+        log.info("Added cards: {}".format(added_cards))
+
+        for card_name, number in cards_data.items():
+            try:
+                card = Card.objects.get(name=card_name)
+            except Card.DoesNotExist:
+                log.error("Card Does Not Exist: {}".format(card_name))
+                continue
+            try:
+                if card_name in added_cards:
+                    CardInDeck.objects.create(deck=self, card=card, copies=number)
+                elif card_name in removed_cards:
+                    CardInDeck.objects.get(deck=self, card=card).delete()
+                else:
+                    card_in_deck = CardInDeck.objects.get(deck=self, card=card)
+                    if card_in_deck.copies != number:
+                        log.info("Updating copies of '{}' from {} to {}".format(card.name, card_in_deck.copies, number))
+                        card_in_deck.copies = number
+                        card_in_deck.save()
+            except Exception:
+                log.exception("Problem updating card '{}'".format(card_name))
+
 
 class CardInDeck(models.Model):
     card = models.ForeignKey(Card, on_delete=models.CASCADE)
@@ -129,6 +204,7 @@ class CardInDeck(models.Model):
 
     def __str__(self):
         return "{} {}".format(self.copies, self.card.name)
+
 
 class Tag(models.Model):
     # TODO: script to create tags

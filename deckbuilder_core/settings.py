@@ -46,6 +46,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'deckbuilder_core.urls'
 
+APPEND_SLASH = True
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -148,10 +150,10 @@ LOGGING = {
         },
     },
     'loggers': {
-        'django.db.backends': {
+        'django': {
             'level': 'ERROR',
             'handlers': ['console'],
-            'propagate': False,
+            'propagate': True,
         },
         'deckbuilder_core': {
             'handlers': ['console', 'file'],
