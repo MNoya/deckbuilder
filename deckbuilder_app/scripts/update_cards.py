@@ -80,9 +80,16 @@ def update_cards():
 
     # Remove cards that have changed names
     for card in Card.objects.all():
-        if card.name not in card_names:
+        _card_name = card.name
+        if _card_name not in card_names:
             card.delete()
-            print("Deleted {}".format(card.name))
+            print("Deleted {}".format(_card_name))
+        # Remove duplicate cards
+        _cards = Card.objects.filter(name=_card_name)
+        _cards_count = _cards.count()
+        if _cards_count > 1:
+            _cards.delete()
+            print("WARNING: Deleted {} duplicated cards for name {}".format(_cards_count, _card_name))
 
     # List unused art
     unused_art = []

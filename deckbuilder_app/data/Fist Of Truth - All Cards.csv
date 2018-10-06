@@ -617,6 +617,10 @@ Pinaster Hermit,Zen Valley,Common,Unit,4,1,6,Turn end: Restore 2 health.,,
 Shrewd Pedlar,Zen Valley,Common,Unit,4,4,2,Heritage 1(Death: Give a random adjacent ally +1/+1 and Heritage 1.,,
 "Taste House, Chef",Zen Valley,Common,Unit,4,2,4,Debut:Give all other allies +0/+1.,,
 Peripatetic Lay Monk,Zen Valley,Legendary,Unit,5,3,3,"If this unit has Heritage, transform it into Successor of Shenron.",,
+"Dragon Descendant, Peng",Zen Valley,Legendary,Unit,5,3,3,"First Strike
+Hexproof
+Rejuvenation
+Double strike",,
 Protective Anima,Zen Valley,Epic,Spell,5,-,-,Giver target Ally +2/+2 and Shroud/(Immune all effects.),,
 Ferry Hermit,Zen Valley,Epic,Unit,5,4,3,"Death: Draw a card,
  if this unit has Heritage summon 4/3 Ferry Hermit on random adjacent area.",,

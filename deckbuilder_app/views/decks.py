@@ -127,6 +127,7 @@ def deck_edit(request, pk):
 
 def new_deck(request):
     template_name = 'views/new_deck.html'
+    exclude_card_names = ['Dragon Descendant, Peng']
 
     if request.POST:
         deck_data = json.loads(request.body)
@@ -146,7 +147,7 @@ def new_deck(request):
     else:
         fields = Card.fields
         card_list = []
-        for card in Card.objects.all():
+        for card in Card.objects.all().exclude(name__in=exclude_card_names):
             card_data = {}
             for field in fields:
                 card_data[field] = getattr(card, field)
