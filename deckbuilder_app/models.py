@@ -44,6 +44,7 @@ class Deck(models.Model):
 
     class Meta:
         db_table = 'deck'
+        ordering = ['likes', 'views']
 
     def __str__(self):
         return self.name
@@ -126,9 +127,16 @@ class CardInDeck(models.Model):
         unique_together = ('card', 'deck')
         ordering = ['card__cost', '-card__rarity', '-card__race', '-card__card_type', 'card__name']
 
+    def __str__(self):
+        return "{} {}".format(self.copies, self.card.name)
+
 class Tag(models.Model):
     # TODO: script to create tags
     name = models.CharField(max_length=50, unique=True)
+
+    class Meta:
+        db_table = 'tag'
+        ordering = ['name']
 
     def __str__(self):
         return self.name
@@ -145,6 +153,10 @@ class GalaxyMap(models.Model):
 
     # TODO: turn order?
 
+    class Meta:
+        db_table = 'galaxy_map'
+        ordering = ['name', ]
+
     def __str__(self):
         return "{}".format(self.name)
 
@@ -153,7 +165,12 @@ class GalaxyDeck(models.Model):
     deck = models.ForeignKey(Deck, on_delete=models.CASCADE)
     map = models.ForeignKey(GalaxyMap, on_delete=models.CASCADE)
     likes = models.IntegerField(default=0)
+
     # winrate?
+
+    class Meta:
+        db_table = 'galaxy_deck'
+        ordering = ['likes', ]
 
 
 class DeckComment(models.Model):
@@ -162,3 +179,6 @@ class DeckComment(models.Model):
     comment = models.TextField()
     parent = models.OneToOneField('self', on_delete=models.CASCADE)
     answers = models.ManyToManyField('self')
+
+    class Meta:
+        db_table = 'deck_comment'
