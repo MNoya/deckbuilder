@@ -1,0 +1,29 @@
+#filters-container {
+    padding: 5px;
+    background-color: var(--color-gray);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#cards-container {
+    max-width: 800px;
+}
+
+#deck-name {
+    width: 290px;
+    margin: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.card-cost {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.deck-count {
+    font-size: 18px;
+    color: white;
+}

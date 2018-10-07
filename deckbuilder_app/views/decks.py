@@ -4,7 +4,7 @@ import logging
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import PermissionDenied
 from django.http import JsonResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.views.generic import ListView, DetailView
 
@@ -65,7 +65,9 @@ def new_deck(request):
     else:
         context = {
             'races': [[i, race_name] for i, race_name in enumerate(RACES)],
-            'cards': json.dumps(Card.cards_list())
+            'cards': json.dumps(Card.cards_list()),
+            'deck_cards': [],
+            'deck_name': "New Deck"
         }
         return render(request, template_name=template_name, context=context)
 
@@ -76,8 +78,8 @@ def deck_edit(request, pk):
 
     deck = Deck.objects.get(pk=pk)
     if request.user != deck.user:
-        log.error("User {} tried to edit deck {} of User {} - Forbidden".format(request.user, deck.name, deck.user))
-        raise PermissionDenied
+        log.error("User {} tried to edit deck '{}' of User {} - Forbidden".format(request.user, deck.name, deck.user))
+        return redirect(reverse('deck_detail', kwargs={'pk': pk}))
 
     if request.POST:
         deck_data = json.loads(request.body)

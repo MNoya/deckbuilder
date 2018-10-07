@@ -1,4 +1,13 @@
 {% extends "views/base.html" %}
+{% load staticfiles i18n %}
+
+{% block stylesheets %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static "css/deck_list.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/deck_detail.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/deckbuilder.css" %}"/>
+{% endblock %}
+
 {% block content %}
 
     <div id="filters-container" class="container">
@@ -41,18 +50,13 @@
     {# cards #}
     <div class="container">
         <div class="row">
-            <div id="cards-container" class="col-8">
-
-            </div>
-            <div id="deck-container" class="col-4">
+            <div id="cards-container"></div>
+            <div id="deck-container">
                 <input type="text" id="deck-name" placeholder="Deck Name (required)" value="New Deck"/>
-                <div id="deck-cards-container">
-
-                </div>
+                <div id="deck-cards-container" class="table"></div>
                 <button type='button' class='btn btn-primary' onclick='saveDeck()'>Save</button>
             </div>
         </div>
-
     </div>
 
     {% csrf_token %}
@@ -99,31 +103,24 @@
                         if (card_type == 0 && bIncludeUnits || card_type == 1 && bIncludeSpells) {
                             if (!bOnlyRare || card['rarity'] > 1) {
                                 if (!text || card['name'].toLowerCase().includes(text) || card['text'].toLowerCase().includes(text)) {
-                                    $("#cards-container").append(cardHTML(card));
+                                    $("#cards-container").append(imageCardHTML(card));
                                 }
                             }
                         }
                     }
                 }
             }
+        }
 
-            $('.deckbuilder-card').click(function (evt) {
-                var cardID = $(this).attr('id');
-                console.log("Selected card " + cardID);
-                if (totalCards < 30) {
-                    if (deckCards[cardID]) {
-                        if (deckCards[cardID] < 3) {
-                            deckCards[cardID] = deckCards[cardID] + 1;
-                            totalCards += 1
-                        }
-                    } else {
-                        totalCards += 1;
-                        deckCards[cardID] = 1;
-                        deckCardNames.push(cardID);
-                    }
-                }
-                updateDeck()
-            })
+        // Returns the HTML formatting of a card image in the card picking zone
+        function imageCardHTML(card) {
+            id = card['name'];
+            if (card['art']) {
+                card_url = "/static/" + card['art'];
+            } else {
+                card_url = "/static/img/default/card_image.png"
+            }
+            return '<img src="' + card_url + '" id="' + id + '" class="img-fluid deckbuilder-card">';
         }
 
         function updateDeck() {
@@ -135,8 +132,7 @@
                 if (deckCardNames.indexOf(cardName) > -1) {
                     var number = deckCards[cardName];
                     if (number > 0) {
-                        result = "<div class='deck-card' id='" + cardName + "'>" + number + " " + cardName + "</div>";
-                        container.append(result);
+                        container.append(deckCardHTML(card, number));
                     }
                 }
             }
@@ -159,6 +155,25 @@
             })
         }
 
+        // Returns the HTML formatting of a card in the deck list
+        function deckCardHTML(cardData, number) {
+            cardName = cardData['name'];
+            cardRarity = cardData['rarity'];
+            cardCost = cardData['cost'];
+            //card_name_in_rarity = "<div class='card-rarity-" + card['rarity'] + "'>" + card_name + "</div>";
+            cardClasses = "table-cell card-name card-rarity-" + cardRarity;
+            result =
+                "<div class='deck-card table-row card-row'>" +
+                {#"   <div class='gradient_overlay'></div>" +#}
+                "   <div class='table-cell card-cost'>" + cardCost + "</div>" +
+                "       <div id='" + cardName + "' class='" + cardClasses + "'>" +
+                "            <b>" + cardName + "</b>" +
+                "       </div>" +
+                "   <div class='table-cell card-copies'>" + number + "</div>" +
+                "</div>";
+            return result
+        }
+
         $("#deck-name").keyup(function (evt) {
             var input = $(this);
             var text = input.val();
@@ -170,40 +185,6 @@
                 input.addClass("invalid");
             }
         });
-
-        function cardHTML(card) {
-            card_name = "<b>" + card['name'] + "</b>";
-            switch (card['rarity']) {
-                case 0:
-                    card_name_in_rarity = "<font color='gray'>" + card_name + "</font>";
-                    break;
-                case 2:
-                    card_name_in_rarity = "<font color='blue'>" + card_name + "</font>";
-                    break;
-                case 3:
-                    card_name_in_rarity = "<font color='purple'>" + card_name + "</font>";
-                    break;
-                case 4:
-                    card_name_in_rarity = "<font color='orange'>" + card_name + "</font>";
-                    break;
-                default:
-                    card_name_in_rarity = card_name;
-            }
-            id = card['name'];
-            result = '<div class="deckbuilder-card" style="display: block;" id="' + id + '">(" + card["cost"] + ") ';
-            result += card_name_in_rarity;
-            if (card['attack'] != null) {
-                result += " " + card['attack'] + "/" + card['defense']
-            }
-            result += " " + card['text'];
-            card_url = "/static/" + card['art'];
-            if (card['art']) {
-                return '<img src="' + card_url + '" id="' + id + '" class="img-fluid deckbuilder-card">';
-            } else {
-                return '<img src="/static/img/default/card_image.png" id="' + id + '" class="img-fluid deckbuilder-card">'
-            }
-            return result + '<div>'
-        }
 
         function saveDeck() {
             console.log('Saving Deck...');
@@ -256,7 +237,4 @@
             updateDeck();
         });
     </script>
-
-
 {% endblock %}
-

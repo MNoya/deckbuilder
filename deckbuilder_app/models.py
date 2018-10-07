@@ -135,6 +135,8 @@ class Deck(models.Model):
             new_deck = Deck.objects.create(name=name)
         else:
             new_deck = Deck.objects.create(name=name, user=user)
+        if not cards:
+            return new_deck
 
         for card_name, number in cards.items():
             try:
@@ -147,7 +149,7 @@ class Deck(models.Model):
         return new_deck
 
     def update(self, deck_data):
-        log.info("Updating deck '{}' id {}".format(self.name, self.pk))
+        log.info("Updating Deck '{}' id {}".format(self.name, self.pk))
 
         # Update deck name
         name = deck_data['name']

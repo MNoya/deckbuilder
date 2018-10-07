@@ -25,7 +25,7 @@
                             {{ card_in_deck.card.cost }}
                         </div>
                         <div id="{{ card_in_deck.card.name }}"
-                             class="table-cell card-name card-rarity-{{ card_in_deck.card.get_rarity_display|lower }}">
+                             class="table-cell card-name card-rarity-{{ card_in_deck.card.rarity }}">
                             <b>{{ card_in_deck.card.name }}</b>
                         </div>
                         <div class="table-cell card-copies">

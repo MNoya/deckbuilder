@@ -135,31 +135,24 @@ a:-webkit-any-link {
 }
 
 /* Rarity Colors */
-.card-rarity-newbie {
+.card-rarity-0 {
     color: gray;
 }
 
-.card-rarity-common {
+.card-rarity-1 {
     color: black;
 }
 
-.card-rarity-rare {
+.card-rarity-2 {
     color: blue;
 }
 
-.card-rarity-epic {
+.card-rarity-3 {
     color: purple;
 }
 
-.card-rarity-legendary {
+.card-rarity-4 {
     color: #eb9b4b;
-}
-
-#deck-container {
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: .25rem;
 }
 
 /** Text **/
@@ -261,21 +254,6 @@ a:-webkit-any-link {
 
 .galaxy-card {
     max-width: 125px;
-}
-
-.deck-card {
-    color: black;
-}
-
-.deck-count {
-    color: black;
-}
-
-#filters-container {
-    padding: 5px;
-    background-color: var(--color-gray);
-    margin-top: 5px;
-    margin-bottom: 10px;
 }
 
 .galaxy-map-row {
