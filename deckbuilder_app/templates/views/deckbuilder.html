@@ -86,9 +86,31 @@
         $("#deck-name").val('{{ deck_name }}');
         var allCards = JSON.parse('{{ cards | escapejs }}');
 
-        function updateCards() {
-            $("#cards-container").empty();
+        function setupCards() {
+            for (var card of allCards) {
+                $("#cards-container").append(imageCardHTML(card));
+            }
 
+            $('.deckbuilder-card').click(function (evt) {
+                var cardID = $(this).attr('id');
+                console.log("Selected card " + cardID);
+                if (totalCards < 30) {
+                    if (deckCards[cardID]) {
+                        if (deckCards[cardID] < 3) {
+                            deckCards[cardID] = deckCards[cardID] + 1;
+                            totalCards += 1
+                        }
+                    } else {
+                        totalCards += 1;
+                        deckCards[cardID] = 1;
+                        deckCardNames.push(cardID);
+                    }
+                }
+                updateDeck()
+            })
+        }
+
+        function updateCards() {
             var race = $("#race-filter").val();
             var cost = $("#cost-filter").val();
             var bIncludeUnits = $("#unit-filter").prop('checked');
@@ -97,17 +119,23 @@
             var text = $("#text-filter").val().toLowerCase();
 
             for (var card of allCards) {
+                hideCard = true;
                 if (cost == 'All' || card['cost'] == cost || card['cost'] >= 6 && cost >= 6) {
                     if (race == 'All' || card['race'] == race) {
                         card_type = card['card_type'];
                         if (card_type == 0 && bIncludeUnits || card_type == 1 && bIncludeSpells) {
                             if (!bOnlyRare || card['rarity'] > 1) {
                                 if (!text || card['name'].toLowerCase().includes(text) || card['text'].toLowerCase().includes(text)) {
-                                    $("#cards-container").append(imageCardHTML(card));
+                                    hideCard = false;
                                 }
                             }
                         }
                     }
+                }
+                if (hideCard){
+                    $(document.getElementById(card['name'])).hide()
+                } else {
+                    $(document.getElementById(card['name'])).show()
                 }
             }
         }
@@ -233,7 +261,7 @@
         }
 
         $(document).ready(function () {
-            updateCards();
+            setupCards();
             updateDeck();
         });
     </script>
