@@ -5,8 +5,19 @@
     margin-bottom: 10px;
 }
 
+@media (max-width: 1200px) {
+    .deckbuilder-card {
+        width: 110px;
+    }
+}
+
 #cards-container {
-    max-width: 800px;
+    /*max-width: 800px;*/
+    width: 80%;
+}
+
+#deck-container {
+    width: 19%;
 }
 
 #deck-name {
@@ -26,4 +37,9 @@
 .deck-count {
     font-size: 18px;
     color: white;
+}
+
+
+.row {
+    margin-left: 0;
 }

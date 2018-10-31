@@ -48,14 +48,12 @@
     </div>
 
     {# cards #}
-    <div class="container">
-        <div class="row">
-            <div id="cards-container"></div>
-            <div id="deck-container">
-                <input type="text" id="deck-name" placeholder="Deck Name (required)" value="New Deck"/>
-                <div id="deck-cards-container" class="table"></div>
-                <button type='button' class='btn btn-primary' onclick='saveDeck()'>Save</button>
-            </div>
+    <div class="row">
+        <div id="cards-container"></div>
+        <div id="deck-container">
+            <input type="text" id="deck-name" placeholder="Deck Name (required)" value="New Deck"/>
+            <div id="deck-cards-container" class="table"></div>
+            <button type='button' class='btn btn-primary' onclick='saveDeck()'>Save</button>
         </div>
     </div>
 
@@ -132,7 +130,7 @@
                         }
                     }
                 }
-                if (hideCard){
+                if (hideCard) {
                     $(document.getElementById(card['name'])).hide()
                 } else {
                     $(document.getElementById(card['name'])).show()
